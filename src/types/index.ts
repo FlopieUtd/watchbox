@@ -14,7 +14,6 @@ export enum CaseMaterial {
 export enum DialColour {
   Black = "BLACK",
   White = "WHITE",
-  Silver = "SILVER",
   Grey = "GREY",
   Blue = "BLUE",
   Green = "GREEN",
@@ -55,6 +54,10 @@ export enum Brand {
   Doxa = "DOXA",
   Omega = "OMEGA",
   IWC = "IWC",
+  PATEK_PHILIPPE = "PATEK_PHILIPPE",
+  TAG_HEUER = "TAG_HEUER",
+  BREITLING = "BREITLING",
+  GRAND_SEIKO = "GRAND_SEIKO",
 }
 
 export interface Watch {
@@ -81,6 +84,5 @@ export interface Watch {
     colour: DialColour;
     indices: string;
   };
-  production_years: unknown[];
   complications: string[];
 }

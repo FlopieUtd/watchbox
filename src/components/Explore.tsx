@@ -23,7 +23,7 @@ export const Explore = observer(() => {
                       <img
                         src={getImageSrc(watch)}
                         alt={watch.reference}
-                        className="object-cover w-full h-full scale-105 hover:scale-110 transition-transform	"
+                        className="object-cover w-full h-full   scale-105 hover:scale-110 transition-transform	"
                       />
                     </div>
                     <div className="text-xs text-center">

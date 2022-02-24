@@ -13,6 +13,10 @@ export const BRAND: { [key in Brand]: string } = {
   DOXA: "Doxa",
   OMEGA: "Omega",
   IWC: "IWC",
+  PATEK_PHILIPPE: "Patek Philippe",
+  TAG_HEUER: "TAG Heuer",
+  BREITLING: "Breitling",
+  GRAND_SEIKO: "Grand Seiko",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {
@@ -30,8 +34,7 @@ export const MOVEMENT: { [key in Movement]: string } = {
 
 export const DIAL_COLOUR: { [key in DialColour]: string } = {
   BLACK: "Black",
-  WHITE: "White",
-  SILVER: "Silver",
+  WHITE: "White / silver",
   GREY: "Grey",
   BLUE: "Blue",
   GREEN: "Green",

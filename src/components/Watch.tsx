@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link, useParams } from "react-router-dom";
-import { CASE_MATERIAL, MOVEMENT } from "src/constants";
+import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
 import useMediaQuery from "src/hooks/useMediaQuery";
 import { getImageSrc } from "src/utils/getImageSrc";
 import { getWatchById } from "src/utils/getWatchById";
@@ -67,7 +67,7 @@ export const Watch = () => {
       </Link>
       <div className={imageWrapperClass}>
         <img
-          className="max-w-full h-full object-scale-down"
+          className="max-w-full h-full object-scale-down "
           src={getImageSrc(watch)}
           alt={reference}
         />
@@ -75,12 +75,12 @@ export const Watch = () => {
       <div className="w-full h-full border-l p-4 flex justify-center">
         <div className="max-w-[480px] w-full">
           <h1>
-            {brand} - {model}
+            {BRAND[brand]} - {model}
           </h1>
           <div>
             <div className="mb-4">
               <h2>General</h2>
-              <DescriptionLine label="Brand" value={brand} />
+              <DescriptionLine label="Brand" value={BRAND[brand]} />
               <DescriptionLine label="Model" value={model} />
               <DescriptionLine label="Reference" value={reference} />
             </div>

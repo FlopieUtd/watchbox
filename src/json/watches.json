@@ -20,10 +20,9 @@
       "lug_width": 18
     },
     "dial": {
-      "colour": "",
+      "colour": "WHITE",
       "indices": ""
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS"]
   },
   {
@@ -47,10 +46,9 @@
       "lug_width": 19
     },
     "dial": {
-      "colour": "",
+      "colour": "WHITE",
       "indices": ""
     },
-    "production_years": [],
     "complications": ["DAY", "DATE"]
   },
   {
@@ -74,10 +72,9 @@
       "lug_width": 20
     },
     "dial": {
-      "colour": "",
+      "colour": "BLACK",
       "indices": ""
     },
-    "production_years": [],
     "complications": ["DATE", "HACKING_SECONDS"]
   },
   {
@@ -105,7 +102,6 @@
       "colour": "WHITE",
       "indices": "INDICES"
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS"]
   },
   {
@@ -133,7 +129,6 @@
       "colour": "BLACK",
       "indices": "INDICES"
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS"]
   },
   {
@@ -157,10 +152,9 @@
       "lug_width": 22
     },
     "dial": {
-      "colour": "",
+      "colour": "WHITE",
       "indices": ""
     },
-    "production_years": [],
     "complications": [
       "POWER_RESERVE_INDICATOR",
       "SMALL_SECONDS",
@@ -189,10 +183,9 @@
       "lug_width": 20
     },
     "dial": {
-      "colour": "",
+      "colour": "WHITE",
       "indices": ""
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS", "SMALL_SECONDS"]
   },
   {
@@ -208,7 +201,7 @@
       "base_manufacturer": ""
     },
     "watch_case": {
-      "material": "PINK_GOLD",
+      "material": "GOLD",
       "water_resistance": 3,
       "diameter": 38.5,
       "thickness": 10,
@@ -216,10 +209,9 @@
       "lug_width": 20
     },
     "dial": {
-      "colour": "",
+      "colour": "WHITE",
       "indices": ""
     },
-    "production_years": [],
     "complications": [
       "HACKING_SECONDS",
       "MOON_PHASE",
@@ -249,10 +241,9 @@
       "lug_width": 20
     },
     "dial": {
-      "colour": "",
+      "colour": "BLACK",
       "indices": ""
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS"]
   },
   {
@@ -276,10 +267,9 @@
       "lug_width": 20
     },
     "dial": {
-      "colour": "",
+      "colour": "BLUE",
       "indices": ""
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS"]
   },
   {
@@ -303,10 +293,9 @@
       "lug_width": 20
     },
     "dial": {
-      "colour": "",
+      "colour": "BLACK",
       "indices": ""
     },
-    "production_years": [],
     "complications": [
       "SMALL_SECONDS",
       "CHRONOGRAPH",
@@ -338,7 +327,110 @@
       "colour": "YELLOW",
       "indices": "INDICES"
     },
-    "production_years": [],
     "complications": ["HACKING_SECONDS", "DATE"]
+  },
+  {
+    "id": "patek-philippe--5711-1a-010",
+    "brand": "PATEK_PHILIPPE",
+    "model": "Nautilus 5711",
+    "reference": "5711/1A-010",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "324 S C",
+      "caliber_manufacturer": "Patek Philippe",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watch_case": {
+      "material": "STAINLESS_STEEL",
+      "water_resistance": 12,
+      "diameter": 40,
+      "thickness": 8.5,
+      "lug_to_lug": 47,
+      "lug_width": 25
+    },
+    "dial": {
+      "colour": "BLUE",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS", "DATE"]
+  },
+  {
+    "id": "tag-heuer--caw211r-fc6401",
+    "brand": "TAG_HEUER",
+    "model": "Monaco",
+    "reference": "CAW211R.FC6401",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "Calibre 11",
+      "caliber_manufacturer": "TAG Heuer",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watch_case": {
+      "material": "STAINLESS_STEEL",
+      "water_resistance": 10,
+      "diameter": 39,
+      "thickness": 15,
+      "lug_to_lug": 48,
+      "lug_width": 22
+    },
+    "dial": {
+      "colour": "BLUE",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS", "DATE", "SMALL_SECONDS", "CHRONOGRAPH"]
+  },
+  {
+    "id": "breitling--a17367021i1a1",
+    "brand": "BREITLING",
+    "model": "Superocean Automatic 44",
+    "reference": "A17367021I1A1",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "Breitling 17",
+      "caliber_manufacturer": "Breitling",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watch_case": {
+      "material": "STAINLESS_STEEL",
+      "water_resistance": 100,
+      "diameter": 44,
+      "thickness": 14,
+      "lug_to_lug": 53,
+      "lug_width": 22
+    },
+    "dial": {
+      "colour": "YELLOW",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS", "DATE"]
+  },
+  {
+    "id": "grand-seiko--sbga211",
+    "brand": "GRAND_SEIKO",
+    "model": "SBGA211",
+    "reference": "SBGA211",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "Caliber 9R65",
+      "caliber_manufacturer": "Grand Seiko",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watch_case": {
+      "material": "TITANIUM",
+      "water_resistance": 10,
+      "diameter": 41,
+      "thickness": 12.5,
+      "lug_to_lug": 49,
+      "lug_width": 22
+    },
+    "dial": {
+      "colour": "WHITE",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS", "DATE", "POWER_RESERVE_INDICATOR"]
   }
 ]

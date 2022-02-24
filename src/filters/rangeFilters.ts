@@ -49,7 +49,7 @@ const rangeFilters: RangeFilter[] = [
     range: getRange("watch_case.lug_width"),
     accessor: "watch_case.lug_width",
     postfix: "mm",
-    step: 0.5,
+    step: 1,
   },
 ];
 

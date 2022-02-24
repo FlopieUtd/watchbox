@@ -43,7 +43,7 @@ export const Box = ({ rows, columns }: BoxProps) => {
             >
               {watches[slot] ? (
                 <img
-                  className="scale-110"
+                  className="scale-110 "
                   src={getImageSrc(watches[slot])}
                   alt={watches[slot].reference}
                 />
