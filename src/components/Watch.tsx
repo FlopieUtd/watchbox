@@ -37,6 +37,20 @@ const useDiameter = () => {
   return { isDiameterActive, handleDiameterOn, handleDiameterOff };
 };
 
+const useLugToLug = () => {
+  const [isLugToLugActive, setIsLugToLugActive] = useState(false);
+
+  const handleLugToLugOn = () => {
+    setIsLugToLugActive(true);
+  };
+
+  const handleLugToLugOff = () => {
+    setIsLugToLugActive(false);
+  };
+
+  return { isLugToLugActive, handleLugToLugOn, handleLugToLugOff };
+};
+
 export const Watch = () => {
   const { watchId } = useParams();
 
@@ -60,6 +74,8 @@ export const Watch = () => {
 
   const { isDiameterActive, handleDiameterOn, handleDiameterOff } =
     useDiameter();
+  const { isLugToLugActive, handleLugToLugOn, handleLugToLugOff } =
+    useLugToLug();
 
   const q1 = useMediaQuery("(min-height: 600px)");
   const q2 = useMediaQuery("(min-height: 800px)");
@@ -77,7 +93,7 @@ export const Watch = () => {
 
   const imageClass = classNames(
     "absolute max-w-full h-full object-scale-down transition",
-    isDiameterActive && "opacity-20"
+    (isDiameterActive || isLugToLugActive) && "opacity-20"
   );
 
   return (
@@ -102,13 +118,32 @@ export const Watch = () => {
           </div>
         )}
 
-        <div className="flex justify-center absolute bottom-0 w-full">
+        {isLugToLugActive && (
+          <div
+            className="absolute border-y-2 border-black  flex items-center justify-center text-xl"
+            style={{
+              height: `${lug_to_lug / 1.03}%`,
+              width: `${diameter / 1.03}%`,
+            }}
+          >
+            {lug_to_lug} mm
+          </div>
+        )}
+
+        <div className="flex justify-center absolute bottom-0 w-full gap-4">
           <div
             onMouseEnter={handleDiameterOn}
             onMouseLeave={handleDiameterOff}
-            className="bg-slate-100 text-slate-500 w-20 h-10 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+            className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
           >
             diameter
+          </div>
+          <div
+            onMouseEnter={handleLugToLugOn}
+            onMouseLeave={handleLugToLugOff}
+            className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+          >
+            lug to lug
           </div>
         </div>
       </div>
