@@ -1,69 +1,15 @@
 import classNames from "classnames";
-import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { DescriptionLine } from "src/components/Watch/DescriptionLine";
+import {
+  useDiameter,
+  useLugToLug,
+  useLugWidth,
+} from "src/components/Watch/hooks";
 import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
 import useMediaQuery from "src/hooks/useMediaQuery";
 import { getImageSrc } from "src/utils/getImageSrc";
 import { getWatchById } from "src/utils/getWatchById";
-
-interface DescriptionLineProps {
-  label: string;
-  value: string | number;
-  postfix?: string;
-}
-
-const DescriptionLine = ({ label, value, postfix }: DescriptionLineProps) => {
-  return (
-    <div className="grid grid-cols-2 w-full min-h-[24px] items-center">
-      <div className="">{label}</div>
-      <div>
-        {value} {postfix}
-      </div>
-    </div>
-  );
-};
-
-const useDiameter = () => {
-  const [isDiameterActive, setIsDiameterActive] = useState(false);
-
-  const handleDiameterOn = () => {
-    setIsDiameterActive(true);
-  };
-
-  const handleDiameterOff = () => {
-    setIsDiameterActive(false);
-  };
-
-  return { isDiameterActive, handleDiameterOn, handleDiameterOff };
-};
-
-const useLugToLug = () => {
-  const [isLugToLugActive, setIsLugToLugActive] = useState(false);
-
-  const handleLugToLugOn = () => {
-    setIsLugToLugActive(true);
-  };
-
-  const handleLugToLugOff = () => {
-    setIsLugToLugActive(false);
-  };
-
-  return { isLugToLugActive, handleLugToLugOn, handleLugToLugOff };
-};
-
-const useLugWidth = () => {
-  const [isLugWidthActive, setIsLugWidthActive] = useState(false);
-
-  const handleLugWidthOn = () => {
-    setIsLugWidthActive(true);
-  };
-
-  const handleLugWidthOff = () => {
-    setIsLugWidthActive(false);
-  };
-
-  return { isLugWidthActive, handleLugWidthOn, handleLugWidthOff };
-};
 
 export const Watch = () => {
   const { watchId } = useParams();
@@ -150,7 +96,7 @@ export const Watch = () => {
           <div
             className="absolute border-x-2 border-black  flex items-center justify-center text-xl"
             style={{
-              height: `${lug_to_lug / 1.03}%`,
+              height: `${(lug_to_lug * 1.4) / 1.03}%`,
               width: `${lug_width / 1.03}%`,
             }}
           >

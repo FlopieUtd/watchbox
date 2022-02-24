@@ -1,6 +1,6 @@
 import { Box } from "src/components/Box";
 import { Explore } from "src/components/Explore";
-import { Watch } from "src/components/Watch";
+import { Watch } from "src/components/Watch/Watch";
 
 export const routes = [
   { path: "/", name: "Explore", element: <Explore /> },
