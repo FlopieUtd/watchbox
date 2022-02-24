@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
 import useMediaQuery from "src/hooks/useMediaQuery";
@@ -22,6 +23,20 @@ const DescriptionLine = ({ label, value, postfix }: DescriptionLineProps) => {
   );
 };
 
+const useDiameter = () => {
+  const [isDiameterActive, setIsDiameterActive] = useState(false);
+
+  const handleDiameterOn = () => {
+    setIsDiameterActive(true);
+  };
+
+  const handleDiameterOff = () => {
+    setIsDiameterActive(false);
+  };
+
+  return { isDiameterActive, handleDiameterOn, handleDiameterOff };
+};
+
 export const Watch = () => {
   const { watchId } = useParams();
 
@@ -43,6 +58,9 @@ export const Watch = () => {
 
   const { type, caliber } = movement;
 
+  const { isDiameterActive, handleDiameterOn, handleDiameterOff } =
+    useDiameter();
+
   const q1 = useMediaQuery("(min-height: 600px)");
   const q2 = useMediaQuery("(min-height: 800px)");
 
@@ -51,10 +69,15 @@ export const Watch = () => {
   const c = "h-[800px]";
 
   const imageWrapperClass = classNames(
-    "w-full flex justify-center items-center overflow-hidden p-4",
+    "relative w-full flex justify-center items-center overflow-hidden",
     !q1 && !q2 && a,
     q1 && !q2 && b,
     q2 && c
+  );
+
+  const imageClass = classNames(
+    "absolute max-w-full h-full object-scale-down transition",
+    isDiameterActive && "opacity-20"
   );
 
   return (
@@ -66,11 +89,28 @@ export const Watch = () => {
         <img src="/icons/chevron_right.svg" alt="Back" className="rotate-180" />
       </Link>
       <div className={imageWrapperClass}>
-        <img
-          className="max-w-full h-full object-scale-down "
-          src={getImageSrc(watch)}
-          alt={reference}
-        />
+        <img className={imageClass} src={getImageSrc(watch)} alt={reference} />
+
+        {isDiameterActive && (
+          <div
+            className="absolute rounded-full border-2 border-black aspect-square flex items-center justify-center text-xl"
+            style={{
+              width: `${diameter / 1.03}%`,
+            }}
+          >
+            {diameter} mm
+          </div>
+        )}
+
+        <div className="flex justify-center absolute bottom-0 w-full">
+          <div
+            onMouseEnter={handleDiameterOn}
+            onMouseLeave={handleDiameterOff}
+            className="bg-slate-100 text-slate-500 w-20 h-10 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+          >
+            diameter
+          </div>
+        </div>
       </div>
       <div className="w-full h-full border-l p-4 flex justify-center">
         <div className="max-w-[480px] w-full">
