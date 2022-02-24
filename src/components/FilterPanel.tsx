@@ -2,12 +2,14 @@ import { observer } from "mobx-react-lite";
 import { CategoryFilter } from "src/components/Filters/CategoryFilter";
 import { RangeFilter } from "src/components/Filters/RangeFilter";
 import { useExplore } from "src/context/ExploreContext";
-import { useFilterResults } from "src/hooks/useFilterResults";
+import { filterWatches } from "src/filters/filterWatches";
+import { getFilterResults } from "src/filters/getFilterResults";
+import { watches } from "src/json";
 
 export const FilterPanel = observer(() => {
   const { filteredWatches, searchFilter, categoryFilters, rangeFilters } =
     useExplore();
-  const filterResults = useFilterResults({
+  const filterResults = getFilterResults({
     watches: filteredWatches,
     searchFilter,
     categoryFilters,
@@ -18,10 +20,29 @@ export const FilterPanel = observer(() => {
     (categoryFilter, index) => ({
       ...categoryFilter,
       filterOptions: [
-        ...categoryFilter.filterOptions.map((option, index2) => ({
-          option: option,
-          results: filterResults[index].filterOptions[index2].results,
-        })),
+        // If a categoryFilter has an active filter option, calculate the results for this filter
+        // as if the filter is not active. Otherwise all other options get 0 as a result
+        ...(categoryFilter.activeFilterOptions.length
+          ? categoryFilter.filterOptions.map((option, index2) => ({
+              option: option,
+              results: getFilterResults({
+                watches: filterWatches({
+                  watches,
+                  searchFilter: searchFilter,
+                  categoryFilters: categoryFilters.filter(
+                    (cf) => cf.name !== categoryFilter.name
+                  ),
+                  rangeFilters: rangeFilters,
+                }),
+                searchFilter,
+                categoryFilters,
+                rangeFilters,
+              })[index].filterOptions[index2].results,
+            }))
+          : categoryFilter.filterOptions.map((option, index2) => ({
+              option: option,
+              results: filterResults[index].filterOptions[index2].results,
+            }))),
       ],
     })
   );

@@ -1,10 +1,10 @@
 import { observer } from "mobx-react-lite";
 import { createContext, ReactNode, useContext } from "react";
-import { filterWatches } from "src/filters";
 import {
   StatefulCategoryFilter,
   statefulCategoryFilters,
 } from "src/filters/categoryFilters";
+import { filterWatches } from "src/filters/filterWatches";
 import {
   StatefulRangeFilter,
   statefulRangeFilters,
