@@ -51,6 +51,20 @@ const useLugToLug = () => {
   return { isLugToLugActive, handleLugToLugOn, handleLugToLugOff };
 };
 
+const useLugWidth = () => {
+  const [isLugWidthActive, setIsLugWidthActive] = useState(false);
+
+  const handleLugWidthOn = () => {
+    setIsLugWidthActive(true);
+  };
+
+  const handleLugWidthOff = () => {
+    setIsLugWidthActive(false);
+  };
+
+  return { isLugWidthActive, handleLugWidthOn, handleLugWidthOff };
+};
+
 export const Watch = () => {
   const { watchId } = useParams();
 
@@ -76,6 +90,8 @@ export const Watch = () => {
     useDiameter();
   const { isLugToLugActive, handleLugToLugOn, handleLugToLugOff } =
     useLugToLug();
+  const { isLugWidthActive, handleLugWidthOn, handleLugWidthOff } =
+    useLugWidth();
 
   const q1 = useMediaQuery("(min-height: 600px)");
   const q2 = useMediaQuery("(min-height: 800px)");
@@ -93,7 +109,7 @@ export const Watch = () => {
 
   const imageClass = classNames(
     "absolute max-w-full h-full object-scale-down transition",
-    (isDiameterActive || isLugToLugActive) && "opacity-20"
+    (isDiameterActive || isLugToLugActive || isLugWidthActive) && "opacity-20"
   );
 
   return (
@@ -130,6 +146,18 @@ export const Watch = () => {
           </div>
         )}
 
+        {isLugWidthActive && (
+          <div
+            className="absolute border-x-2 border-black  flex items-center justify-center text-xl"
+            style={{
+              height: `${lug_to_lug / 1.03}%`,
+              width: `${lug_width / 1.03}%`,
+            }}
+          >
+            {lug_width} mm
+          </div>
+        )}
+
         <div className="flex justify-center absolute bottom-0 w-full gap-4">
           <div
             onMouseEnter={handleDiameterOn}
@@ -144,6 +172,13 @@ export const Watch = () => {
             className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
           >
             lug to lug
+          </div>
+          <div
+            onMouseEnter={handleLugWidthOn}
+            onMouseLeave={handleLugWidthOff}
+            className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+          >
+            lug width
           </div>
         </div>
       </div>
