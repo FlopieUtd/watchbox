@@ -1,5 +1,6 @@
 import { observer } from "mobx-react-lite";
 import { createContext, ReactNode, useContext } from "react";
+import { filterWatches } from "src/filters";
 import {
   StatefulCategoryFilter,
   statefulCategoryFilters,
@@ -12,7 +13,6 @@ import {
   StatefulSearchFilter,
   statefulSearchFilter,
 } from "src/filters/searchFilter";
-import { useFilters } from "src/hooks/filters";
 import { watches } from "src/json";
 import { Watch } from "src/types";
 
@@ -31,7 +31,7 @@ interface ExploreProviderProps {
 }
 
 const ExploreProvider = observer(({ children }: ExploreProviderProps) => {
-  const { filteredWatches } = useFilters({
+  const filteredWatches = filterWatches({
     watches,
     searchFilter: statefulSearchFilter,
     categoryFilters: statefulCategoryFilters,
