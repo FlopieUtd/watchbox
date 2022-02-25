@@ -31,7 +31,7 @@ export enum DialColour {
 
 export enum Complication {
   SmallSeconds = "SMALL_SECONDS",
-  PowerReserveIndicator = "POWER_RESERVE_INDICATOR",
+  PowerReserveIndicator = "powerReserve_INDICATOR",
   Day = "DAY",
   Date = "DATE",
   YearCalendar = "YEAR_CALENDAR",
@@ -60,6 +60,26 @@ export enum Brand {
   GRAND_SEIKO = "GRAND_SEIKO",
 }
 
+export enum DiameterType {
+  Round = "ROUND",
+  Rectangular = "RECTANGULAR",
+}
+
+export interface RoundDiameter {
+  type: DiameterType.Round;
+  diameter: number;
+}
+
+export interface RectangularDiameter {
+  type: DiameterType.Rectangular;
+  width: number;
+  height: number;
+  offsetX: number;
+  offsetY: number;
+}
+
+export type DetailedDiameter = RoundDiameter | RectangularDiameter;
+
 export interface Watch {
   id: string;
   brand: Brand;
@@ -68,17 +88,18 @@ export interface Watch {
   movement: {
     type: Movement;
     caliber: string;
-    caliber_manufacturer: string;
+    caliberManufacturer: string;
     base: string;
     base_manufacturer: string;
   };
-  watch_case: {
+  watchCase: {
     material: CaseMaterial;
-    water_resistance: 3;
-    diameter: 42.5;
-    thickness: 14;
-    lug_to_lug: 50.5;
-    lug_width: 22;
+    waterResistance: number;
+    diameter: number;
+    detailedDiameter: DetailedDiameter;
+    thickness: number;
+    lugToLug: number;
+    lugWidth: number;
   };
   dial: {
     colour: DialColour;

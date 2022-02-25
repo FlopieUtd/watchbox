@@ -6,6 +6,7 @@ import {
   useLugToLug,
   useLugWidth,
 } from "src/components/Watch/hooks";
+import { DiameterOverlay } from "src/components/Watch/Overlays/DiameterOverlay";
 import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
 import useMediaQuery from "src/hooks/useMediaQuery";
 import { getImageSrc } from "src/utils/getImageSrc";
@@ -19,16 +20,17 @@ export const Watch = () => {
   }
   const watch = getWatchById(watchId);
 
-  const { reference, brand, model, movement, watch_case } = watch;
+  const { reference, brand, model, movement, watchCase } = watch;
 
   const {
     diameter,
+    detailedDiameter,
     thickness,
-    lug_to_lug,
-    lug_width,
+    lugToLug,
+    lugWidth,
     material,
-    water_resistance,
-  } = watch_case;
+    waterResistance,
+  } = watchCase;
 
   const { type, caliber } = movement;
 
@@ -70,37 +72,30 @@ export const Watch = () => {
         <img className={imageClass} src={getImageSrc(watch)} alt={reference} />
 
         {isDiameterActive && (
-          <div
-            className="absolute rounded-full border-2 border-black aspect-square flex items-center justify-center text-xl"
-            style={{
-              width: `${diameter / 1.03}%`,
-            }}
-          >
-            {diameter} mm
-          </div>
+          <DiameterOverlay detailedDiameter={detailedDiameter} />
         )}
 
         {isLugToLugActive && (
           <div
-            className="absolute border-y-2 border-black  flex items-center justify-center text-xl"
+            className="absolute border-y-2 border-black flex items-center justify-center text-xl"
             style={{
-              height: `${lug_to_lug / 1.03}%`,
+              height: `${lugToLug / 1.03}%`,
               width: `${diameter / 1.03}%`,
             }}
           >
-            {lug_to_lug} mm
+            {lugToLug} mm
           </div>
         )}
 
         {isLugWidthActive && (
           <div
-            className="absolute border-x-2 border-black  flex items-center justify-center text-xl"
+            className="absolute border-x-2 border-black flex items-center justify-center text-xl"
             style={{
-              height: `${(lug_to_lug * 1.4) / 1.03}%`,
-              width: `${lug_width / 1.03}%`,
+              height: `${(lugToLug * 1.4) / 1.03}%`,
+              width: `${lugWidth / 1.03}%`,
             }}
           >
-            {lug_width} mm
+            {lugWidth} mm
           </div>
         )}
 
@@ -153,7 +148,7 @@ export const Watch = () => {
               />
               <DescriptionLine
                 label="Water resistance"
-                value={water_resistance}
+                value={waterResistance}
                 postfix=" bar"
               />
 
@@ -169,12 +164,12 @@ export const Watch = () => {
               />
               <DescriptionLine
                 label="Lug to lug width"
-                value={lug_to_lug}
+                value={lugToLug}
                 postfix=" mm"
               />
               <DescriptionLine
                 label="Lug width"
-                value={lug_width}
+                value={lugWidth}
                 postfix=" mm"
               />
             </div>

@@ -30,7 +30,7 @@ const categoryFilters: CategoryFilter[] = [
     dict: CASE_MATERIAL,
     type: FilterType.Category,
     filterOptions: Object.values(CaseMaterial),
-    accessor: "watch_case.material",
+    accessor: "watchCase.material",
   },
   {
     name: "Dial colour",

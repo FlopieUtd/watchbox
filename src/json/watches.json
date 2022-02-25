@@ -1,5 +1,36 @@
 [
   {
+    "id": "nomos--1170",
+    "brand": "NOMOS",
+    "model": "Metro Rose Gold",
+    "reference": "1170",
+    "movement": {
+      "type": "MANUAL_WIND",
+      "caliber": "Alpha",
+      "caliberManufacturer": "Nomos",
+      "base": "",
+      "base_manufacturer": "",
+      "powerReserve": 43
+    },
+    "watchCase": {
+      "material": "GOLD",
+      "waterResistance": 3,
+      "diameter": 33,
+      "thickness": 7.5,
+      "lugToLug": 40,
+      "lugWidth": 16,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 33
+      }
+    },
+    "dial": {
+      "colour": "WHITE",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS"]
+  },
+  {
     "id": "junghans--027-3701-00",
     "brand": "JUNGHANS",
     "model": "Max Bill Handaufzug",
@@ -7,17 +38,21 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "J815.1",
-      "caliber_manufacturer": "",
+      "caliberManufacturer": "",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 3,
+      "waterResistance": 3,
       "diameter": 34,
       "thickness": 10,
-      "lug_to_lug": 37,
-      "lug_width": 18
+      "lugToLug": 37,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 34
+      }
     },
     "dial": {
       "colour": "WHITE",
@@ -33,192 +68,27 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "7S26",
-      "caliber_manufacturer": "",
+      "caliberManufacturer": "",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 3,
+      "waterResistance": 3,
       "diameter": 37,
       "thickness": 12,
-      "lug_to_lug": 42,
-      "lug_width": 19
+      "lugToLug": 42,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37
+      }
     },
     "dial": {
       "colour": "WHITE",
       "indices": ""
     },
     "complications": ["DAY", "DATE"]
-  },
-  {
-    "id": "sinn--556-010",
-    "brand": "SINN",
-    "model": "556 i",
-    "reference": "556.010",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "SW-200-1",
-      "caliber_manufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
-    },
-    "watch_case": {
-      "material": "STAINLESS_STEEL",
-      "water_resistance": 20,
-      "diameter": 38.5,
-      "thickness": 11,
-      "lug_to_lug": 46,
-      "lug_width": 20
-    },
-    "dial": {
-      "colour": "BLACK",
-      "indices": ""
-    },
-    "complications": ["DATE", "HACKING_SECONDS"]
-  },
-  {
-    "id": "nomos--1170",
-    "brand": "NOMOS",
-    "model": "Metro Rose Gold",
-    "reference": "1170",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "Alpha",
-      "caliber_manufacturer": "Nomos",
-      "base": "",
-      "base_manufacturer": "",
-      "power_reserve": 43
-    },
-    "watch_case": {
-      "material": "GOLD",
-      "water_resistance": 3,
-      "diameter": 33,
-      "thickness": 7.5,
-      "lug_to_lug": 40,
-      "lug_width": 16
-    },
-    "dial": {
-      "colour": "WHITE",
-      "indices": "INDICES"
-    },
-    "complications": ["HACKING_SECONDS"]
-  },
-  {
-    "id": "omega-227-90-55-21-01-001",
-    "brand": "OMEGA",
-    "model": "Seamaster Ploprof 1200m",
-    "reference": "227.90.55.21.01.001",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "8912",
-      "caliber_manufacturer": "Omega",
-      "base": "",
-      "base_manufacturer": "",
-      "power_reserve": 60
-    },
-    "watch_case": {
-      "material": "TITANIUM",
-      "water_resistance": 120,
-      "diameter": 55,
-      "thickness": 18,
-      "lug_to_lug": 48,
-      "lug_width": 24
-    },
-    "dial": {
-      "colour": "BLACK",
-      "indices": "INDICES"
-    },
-    "complications": ["HACKING_SECONDS"]
-  },
-  {
-    "id": "iwc--iw500701",
-    "brand": "IWC",
-    "model": "Portugieser 7 Days",
-    "reference": "IW500701",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "52010",
-      "caliber_manufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
-    },
-    "watch_case": {
-      "material": "STAINLESS_STEEL",
-      "water_resistance": 3,
-      "diameter": 42.5,
-      "thickness": 14,
-      "lug_to_lug": 50.5,
-      "lug_width": 22
-    },
-    "dial": {
-      "colour": "WHITE",
-      "indices": ""
-    },
-    "complications": [
-      "POWER_RESERVE_INDICATOR",
-      "SMALL_SECONDS",
-      "DATE",
-      "HACKING_SECONDS"
-    ]
-  },
-  {
-    "id": "nomos--1109",
-    "brand": "NOMOS",
-    "model": "Metro 38",
-    "reference": "1109",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "Alpha",
-      "caliber_manufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
-    },
-    "watch_case": {
-      "material": "STAINLESS_STEEL",
-      "water_resistance": 3,
-      "diameter": 38,
-      "thickness": 8,
-      "lug_to_lug": 45.5,
-      "lug_width": 20
-    },
-    "dial": {
-      "colour": "WHITE",
-      "indices": ""
-    },
-    "complications": ["HACKING_SECONDS", "SMALL_SECONDS"]
-  },
-  {
-    "id": "a-lange-sohne--192-032",
-    "brand": "A_LANGE_SOHNE",
-    "model": "Lange 1 Moon Phase",
-    "reference": "192.032",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "L121.3",
-      "caliber_manufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
-    },
-    "watch_case": {
-      "material": "GOLD",
-      "water_resistance": 3,
-      "diameter": 38.5,
-      "thickness": 10,
-      "lug_to_lug": 47,
-      "lug_width": 20
-    },
-    "dial": {
-      "colour": "WHITE",
-      "indices": ""
-    },
-    "complications": [
-      "HACKING_SECONDS",
-      "MOON_PHASE",
-      "POWER_RESERVE_INDICATOR",
-      "SMALL_SECONDS",
-      "DATE"
-    ]
   },
   {
     "id": "traska--commuter-slate-black",
@@ -228,17 +98,21 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "9039",
-      "caliber_manufacturer": "",
+      "caliberManufacturer": "",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 10,
+      "waterResistance": 10,
       "diameter": 36.5,
       "thickness": 10,
-      "lug_to_lug": 44,
-      "lug_width": 20
+      "lugToLug": 44,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36.5
+      }
     },
     "dial": {
       "colour": "BLACK",
@@ -247,30 +121,130 @@
     "complications": ["HACKING_SECONDS"]
   },
   {
-    "id": "rolex--126000",
-    "brand": "ROLEX",
-    "model": "Oyster Perpetual 36",
-    "reference": "126000",
+    "id": "nomos--1109",
+    "brand": "NOMOS",
+    "model": "Metro 38",
+    "reference": "1109",
     "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "3230",
-      "caliber_manufacturer": "",
+      "type": "MANUAL_WIND",
+      "caliber": "Alpha",
+      "caliberManufacturer": "",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 10,
-      "diameter": 36,
-      "thickness": 11.5,
-      "lug_to_lug": 43,
-      "lug_width": 20
+      "waterResistance": 3,
+      "diameter": 38,
+      "thickness": 8,
+      "lugToLug": 45.5,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38
+      }
     },
     "dial": {
-      "colour": "BLUE",
+      "colour": "WHITE",
       "indices": ""
     },
-    "complications": ["HACKING_SECONDS"]
+    "complications": ["HACKING_SECONDS", "SMALL_SECONDS"]
+  },
+  {
+    "id": "sinn--556-010",
+    "brand": "SINN",
+    "model": "556 i",
+    "reference": "556.010",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "SW-200-1",
+      "caliberManufacturer": "",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 38.5,
+      "thickness": 11,
+      "lugToLug": 46,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "dial": {
+      "colour": "BLACK",
+      "indices": ""
+    },
+    "complications": ["DATE", "HACKING_SECONDS"]
+  },
+  {
+    "id": "doxa--799-10-361-10",
+    "brand": "DOXA",
+    "model": "Sub 200 Divingstar",
+    "reference": "799.10.361.10",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "",
+      "caliberManufacturer": "",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 42,
+      "thickness": 14,
+      "lugToLug": 46,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42
+      }
+    },
+    "dial": {
+      "colour": "YELLOW",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS", "DATE"]
+  },
+  {
+    "id": "a-lange-sohne--192-032",
+    "brand": "A_LANGE_SOHNE",
+    "model": "Lange 1 Moon Phase",
+    "reference": "192.032",
+    "movement": {
+      "type": "MANUAL_WIND",
+      "caliber": "L121.3",
+      "caliberManufacturer": "",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watchCase": {
+      "material": "GOLD",
+      "waterResistance": 3,
+      "diameter": 38.5,
+      "thickness": 10,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "dial": {
+      "colour": "WHITE",
+      "indices": ""
+    },
+    "complications": [
+      "HACKING_SECONDS",
+      "MOON_PHASE",
+      "powerReserve_INDICATOR",
+      "SMALL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "omega--3570-50-00",
@@ -280,17 +254,21 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "1861",
-      "caliber_manufacturer": "",
+      "caliberManufacturer": "",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 5,
+      "waterResistance": 5,
       "diameter": 42,
       "thickness": 14.5,
-      "lug_to_lug": 47,
-      "lug_width": 20
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42
+      }
     },
     "dial": {
       "colour": "BLACK",
@@ -304,56 +282,34 @@
     ]
   },
   {
-    "id": "doxa--799-10-361-10",
-    "brand": "DOXA",
-    "model": "Sub 200 Divingstar",
-    "reference": "799.10.361.10",
+    "id": "grand-seiko--sbga211",
+    "brand": "GRAND_SEIKO",
+    "model": "SBGA211",
+    "reference": "SBGA211",
     "movement": {
       "type": "AUTOMATIC",
-      "caliber": "",
-      "caliber_manufacturer": "",
+      "caliber": "Caliber 9R65",
+      "caliberManufacturer": "Grand Seiko",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
-      "material": "STAINLESS_STEEL",
-      "water_resistance": 20,
-      "diameter": 42,
-      "thickness": 14,
-      "lug_to_lug": 46,
-      "lug_width": 20
+    "watchCase": {
+      "material": "TITANIUM",
+      "waterResistance": 10,
+      "diameter": 41,
+      "thickness": 12.5,
+      "lugToLug": 49,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41
+      }
     },
     "dial": {
-      "colour": "YELLOW",
+      "colour": "WHITE",
       "indices": "INDICES"
     },
-    "complications": ["HACKING_SECONDS", "DATE"]
-  },
-  {
-    "id": "patek-philippe--5711-1a-010",
-    "brand": "PATEK_PHILIPPE",
-    "model": "Nautilus 5711",
-    "reference": "5711/1A-010",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "324 S C",
-      "caliber_manufacturer": "Patek Philippe",
-      "base": "",
-      "base_manufacturer": ""
-    },
-    "watch_case": {
-      "material": "STAINLESS_STEEL",
-      "water_resistance": 12,
-      "diameter": 40,
-      "thickness": 8.5,
-      "lug_to_lug": 47,
-      "lug_width": 25
-    },
-    "dial": {
-      "colour": "BLUE",
-      "indices": "INDICES"
-    },
-    "complications": ["HACKING_SECONDS", "DATE"]
+    "complications": ["HACKING_SECONDS", "DATE", "powerReserve_INDICATOR"]
   },
   {
     "id": "tag-heuer--caw211r-fc6401",
@@ -363,23 +319,63 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "Calibre 11",
-      "caliber_manufacturer": "TAG Heuer",
+      "caliberManufacturer": "TAG Heuer",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 10,
+      "waterResistance": 10,
       "diameter": 39,
       "thickness": 15,
-      "lug_to_lug": 48,
-      "lug_width": 22
+      "lugToLug": 48,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 39,
+        "height": 39
+      }
     },
     "dial": {
       "colour": "BLUE",
       "indices": "INDICES"
     },
     "complications": ["HACKING_SECONDS", "DATE", "SMALL_SECONDS", "CHRONOGRAPH"]
+  },
+  {
+    "id": "iwc--iw500701",
+    "brand": "IWC",
+    "model": "Portugieser 7 Days",
+    "reference": "IW500701",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "52010",
+      "caliberManufacturer": "",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 42.5,
+      "thickness": 14,
+      "lugToLug": 50.5,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42.5
+      }
+    },
+    "dial": {
+      "colour": "WHITE",
+      "indices": ""
+    },
+    "complications": [
+      "powerReserve_INDICATOR",
+      "SMALL_SECONDS",
+      "DATE",
+      "HACKING_SECONDS"
+    ]
   },
   {
     "id": "breitling--a17367021i1a1",
@@ -389,17 +385,21 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "Breitling 17",
-      "caliber_manufacturer": "Breitling",
+      "caliberManufacturer": "Breitling",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
+    "watchCase": {
       "material": "STAINLESS_STEEL",
-      "water_resistance": 100,
+      "waterResistance": 100,
       "diameter": 44,
       "thickness": 14,
-      "lug_to_lug": 53,
-      "lug_width": 22
+      "lugToLug": 53,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 44
+      }
     },
     "dial": {
       "colour": "YELLOW",
@@ -408,29 +408,67 @@
     "complications": ["HACKING_SECONDS", "DATE"]
   },
   {
-    "id": "grand-seiko--sbga211",
-    "brand": "GRAND_SEIKO",
-    "model": "SBGA211",
-    "reference": "SBGA211",
+    "id": "omega-227-90-55-21-01-001",
+    "brand": "OMEGA",
+    "model": "Seamaster Ploprof 1200m",
+    "reference": "227.90.55.21.01.001",
     "movement": {
       "type": "AUTOMATIC",
-      "caliber": "Caliber 9R65",
-      "caliber_manufacturer": "Grand Seiko",
+      "caliber": "8912",
+      "caliberManufacturer": "Omega",
+      "base": "",
+      "base_manufacturer": "",
+      "powerReserve": 60
+    },
+    "watchCase": {
+      "material": "TITANIUM",
+      "waterResistance": 120,
+      "diameter": 55,
+      "thickness": 18,
+      "lugToLug": 48,
+      "lugWidth": 24,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 55,
+        "height": 48,
+        "offsetX": -5,
+        "offsetY": 0
+      }
+    },
+    "dial": {
+      "colour": "BLACK",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS"]
+  },
+  {
+    "id": "patek-philippe--5711-1a-010",
+    "brand": "PATEK_PHILIPPE",
+    "model": "Nautilus 5711",
+    "reference": "5711/1A-010",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "324 S C",
+      "caliberManufacturer": "Patek Philippe",
       "base": "",
       "base_manufacturer": ""
     },
-    "watch_case": {
-      "material": "TITANIUM",
-      "water_resistance": 10,
-      "diameter": 41,
-      "thickness": 12.5,
-      "lug_to_lug": 49,
-      "lug_width": 22
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 12,
+      "diameter": 40,
+      "thickness": 8.5,
+      "lugToLug": 47,
+      "lugWidth": 25,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "BLUE",
       "indices": "INDICES"
     },
-    "complications": ["HACKING_SECONDS", "DATE", "POWER_RESERVE_INDICATOR"]
+    "complications": ["HACKING_SECONDS", "DATE"]
   }
 ]

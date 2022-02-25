@@ -14,7 +14,7 @@ export const Explore = observer(() => {
         <div className="flex justify-center">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-[1080px]">
             {filteredWatches
-              .sort((a, b) => a.watch_case.diameter - b.watch_case.diameter)
+              .sort((a, b) => a.watchCase.diameter - b.watchCase.diameter)
               .map((watch) => {
                 const { brand, model, id } = watch;
                 return (
