@@ -7,6 +7,8 @@ import {
   useLugWidth,
 } from "src/components/Watch/hooks";
 import { DiameterOverlay } from "src/components/Watch/Overlays/DiameterOverlay";
+import { LugToLugOverlay } from "src/components/Watch/Overlays/LugToLugOverlay";
+import { LugWidthOverlay } from "src/components/Watch/Overlays/LugWidthOverlay";
 import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
 import useMediaQuery from "src/hooks/useMediaQuery";
 import { getImageSrc } from "src/utils/getImageSrc";
@@ -76,50 +78,34 @@ export const Watch = () => {
         )}
 
         {isLugToLugActive && (
-          <div
-            className="absolute border-y-2 border-black flex items-center justify-center text-xl"
-            style={{
-              height: `${lugToLug / 1.03}%`,
-              width: `${diameter / 1.03}%`,
-            }}
-          >
-            {lugToLug} mm
-          </div>
+          <LugToLugOverlay lugToLug={lugToLug} diameter={diameter} />
         )}
 
         {isLugWidthActive && (
-          <div
-            className="absolute border-x-2 border-black flex items-center justify-center text-xl"
-            style={{
-              height: `${(lugToLug * 1.4) / 1.03}%`,
-              width: `${lugWidth / 1.03}%`,
-            }}
-          >
-            {lugWidth} mm
-          </div>
+          <LugWidthOverlay lugWidth={lugWidth} lugToLug={lugToLug} />
         )}
 
         <div className="flex justify-center absolute bottom-0 w-full gap-4">
           <div
             onMouseEnter={handleDiameterOn}
             onMouseLeave={handleDiameterOff}
-            className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+            className="bg-slate-100 text-slate-500 px-2 py-1 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
           >
-            diameter
+            Diameter
           </div>
           <div
             onMouseEnter={handleLugToLugOn}
             onMouseLeave={handleLugToLugOff}
-            className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+            className="bg-slate-100 text-slate-500 px-2 py-1 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
           >
-            lug to lug
+            Lug to lug
           </div>
           <div
             onMouseEnter={handleLugWidthOn}
             onMouseLeave={handleLugWidthOff}
-            className="bg-slate-100 text-slate-500 px-4 py-2 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
+            className="bg-slate-100 text-slate-500 px-2 py-1 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
           >
-            lug width
+            Lug width
           </div>
         </div>
       </div>

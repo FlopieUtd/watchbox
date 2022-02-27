@@ -1,7 +1,9 @@
+import { debounce } from "lodash";
 import { observer } from "mobx-react-lite";
 import { CategoryFilter } from "src/components/Filters/CategoryFilter";
 import { RangeFilter } from "src/components/Filters/RangeFilter";
 import { useExplore } from "src/context/ExploreContext";
+import { StatefulCategoryFilterWithResults } from "src/filters/categoryFilters";
 import { filterWatches } from "src/filters/filterWatches";
 import { getFilterResults } from "src/filters/getFilterResults";
 import { watches } from "src/json";
@@ -16,12 +18,14 @@ export const FilterPanel = observer(() => {
     rangeFilters,
   });
 
-  const categoryFiltersWithResults = categoryFilters.map(
-    (categoryFilter, index) => ({
+  const categoryFiltersWithResults: StatefulCategoryFilterWithResults[] =
+    categoryFilters.map((categoryFilter, index) => ({
       ...categoryFilter,
+      onFilter: categoryFilter.onFilter,
+      onClear: categoryFilter.onClear,
       filterOptions: [
-        // If a categoryFilter has an active filter option, calculate the results for this filter
-        // as if the filter is not active. Otherwise all other options get 0 as a result
+        // If a filter has an active filter option, exclude that filter from the filter results.
+        // Otherwise all other options get 0 as a result
         ...(categoryFilter.activeFilterOptions.length
           ? categoryFilter.filterOptions.map((option, index2) => ({
               option: option,
@@ -44,35 +48,21 @@ export const FilterPanel = observer(() => {
               results: filterResults[index].filterOptions[index2].results,
             }))),
       ],
-    })
-  );
+    }));
 
   return (
     <div className="border-l p-6 min-w-[280px] w-[280px] overflow-y-auto">
       <input
         type="search"
-        placeholder="Brand, model, reference"
-        className="border rounded mb-4 w-full"
-        onChange={searchFilter.onFilter}
+        placeholder="Brand, model, or reference"
+        className="border rounded mb-4 w-full px-2 py-1"
+        onChange={debounce(searchFilter.onFilter, 200)}
       />
-      <div>
-        {categoryFiltersWithResults.map((filter) => {
-          return (
-            <div key={filter.name}>
-              <h2>{filter.name}</h2>
-              {/*  @ts-ignore */}
-              <CategoryFilter filter={filter} />
-            </div>
-          );
-        })}
-      </div>
+      {categoryFiltersWithResults.map((filter) => {
+        return <CategoryFilter filter={filter} key={filter.name} />;
+      })}
       {rangeFilters.map((filter) => {
-        return (
-          <div key={filter.name}>
-            <h2>{filter.name}</h2>
-            <RangeFilter filter={filter} />
-          </div>
-        );
+        return <RangeFilter filter={filter} key={filter.name} />;
       })}
     </div>
   );

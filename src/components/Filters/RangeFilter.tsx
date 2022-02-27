@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite";
 import { NumberRange, StatefulRangeFilter } from "src/filters/rangeFilters";
 import { Range } from "rc-slider";
 import "rc-slider/assets/index.css";
+import { Filter } from "src/components/Filters/Filter";
 
 interface RangeFilterProps {
   filter: StatefulRangeFilter;
@@ -15,7 +16,7 @@ export const RangeFilter = observer(({ filter }: RangeFilterProps) => {
   };
 
   return (
-    <>
+    <Filter filter={filter}>
       <Range
         min={range[0]}
         max={range[1]}
@@ -26,6 +27,6 @@ export const RangeFilter = observer(({ filter }: RangeFilterProps) => {
       <div>
         {value[0]} {postfix} - {value[1]} {postfix}
       </div>
-    </>
+    </Filter>
   );
 });

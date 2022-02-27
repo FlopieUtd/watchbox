@@ -24,5 +24,5 @@ export class StatefulSearchFilter {
 }
 
 export const statefulSearchFilter = new StatefulSearchFilter({
-  name: "Brand, model, reference",
+  name: "Brand, model, or reference",
 });

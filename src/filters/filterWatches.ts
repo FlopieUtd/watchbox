@@ -1,4 +1,5 @@
 import { get } from "lodash";
+import { BRAND } from "src/constants";
 import { StatefulCategoryFilter } from "src/filters/categoryFilters";
 import { StatefulRangeFilter } from "src/filters/rangeFilters";
 import { StatefulSearchFilter } from "src/filters/searchFilter";
@@ -23,7 +24,7 @@ export const filterWatches = ({
   // Search filter
   result = result.filter(
     (watch) =>
-      normalizeString(watch.brand).includes(searchFilter.searchString) ||
+      normalizeString(BRAND[watch.brand]).includes(searchFilter.searchString) ||
       normalizeString(watch.model).includes(searchFilter.searchString) ||
       normalizeString(watch.reference).includes(searchFilter.searchString)
   );

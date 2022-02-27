@@ -1,5 +1,6 @@
 import { Box } from "src/components/Box";
 import { Explore } from "src/components/Explore";
+import { Manage } from "src/components/Manage";
 import { Watch } from "src/components/Watch/Watch";
 
 export const routes = [
@@ -10,5 +11,10 @@ export const routes = [
     path: "/watches/:watchId",
     name: "Watch",
     element: <Watch />,
+  },
+  {
+    path: "/manage",
+    name: "Manage",
+    element: <Manage />,
   },
 ];

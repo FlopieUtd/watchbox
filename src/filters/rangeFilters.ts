@@ -61,6 +61,7 @@ export class StatefulRangeFilter {
   value: NumberRange;
   postfix?: string;
   step: number;
+  isActive = false;
 
   constructor({
     name,
@@ -82,11 +83,21 @@ export class StatefulRangeFilter {
     this.value = range;
     this.postfix = postfix;
     this.onFilter = this.onFilter.bind(this);
+    this.onClear = this.onClear.bind(this);
     this.step = step;
   }
 
   onFilter(value: NumberRange) {
     this.value = value;
+
+    this.isActive = !(
+      this.value[0] === this.range[0] && this.value[1] === this.range[1]
+    );
+  }
+
+  onClear() {
+    this.value = this.range;
+    this.isActive = false;
   }
 }
 

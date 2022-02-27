@@ -12,6 +12,9 @@ export const Header = () => (
       <li className="p-2">
         <Link to="/collect">Collect</Link>
       </li>
+      <li className="p-2">
+        <Link to="/manage">Manage</Link>
+      </li>
     </ul>
   </div>
 );

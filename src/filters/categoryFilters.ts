@@ -48,6 +48,7 @@ export class StatefulCategoryFilter {
   accessor: string;
   dict: Record<string, string>;
   type: FilterType.Category;
+  isActive = false;
 
   constructor({
     name,
@@ -65,6 +66,8 @@ export class StatefulCategoryFilter {
     this.filterOptions = filterOptions;
     this.activeFilterOptions = [];
     this.onFilter = this.onFilter.bind(this);
+    this.onClear = this.onClear.bind(this);
+
     this.accessor = accessor;
     this.dict = dict;
   }
@@ -78,6 +81,12 @@ export class StatefulCategoryFilter {
     } else {
       this.activeFilterOptions = [...this.activeFilterOptions, value];
     }
+    this.isActive = !!this.activeFilterOptions.length;
+  }
+
+  onClear() {
+    this.activeFilterOptions = [];
+    this.isActive = false;
   }
 }
 

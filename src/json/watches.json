@@ -343,39 +343,34 @@
     "complications": ["HACKING_SECONDS", "DATE", "SMALL_SECONDS", "CHRONOGRAPH"]
   },
   {
-    "id": "iwc--iw500701",
+    "id": "iwc--iw371401",
     "brand": "IWC",
-    "model": "Portugieser 7 Days",
-    "reference": "IW500701",
+    "model": "Portugieser Chronograph",
+    "reference": "IW371401",
     "movement": {
       "type": "AUTOMATIC",
-      "caliber": "52010",
-      "caliberManufacturer": "",
+      "caliber": "79240",
+      "caliberManufacturer": "IWC",
       "base": "",
       "base_manufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
-      "diameter": 42.5,
-      "thickness": 14,
-      "lugToLug": 50.5,
-      "lugWidth": 22,
+      "diameter": 41,
+      "thickness": 12.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42.5
+        "diameter": 41
       }
     },
     "dial": {
       "colour": "WHITE",
       "indices": ""
     },
-    "complications": [
-      "powerReserve_INDICATOR",
-      "SMALL_SECONDS",
-      "DATE",
-      "HACKING_SECONDS"
-    ]
+    "complications": ["SMALL_SECONDS", "DATE", "HACKING_SECONDS", "CHRONOGRAPH"]
   },
   {
     "id": "breitling--a17367021i1a1",
@@ -470,5 +465,65 @@
       "indices": "INDICES"
     },
     "complications": ["HACKING_SECONDS", "DATE"]
+  },
+  {
+    "id": "rolex--5513",
+    "brand": "ROLEX",
+    "model": "Submariner 5513",
+    "reference": "5513",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "",
+      "caliberManufacturer": "Rolex",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 40,
+      "thickness": 14.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
+    },
+    "dial": {
+      "colour": "BLACK",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS"]
+  },
+  {
+    "id": "jlc--1362510",
+    "brand": "JAEGER_LECOULTRE",
+    "model": "Master Ultra Thin Moon",
+    "reference": "1362510",
+    "movement": {
+      "type": "AUTOMATIC",
+      "caliber": "925AA",
+      "caliberManufacturer": "JAEGER_LECOULTRE",
+      "base": "",
+      "base_manufacturer": ""
+    },
+    "watchCase": {
+      "material": "GOLD",
+      "waterResistance": 3,
+      "diameter": 39,
+      "thickness": 9.5,
+      "lugToLug": 46,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
+    },
+    "dial": {
+      "colour": "CHAMPAGNE",
+      "indices": "INDICES"
+    },
+    "complications": ["HACKING_SECONDS", "MOON_PHASE", "SMALL_SECONDS"]
   }
 ]

@@ -17,6 +17,7 @@ export const BRAND: { [key in Brand]: string } = {
   TAG_HEUER: "TAG Heuer",
   BREITLING: "Breitling",
   GRAND_SEIKO: "Grand Seiko",
+  JAEGER_LECOULTRE: "Jaeger-LeCoultre",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {
@@ -48,4 +49,5 @@ export const DIAL_COLOUR: { [key in DialColour]: string } = {
   MOTHER_OF_PEARL: "Mother of pearl",
   TRANSPARENT: "Transparent",
   PURPLE: "Purple",
+  CHAMPAGNE: "Champagne",
 };

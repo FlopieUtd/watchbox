@@ -1,4 +1,5 @@
 import { observer } from "mobx-react-lite";
+import { Filter } from "src/components/Filters/Filter";
 import { StatefulCategoryFilterWithResults } from "src/filters/categoryFilters";
 
 interface CategoryFilterProps {
@@ -7,7 +8,7 @@ interface CategoryFilterProps {
 
 export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
   return (
-    <>
+    <Filter filter={filter}>
       {filter.filterOptions.map((filterOption) => {
         const className = filterOption.results
           ? "cursor-pointer"
@@ -19,7 +20,7 @@ export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
               <input
                 type="checkbox"
                 id={String(filterOption.option)}
-                className="mr-2"
+                className="mr-2 cursor-pointer"
                 onChange={filter.onFilter}
                 checked={filter.activeFilterOptions.includes(
                   filterOption.option
@@ -32,6 +33,6 @@ export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
           </div>
         );
       })}
-    </>
+    </Filter>
   );
 });

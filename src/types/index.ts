@@ -27,6 +27,7 @@ export enum DialColour {
   MotherOfPearl = "MOTHER_OF_PEARL",
   Transparent = "TRANSPARENT",
   Purple = "PURPLE",
+  Champagne = "CHAMPAGNE",
 }
 
 export enum Complication {
@@ -58,6 +59,7 @@ export enum Brand {
   TAG_HEUER = "TAG_HEUER",
   BREITLING = "BREITLING",
   GRAND_SEIKO = "GRAND_SEIKO",
+  JAEGER_LECOULTRE = "JAEGER_LECOULTRE",
 }
 
 export enum DiameterType {
