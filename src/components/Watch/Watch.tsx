@@ -10,9 +10,9 @@ import { DiameterOverlay } from "src/components/Watch/Overlays/DiameterOverlay";
 import { LugToLugOverlay } from "src/components/Watch/Overlays/LugToLugOverlay";
 import { LugWidthOverlay } from "src/components/Watch/Overlays/LugWidthOverlay";
 import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
-import useMediaQuery from "src/hooks/useMediaQuery";
 import { getImageSrc } from "src/utils/getImageSrc";
 import { getWatchById } from "src/utils/getWatchById";
+import { useElementSize } from "usehooks-ts";
 
 export const Watch = () => {
   const { watchId } = useParams();
@@ -43,24 +43,12 @@ export const Watch = () => {
   const { isLugWidthActive, handleLugWidthOn, handleLugWidthOff } =
     useLugWidth();
 
-  const q1 = useMediaQuery("(min-height: 600px)");
-  const q2 = useMediaQuery("(min-height: 800px)");
-
-  const a = "h-[400px]";
-  const b = "h-[600px]";
-  const c = "h-[800px]";
-
-  const imageWrapperClass = classNames(
-    "relative w-full flex justify-center items-center overflow-hidden",
-    !q1 && !q2 && a,
-    q1 && !q2 && b,
-    q2 && c
-  );
-
   const imageClass = classNames(
-    "absolute max-w-full h-full object-scale-down transition",
+    " max-w-full h-full object-scale-down transition max-h-[80vh]",
     (isDiameterActive || isLugToLugActive || isLugWidthActive) && "opacity-20"
   );
+
+  const [imageRef, { width: imageWidth }] = useElementSize();
 
   return (
     <div className="flex h-full w-full justify-center items-center">
@@ -70,19 +58,34 @@ export const Watch = () => {
       >
         <img src="/icons/chevron_right.svg" alt="Back" className="rotate-180" />
       </Link>
-      <div className={imageWrapperClass}>
-        <img className={imageClass} src={getImageSrc(watch)} alt={reference} />
-
+      <div className="relative w-full flex justify-center items-center overflow-hidden">
+        <img
+          className={imageClass}
+          src={getImageSrc(watch)}
+          alt={reference}
+          ref={imageRef}
+        />
         {isDiameterActive && (
-          <DiameterOverlay detailedDiameter={detailedDiameter} />
+          <DiameterOverlay
+            detailedDiameter={detailedDiameter}
+            imageWidth={imageWidth}
+          />
         )}
 
         {isLugToLugActive && (
-          <LugToLugOverlay lugToLug={lugToLug} diameter={diameter} />
+          <LugToLugOverlay
+            lugToLug={lugToLug}
+            diameter={diameter}
+            imageWidth={imageWidth}
+          />
         )}
 
         {isLugWidthActive && (
-          <LugWidthOverlay lugWidth={lugWidth} lugToLug={lugToLug} />
+          <LugWidthOverlay
+            lugWidth={lugWidth}
+            lugToLug={lugToLug}
+            imageWidth={imageWidth}
+          />
         )}
 
         <div className="flex justify-center absolute bottom-0 w-full gap-4">

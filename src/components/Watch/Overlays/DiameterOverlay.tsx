@@ -4,14 +4,24 @@ import { DetailedDiameter, DiameterType } from "src/types";
 
 interface DiameterOverlayProps {
   detailedDiameter: DetailedDiameter;
+  imageWidth: number;
 }
 
-export const DiameterOverlay = ({ detailedDiameter }: DiameterOverlayProps) => {
+export const DiameterOverlay = ({
+  detailedDiameter,
+  imageWidth,
+}: DiameterOverlayProps) => {
   const { type } = detailedDiameter;
 
   return type === DiameterType.Round ? (
-    <RoundDiameterOverlay detailedDiameter={detailedDiameter} />
+    <RoundDiameterOverlay
+      detailedDiameter={detailedDiameter}
+      imageWidth={imageWidth}
+    />
   ) : (
-    <RectangularDiameterOverlay detailedDiameter={detailedDiameter} />
+    <RectangularDiameterOverlay
+      detailedDiameter={detailedDiameter}
+      imageWidth={imageWidth}
+    />
   );
 };
