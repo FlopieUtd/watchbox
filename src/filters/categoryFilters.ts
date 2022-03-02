@@ -1,8 +1,20 @@
 import { makeAutoObservable } from "mobx";
 import { ChangeEvent } from "react";
-import { MOVEMENT, CASE_MATERIAL, DIAL_COLOUR, BRAND } from "src/constants";
+import {
+  MOVEMENT,
+  CASE_MATERIAL,
+  DIAL_COLOUR,
+  BRAND,
+  HOUR_MARKER_NUMERALS,
+} from "src/constants";
 import { BaseFilter, FilterOption, FilterType } from "src/filters";
-import { Movement, CaseMaterial, DialColour, Brand } from "src/types";
+import {
+  Movement,
+  CaseMaterial,
+  DialColour,
+  Brand,
+  HourMarkerNumerals,
+} from "src/types";
 
 export interface CategoryFilter extends BaseFilter {
   dict: Record<string, string>;
@@ -38,6 +50,13 @@ const categoryFilters: CategoryFilter[] = [
     type: FilterType.Category,
     filterOptions: Object.values(DialColour),
     accessor: "dial.colour",
+  },
+  {
+    name: "Hour marker numerals",
+    dict: HOUR_MARKER_NUMERALS,
+    type: FilterType.Category,
+    filterOptions: Object.values(HourMarkerNumerals),
+    accessor: "dial.hourMarkerNumerals",
   },
 ];
 

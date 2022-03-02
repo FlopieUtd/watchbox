@@ -67,6 +67,13 @@ export enum DiameterType {
   Rectangular = "RECTANGULAR",
 }
 
+export enum HourMarkerNumerals {
+  Arabic = "ARABIC",
+  Roman = "ROMAN",
+  Both = "BOTH",
+  NoNumerals = "NO_NUMERALS",
+}
+
 export interface RoundDiameter {
   type: DiameterType.Round;
   diameter: number;
@@ -105,7 +112,7 @@ export interface Watch {
   };
   dial: {
     colour: DialColour;
-    indices: string;
+    hourMarkerNumerals: HourMarkerNumerals;
   };
   complications: string[];
 }

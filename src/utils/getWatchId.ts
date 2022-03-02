@@ -9,6 +9,9 @@ const urlSafe = (string: string) =>
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 
-export const getWatchId = ({ brand, reference }: Watch) => {
+export const getWatchId = ({
+  brand,
+  reference,
+}: Pick<Watch, "brand" | "reference">) => {
   return `${urlSafe(brand)}--${urlSafe(reference)}`;
 };

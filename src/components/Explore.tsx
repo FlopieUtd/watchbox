@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FilterPanel } from "src/components/FilterPanel";
 import { BRAND } from "src/constants";
 import { useExplore } from "src/context/ExploreContext";
-import { getImageSrc } from "src/utils/getImageSrc";
+import { getCompressedImageSrc } from "src/utils/getImageSrc";
 
 export const Explore = observer(() => {
   const { filteredWatches } = useExplore();
@@ -21,7 +21,7 @@ export const Explore = observer(() => {
                   <Link key={id} to={`/watches/${id}`}>
                     <div className="bg-slate-100 aspect-square overflow-hidden mb-2">
                       <img
-                        src={getImageSrc(watch)}
+                        src={getCompressedImageSrc(watch)}
                         alt={watch.reference}
                         className="object-cover w-full h-full   scale-105 hover:scale-110 transition-transform	"
                       />

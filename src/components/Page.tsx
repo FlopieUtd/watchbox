@@ -5,5 +5,9 @@ interface PageProps {
 }
 
 export const Page = ({ children }: PageProps) => {
-  return <div className="flex w-full h-[calc(100%-41px)]">{children}</div>;
+  return (
+    <div className="flex w-full h-[calc(100%-36px)] overflow-auto">
+      {children}
+    </div>
+  );
 };

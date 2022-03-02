@@ -7,10 +7,7 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "Alpha",
-      "caliberManufacturer": "Nomos",
-      "base": "",
-      "base_manufacturer": "",
-      "powerReserve": 43
+      "caliberManufacturer": "Nomos"
     },
     "watchCase": {
       "material": "GOLD",
@@ -26,7 +23,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS"]
   },
@@ -38,9 +35,7 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "J815.1",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -56,7 +51,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": ""
+      "hourMarkerNumerals": "ARABIC"
     },
     "complications": ["HACKING_SECONDS"]
   },
@@ -68,9 +63,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "7S26",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -86,7 +79,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": ""
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["DAY", "DATE"]
   },
@@ -98,9 +91,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "9039",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -116,7 +107,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "indices": ""
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS"]
   },
@@ -128,9 +119,7 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "Alpha",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -146,7 +135,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": ""
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS", "SMALL_SECONDS"]
   },
@@ -158,9 +147,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "SW-200-1",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -176,7 +163,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "indices": ""
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["DATE", "HACKING_SECONDS"]
   },
@@ -188,9 +175,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -206,7 +191,7 @@
     },
     "dial": {
       "colour": "YELLOW",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS", "DATE"]
   },
@@ -218,9 +203,7 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "L121.3",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "GOLD",
@@ -236,7 +219,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": ""
+      "hourMarkerNumerals": "ROMAN"
     },
     "complications": [
       "HACKING_SECONDS",
@@ -254,9 +237,7 @@
     "movement": {
       "type": "MANUAL_WIND",
       "caliber": "1861",
-      "caliberManufacturer": "",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": ""
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -272,7 +253,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "indices": ""
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": [
       "SMALL_SECONDS",
@@ -289,9 +270,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "Caliber 9R65",
-      "caliberManufacturer": "Grand Seiko",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "Grand Seiko"
     },
     "watchCase": {
       "material": "TITANIUM",
@@ -307,7 +286,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS", "DATE", "powerReserve_INDICATOR"]
   },
@@ -319,9 +298,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "Calibre 11",
-      "caliberManufacturer": "TAG Heuer",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "TAG Heuer"
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -338,7 +315,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS", "DATE", "SMALL_SECONDS", "CHRONOGRAPH"]
   },
@@ -350,9 +327,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "79240",
-      "caliberManufacturer": "IWC",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "IWC"
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -368,7 +343,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "indices": ""
+      "hourMarkerNumerals": "ARABIC"
     },
     "complications": ["SMALL_SECONDS", "DATE", "HACKING_SECONDS", "CHRONOGRAPH"]
   },
@@ -380,9 +355,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "Breitling 17",
-      "caliberManufacturer": "Breitling",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "Breitling"
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -398,7 +371,7 @@
     },
     "dial": {
       "colour": "YELLOW",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "ARABIC"
     },
     "complications": ["HACKING_SECONDS", "DATE"]
   },
@@ -411,8 +384,6 @@
       "type": "AUTOMATIC",
       "caliber": "8912",
       "caliberManufacturer": "Omega",
-      "base": "",
-      "base_manufacturer": "",
       "powerReserve": 60
     },
     "watchCase": {
@@ -432,7 +403,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS"]
   },
@@ -444,9 +415,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "324 S C",
-      "caliberManufacturer": "Patek Philippe",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "Patek Philippe"
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -462,7 +431,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS", "DATE"]
   },
@@ -474,9 +443,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "",
-      "caliberManufacturer": "Rolex",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "Rolex"
     },
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -492,7 +459,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS"]
   },
@@ -504,9 +471,7 @@
     "movement": {
       "type": "AUTOMATIC",
       "caliber": "925AA",
-      "caliberManufacturer": "JAEGER_LECOULTRE",
-      "base": "",
-      "base_manufacturer": ""
+      "caliberManufacturer": "JAEGER_LECOULTRE"
     },
     "watchCase": {
       "material": "GOLD",
@@ -522,7 +487,7 @@
     },
     "dial": {
       "colour": "CHAMPAGNE",
-      "indices": "INDICES"
+      "hourMarkerNumerals": "NO_NUMERALS"
     },
     "complications": ["HACKING_SECONDS", "MOON_PHASE", "SMALL_SECONDS"]
   }

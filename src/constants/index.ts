@@ -1,4 +1,11 @@
-import { Brand, CaseMaterial, DialColour, Movement } from "src/types";
+import {
+  Brand,
+  CaseMaterial,
+  DialColour,
+  DiameterType,
+  HourMarkerNumerals,
+  Movement,
+} from "src/types";
 
 export const SIDE_PANEL_WIDTH = 280;
 
@@ -27,6 +34,11 @@ export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {
   TITANIUM: "Titanium",
 };
 
+export const DIAMETER_TYPE: { [key in DiameterType]: string } = {
+  ROUND: "Round",
+  RECTANGULAR: "Rectangular",
+};
+
 export const MOVEMENT: { [key in Movement]: string } = {
   MANUAL_WIND: "Manual wind",
   AUTOMATIC: "Automatic",
@@ -50,4 +62,11 @@ export const DIAL_COLOUR: { [key in DialColour]: string } = {
   TRANSPARENT: "Transparent",
   PURPLE: "Purple",
   CHAMPAGNE: "Champagne",
+};
+
+export const HOUR_MARKER_NUMERALS: { [key in HourMarkerNumerals]: string } = {
+  ARABIC: "Arabic",
+  ROMAN: "Roman",
+  BOTH: "Arabic and roman",
+  NO_NUMERALS: "No numerals",
 };
