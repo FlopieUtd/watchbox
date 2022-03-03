@@ -1,4 +1,4 @@
-export enum Movement {
+export enum MovementType {
   ManualWind = "MANUAL_WIND",
   Automatic = "AUTOMATIC",
   Quartz = "QUARTZ",
@@ -31,20 +31,12 @@ export enum DialColour {
 }
 
 export enum Complication {
-  SmallSeconds = "SMALL_SECONDS",
-  PowerReserveIndicator = "powerReserve_INDICATOR",
-  Day = "DAY",
-  Date = "DATE",
-  YearCalendar = "YEAR_CALENDAR",
-  MoonPhase = "MOON_PHASE",
-  Chronograph = "CHRONOGRAPH",
-  HackingSeconds = "HACKING_SECONDS",
   Tachymetre = "TACHYMETER",
   Alarm = "ALARM",
   Gmt = "GMT",
 }
 
-export enum Brand {
+export enum WatchManufacturer {
   Nomos = "NOMOS",
   Junghans = "JUNGHANS",
   Rolex = "ROLEX",
@@ -54,12 +46,18 @@ export enum Brand {
   ALangeSohne = "A_LANGE_SOHNE",
   Doxa = "DOXA",
   Omega = "OMEGA",
-  IWC = "IWC",
-  PATEK_PHILIPPE = "PATEK_PHILIPPE",
-  TAG_HEUER = "TAG_HEUER",
-  BREITLING = "BREITLING",
-  GRAND_SEIKO = "GRAND_SEIKO",
-  JAEGER_LECOULTRE = "JAEGER_LECOULTRE",
+  Iwc = "IWC",
+  PatekPhilippe = "PATEK_PHILIPPE",
+  TagHeuer = "TAG_HEUER",
+  Breitling = "BREITLING",
+  GrandSeiko = "GRAND_SEIKO",
+  JaegerLecoultre = "JAEGER_LECOULTRE",
+}
+
+export enum CaliberManufacturer {
+  Miyota = "MIYOTA",
+  Eta = "ETA",
+  Sellita = "SELLITA",
 }
 
 export enum DiameterType {
@@ -70,8 +68,14 @@ export enum DiameterType {
 export enum HourMarkerNumerals {
   Arabic = "ARABIC",
   Roman = "ROMAN",
-  Both = "BOTH",
+  Mixed = "MIXED",
   NoNumerals = "NO_NUMERALS",
+}
+
+export enum Country {
+  Switzerland = "SWITZERLAND",
+  Germany = "GERMANY",
+  Japan = "JAPAN",
 }
 
 export interface RoundDiameter {
@@ -89,18 +93,12 @@ export interface RectangularDiameter {
 
 export type DetailedDiameter = RoundDiameter | RectangularDiameter;
 
-export interface Watch {
+export interface BareWatch {
   id: string;
-  brand: Brand;
+  manufacturer: WatchManufacturer;
   model: string;
   reference: string;
-  movement: {
-    type: Movement;
-    caliber: string;
-    caliberManufacturer: string;
-    base: string;
-    base_manufacturer: string;
-  };
+  caliberId: string;
   watchCase: {
     material: CaseMaterial;
     waterResistance: number;
@@ -116,3 +114,54 @@ export interface Watch {
   };
   complications: string[];
 }
+
+export interface Watch {
+  id: string;
+  manufacturer: WatchManufacturer;
+  model: string;
+  reference: string;
+  caliber: Caliber;
+  watchCase: {
+    material: CaseMaterial;
+    waterResistance: number;
+    diameter: number;
+    detailedDiameter: DetailedDiameter;
+    thickness: number;
+    lugToLug: number;
+    lugWidth: number;
+  };
+  dial: {
+    colour: DialColour;
+    hourMarkerNumerals: HourMarkerNumerals;
+  };
+  complications: string[];
+}
+
+export enum CaliberFunction {
+  Hours = "HOURS",
+  Minutes = "MINUTES",
+  CentralSeconds = "CENTRAL_SECONDS",
+  SmallSeconds = "SMALL_SECONDS",
+  Day = "DAY",
+  Date = "DATE",
+  PowerReserveIndicator = "POWER_RESERVE_INDICATOR",
+  Chronograph = "CHRONOGRAPH",
+  MoonPhase = "MOON_PHASE",
+  SpringDrive = "SPRING_DRIVE",
+}
+
+export interface Caliber {
+  id: string;
+  name: string;
+  manufacturer: WatchManufacturer | CaliberManufacturer;
+  type: MovementType;
+  powerReserve: number;
+  vph: Vph;
+  hackingSeconds: boolean;
+  jewels: number;
+  diameter: number;
+  thickness: number;
+  functions: CaliberFunction[];
+}
+
+export type Vph = 18000 | 19800 | 21600 | 25200 | 28800 | 36000 | 43200 | 72000;

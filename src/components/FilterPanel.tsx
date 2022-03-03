@@ -2,11 +2,12 @@ import { debounce } from "lodash";
 import { observer } from "mobx-react-lite";
 import { CategoryFilter } from "src/components/Filters/CategoryFilter";
 import { RangeFilter } from "src/components/Filters/RangeFilter";
+import { SIDE_PANEL_WIDTH } from "src/constants";
 import { useExplore } from "src/context/ExploreContext";
 import { StatefulCategoryFilterWithResults } from "src/filters/categoryFilters";
 import { filterWatches } from "src/filters/filterWatches";
 import { getFilterResults } from "src/filters/getFilterResults";
-import { watches } from "src/json";
+import { watches } from "src/utils/watches";
 
 export const FilterPanel = observer(() => {
   const { filteredWatches, searchFilter, categoryFilters, rangeFilters } =
@@ -51,10 +52,13 @@ export const FilterPanel = observer(() => {
     }));
 
   return (
-    <div className="border-l p-6 min-w-[280px] w-[280px] overflow-y-auto">
+    <div
+      className="border-l p-6 overflow-y-auto"
+      style={{ width: SIDE_PANEL_WIDTH, minWidth: SIDE_PANEL_WIDTH }}
+    >
       <input
         type="search"
-        placeholder="Brand, model, or reference"
+        placeholder="Manufacturer, model, or reference"
         className="border rounded mb-4 w-full px-2 py-1"
         onChange={debounce(searchFilter.onFilter, 200)}
       />

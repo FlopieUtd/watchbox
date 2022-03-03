@@ -9,9 +9,9 @@ import {
 import { DiameterOverlay } from "src/components/Watch/Overlays/DiameterOverlay";
 import { LugToLugOverlay } from "src/components/Watch/Overlays/LugToLugOverlay";
 import { LugWidthOverlay } from "src/components/Watch/Overlays/LugWidthOverlay";
-import { BRAND, CASE_MATERIAL, MOVEMENT } from "src/constants";
+import { MANUFACTURER, CASE_MATERIAL, MOVEMENT } from "src/constants";
 import { getImageSrc } from "src/utils/getImageSrc";
-import { getWatchById } from "src/utils/getWatchById";
+import { getWatchById } from "src/utils/watches";
 import { useElementSize } from "usehooks-ts";
 
 export const Watch = () => {
@@ -22,7 +22,7 @@ export const Watch = () => {
   }
   const watch = getWatchById(watchId);
 
-  const { reference, brand, model, movement, watchCase } = watch;
+  const { reference, manufacturer, model, caliber, watchCase } = watch;
 
   const {
     diameter,
@@ -34,7 +34,7 @@ export const Watch = () => {
     waterResistance,
   } = watchCase;
 
-  const { type, caliber } = movement;
+  const { type } = caliber;
 
   const { isDiameterActive, handleDiameterOn, handleDiameterOff } =
     useDiameter();
@@ -115,19 +115,22 @@ export const Watch = () => {
       <div className="w-full h-full border-l p-4 flex justify-center">
         <div className="max-w-[480px] w-full">
           <h1>
-            {BRAND[brand]} - {model}
+            {MANUFACTURER[manufacturer]} - {model}
           </h1>
           <div>
             <div className="mb-4">
               <h2>General</h2>
-              <DescriptionLine label="Brand" value={BRAND[brand]} />
+              <DescriptionLine
+                label="Manufacturer"
+                value={MANUFACTURER[manufacturer]}
+              />
               <DescriptionLine label="Model" value={model} />
               <DescriptionLine label="Reference" value={reference} />
             </div>
             <div className="mb-4">
               <h2>Movement</h2>
               <DescriptionLine label="Type" value={MOVEMENT[type]} />
-              <DescriptionLine label="Caliber" value={caliber} />
+              <DescriptionLine label="Caliber" value={caliber.name} />
             </div>
             <div className="mb-4">
               <h2>Case</h2>
@@ -165,7 +168,7 @@ export const Watch = () => {
             <div className="mb-4">
               <h2>Dial</h2>
               <DescriptionLine label="Type" value={MOVEMENT[type]} />
-              <DescriptionLine label="Caliber" value={caliber} />
+              <DescriptionLine label="Caliber" value={caliber.name} />
             </div>
             <div className="mb-4">
               <h2>Complications</h2>

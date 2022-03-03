@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 import { Link } from "react-router-dom";
 import { FilterPanel } from "src/components/FilterPanel";
-import { BRAND } from "src/constants";
+import { MANUFACTURER } from "src/constants";
 import { useExplore } from "src/context/ExploreContext";
 import { getCompressedImageSrc } from "src/utils/getImageSrc";
 
@@ -16,7 +16,7 @@ export const Explore = observer(() => {
             {filteredWatches
               .sort((a, b) => a.watchCase.diameter - b.watchCase.diameter)
               .map((watch) => {
-                const { brand, model, id } = watch;
+                const { manufacturer, model, id } = watch;
                 return (
                   <Link key={id} to={`/watches/${id}`}>
                     <div className="bg-slate-100 aspect-square overflow-hidden mb-2">
@@ -27,7 +27,7 @@ export const Explore = observer(() => {
                       />
                     </div>
                     <div className="text-xs text-center">
-                      {BRAND[brand]} - {model}
+                      {MANUFACTURER[manufacturer]} - {model}
                     </div>
                   </Link>
                 );

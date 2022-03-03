@@ -1,6 +1,6 @@
 import { FormEventHandler, useState } from "react";
 import {
-  BRAND,
+  MANUFACTURER,
   CASE_MATERIAL,
   DIAL_COLOUR,
   DIAMETER_TYPE,
@@ -8,20 +8,22 @@ import {
   MOVEMENT,
 } from "src/constants";
 import {
-  Brand,
   CaseMaterial,
   DialColour,
   DiameterType,
   HourMarkerNumerals,
-  Movement,
+  MovementType,
+  WatchManufacturer,
 } from "src/types";
-import { getWatchId } from "src/utils/getWatchId";
+import { getWatchId } from "src/utils/watches";
 
 export const Manage = () => {
-  const [brand, setBrand] = useState<Brand | null>(null);
+  const [manufacturer, setManufacturer] = useState<WatchManufacturer | null>(
+    null
+  );
   const [model, setModel] = useState<string | null>(null);
   const [reference, setReference] = useState<string | null>(null);
-  const [movementType, setMovementType] = useState<Movement | null>(null);
+  const [movementType, setMovementType] = useState<MovementType | null>(null);
   const [caliber, setCaliber] = useState<string | null>(null);
   const [caliberManufacturer, setCaliberManufacturer] = useState<string | null>(
     null
@@ -44,13 +46,13 @@ export const Manage = () => {
   const handleSubmit: FormEventHandler = (e) => {
     e.preventDefault();
 
-    if (!brand || !reference) {
+    if (!manufacturer || !reference) {
       return;
     }
 
     const result = {
-      id: getWatchId({ brand, reference }),
-      brand,
+      id: getWatchId({ manufacturer, reference }),
+      manufacturer,
       model,
       reference,
       movement: {
@@ -87,16 +89,16 @@ export const Manage = () => {
       <h1>Manage</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-2">
-          <div>Brand</div>
+          <div>Manufacturer</div>
           <select
             className="border w-72 rounded-sm px-1 py-1 min-h-[30px]"
             onChange={(e) => {
-              setBrand(e.target.value as Brand);
+              setManufacturer(e.target.value as WatchManufacturer);
             }}
           >
-            {Object.values(Brand).map((b) => (
+            {Object.values(WatchManufacturer).map((b) => (
               <option key={b} value={b}>
-                {BRAND[b]}
+                {MANUFACTURER[b]}
               </option>
             ))}
           </select>
@@ -131,10 +133,10 @@ export const Manage = () => {
           <select
             className="border w-72 rounded-sm px-1 py-1 min-h-[30px]"
             onChange={(e) => {
-              setMovementType(e.target.value as Movement);
+              setMovementType(e.target.value as MovementType);
             }}
           >
-            {Object.values(Movement).map((b) => (
+            {Object.values(MovementType).map((b) => (
               <option key={b} value={b}>
                 {MOVEMENT[b]}
               </option>

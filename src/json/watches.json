@@ -1,14 +1,10 @@
 [
   {
     "id": "nomos--1170",
-    "brand": "NOMOS",
+    "manufacturer": "NOMOS",
     "model": "Metro Rose Gold",
     "reference": "1170",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "Alpha",
-      "caliberManufacturer": "Nomos"
-    },
+    "caliberId": "nomos--alpha",
     "watchCase": {
       "material": "GOLD",
       "waterResistance": 3,
@@ -29,14 +25,10 @@
   },
   {
     "id": "junghans--027-3701-00",
-    "brand": "JUNGHANS",
+    "manufacturer": "JUNGHANS",
     "model": "Max Bill Handaufzug",
     "reference": "027/3701.00",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "J815.1",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "junghans--j805-1",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
@@ -57,14 +49,10 @@
   },
   {
     "id": "seiko--snxf05",
-    "brand": "SEIKO",
+    "manufacturer": "SEIKO",
     "model": "SNXF05",
     "reference": "SNXF05",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "7S26",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "seiko--7s26",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
@@ -85,14 +73,10 @@
   },
   {
     "id": "traska--commuter-slate-black",
-    "brand": "TRASKA",
+    "manufacturer": "TRASKA",
     "model": "Commuter Slate Black",
     "reference": "commuter-slate-black",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "9039",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "miyota--9039",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
@@ -113,14 +97,10 @@
   },
   {
     "id": "nomos--1109",
-    "brand": "NOMOS",
+    "manufacturer": "NOMOS",
     "model": "Metro 38",
     "reference": "1109",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "Alpha",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "nomos--alpha",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
@@ -141,14 +121,10 @@
   },
   {
     "id": "sinn--556-010",
-    "brand": "SINN",
+    "manufacturer": "SINN",
     "model": "556 i",
     "reference": "556.010",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "SW-200-1",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "sellita--sw2001",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
@@ -169,14 +145,10 @@
   },
   {
     "id": "doxa--799-10-361-10",
-    "brand": "DOXA",
+    "manufacturer": "DOXA",
     "model": "Sub 200 Divingstar",
     "reference": "799.10.361.10",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "eta--2824-2",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
@@ -197,14 +169,10 @@
   },
   {
     "id": "a-lange-sohne--192-032",
-    "brand": "A_LANGE_SOHNE",
+    "manufacturer": "A_LANGE_SOHNE",
     "model": "Lange 1 Moon Phase",
     "reference": "192.032",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "L121.3",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "a-lange-sohne--l121-3",
     "watchCase": {
       "material": "GOLD",
       "waterResistance": 3,
@@ -231,14 +199,10 @@
   },
   {
     "id": "omega--3570-50-00",
-    "brand": "OMEGA",
+    "manufacturer": "OMEGA",
     "model": "Speedmaster Professional",
     "reference": "3570.50.00",
-    "movement": {
-      "type": "MANUAL_WIND",
-      "caliber": "1861",
-      "caliberManufacturer": ""
-    },
+    "caliberId": "omega--1861",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 5,
@@ -264,14 +228,10 @@
   },
   {
     "id": "grand-seiko--sbga211",
-    "brand": "GRAND_SEIKO",
+    "manufacturer": "GRAND_SEIKO",
     "model": "SBGA211",
     "reference": "SBGA211",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "Caliber 9R65",
-      "caliberManufacturer": "Grand Seiko"
-    },
+    "caliberId": "grand-seiko--9r65",
     "watchCase": {
       "material": "TITANIUM",
       "waterResistance": 10,
@@ -292,14 +252,10 @@
   },
   {
     "id": "tag-heuer--caw211r-fc6401",
-    "brand": "TAG_HEUER",
+    "manufacturer": "TAG_HEUER",
     "model": "Monaco",
     "reference": "CAW211R.FC6401",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "Calibre 11",
-      "caliberManufacturer": "TAG Heuer"
-    },
+    "caliberId": "tag-heuer--11",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
@@ -321,14 +277,10 @@
   },
   {
     "id": "iwc--iw371401",
-    "brand": "IWC",
+    "manufacturer": "IWC",
     "model": "Portugieser Chronograph",
     "reference": "IW371401",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "79240",
-      "caliberManufacturer": "IWC"
-    },
+    "caliberId": "iwc--79240",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
@@ -349,14 +301,10 @@
   },
   {
     "id": "breitling--a17367021i1a1",
-    "brand": "BREITLING",
+    "manufacturer": "BREITLING",
     "model": "Superocean Automatic 44",
     "reference": "A17367021I1A1",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "Breitling 17",
-      "caliberManufacturer": "Breitling"
-    },
+    "caliberId": "breitling--b17",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 100,
@@ -377,15 +325,10 @@
   },
   {
     "id": "omega-227-90-55-21-01-001",
-    "brand": "OMEGA",
+    "manufacturer": "OMEGA",
     "model": "Seamaster Ploprof 1200m",
     "reference": "227.90.55.21.01.001",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "8912",
-      "caliberManufacturer": "Omega",
-      "powerReserve": 60
-    },
+    "caliberId": "omega--8912",
     "watchCase": {
       "material": "TITANIUM",
       "waterResistance": 120,
@@ -409,14 +352,10 @@
   },
   {
     "id": "patek-philippe--5711-1a-010",
-    "brand": "PATEK_PHILIPPE",
+    "manufacturer": "PATEK_PHILIPPE",
     "model": "Nautilus 5711",
     "reference": "5711/1A-010",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "324 S C",
-      "caliberManufacturer": "Patek Philippe"
-    },
+    "caliberId": "patek-philippe--324-s-c",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 12,
@@ -437,14 +376,10 @@
   },
   {
     "id": "rolex--5513",
-    "brand": "ROLEX",
+    "manufacturer": "ROLEX",
     "model": "Submariner 5513",
     "reference": "5513",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "",
-      "caliberManufacturer": "Rolex"
-    },
+    "caliberId": "rolex--1520",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
@@ -465,14 +400,10 @@
   },
   {
     "id": "jlc--1362510",
-    "brand": "JAEGER_LECOULTRE",
+    "manufacturer": "JAEGER_LECOULTRE",
     "model": "Master Ultra Thin Moon",
     "reference": "1362510",
-    "movement": {
-      "type": "AUTOMATIC",
-      "caliber": "925AA",
-      "caliberManufacturer": "JAEGER_LECOULTRE"
-    },
+    "caliberId": "jaeger-lecoultre--925aa",
     "watchCase": {
       "material": "GOLD",
       "waterResistance": 3,

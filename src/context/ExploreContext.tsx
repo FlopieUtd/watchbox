@@ -13,8 +13,8 @@ import {
   StatefulSearchFilter,
   statefulSearchFilter,
 } from "src/filters/searchFilter";
-import { watches } from "src/json";
 import { Watch } from "src/types";
+import { watches } from "src/utils/watches";
 
 interface ExploreContextInterface {
   allWatches: Watch[];

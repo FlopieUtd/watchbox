@@ -4,15 +4,15 @@ import {
   MOVEMENT,
   CASE_MATERIAL,
   DIAL_COLOUR,
-  BRAND,
+  MANUFACTURER,
   HOUR_MARKER_NUMERALS,
 } from "src/constants";
 import { BaseFilter, FilterOption, FilterType } from "src/filters";
 import {
-  Movement,
+  MovementType,
   CaseMaterial,
   DialColour,
-  Brand,
+  WatchManufacturer,
   HourMarkerNumerals,
 } from "src/types";
 
@@ -24,18 +24,18 @@ export interface CategoryFilter extends BaseFilter {
 
 const categoryFilters: CategoryFilter[] = [
   {
-    name: "Brand",
-    dict: BRAND,
+    name: "Manufacturer",
+    dict: MANUFACTURER,
     type: FilterType.Category,
-    filterOptions: Object.values(Brand),
-    accessor: "brand",
+    filterOptions: Object.values(WatchManufacturer),
+    accessor: "manufacturer",
   },
   {
     name: "Movement",
     dict: MOVEMENT,
     type: FilterType.Category,
-    filterOptions: Object.values(Movement),
-    accessor: "movement.type",
+    filterOptions: Object.values(MovementType),
+    accessor: "caliber.type",
   },
   {
     name: "Material",

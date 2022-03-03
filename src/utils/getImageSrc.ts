@@ -1,5 +1,5 @@
+import { getWatchId } from "src/utils/watches";
 import { Watch } from "../types";
-import { getWatchId } from "./getWatchId";
 
 export const getCompressedImageSrc = (watch: Watch) => {
   return `/images/compressed/${getWatchId(watch)}.jpg`;

@@ -1,15 +1,15 @@
 import {
-  Brand,
+  WatchManufacturer,
   CaseMaterial,
   DialColour,
   DiameterType,
   HourMarkerNumerals,
-  Movement,
+  MovementType,
 } from "src/types";
 
-export const SIDE_PANEL_WIDTH = 280;
+export const SIDE_PANEL_WIDTH = 250;
 
-export const BRAND: { [key in Brand]: string } = {
+export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   NOMOS: "Nomos",
   JUNGHANS: "Junghans",
   ROLEX: "Rolex",
@@ -39,7 +39,7 @@ export const DIAMETER_TYPE: { [key in DiameterType]: string } = {
   RECTANGULAR: "Rectangular",
 };
 
-export const MOVEMENT: { [key in Movement]: string } = {
+export const MOVEMENT: { [key in MovementType]: string } = {
   MANUAL_WIND: "Manual wind",
   AUTOMATIC: "Automatic",
   QUARTZ: "Quartz",
@@ -67,6 +67,6 @@ export const DIAL_COLOUR: { [key in DialColour]: string } = {
 export const HOUR_MARKER_NUMERALS: { [key in HourMarkerNumerals]: string } = {
   ARABIC: "Arabic",
   ROMAN: "Roman",
-  BOTH: "Arabic and roman",
+  MIXED: "Mixed",
   NO_NUMERALS: "No numerals",
 };

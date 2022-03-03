@@ -1,6 +1,6 @@
 import { NumberRange } from "src/filters/rangeFilters";
-import { watches } from "src/json";
 import { get } from "lodash";
+import { watches } from "src/utils/watches";
 
 export const getRange = (accessor: string): NumberRange => {
   const sorted = watches.sort((a, b) => get(a, accessor) - get(b, accessor));

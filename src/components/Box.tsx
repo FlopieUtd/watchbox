@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import { watches } from "src/json";
 import { getImageSrc } from "src/utils/getImageSrc";
+import { watches } from "src/utils/watches";
 
 interface BoxProps {
   rows: number;
