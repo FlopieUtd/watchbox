@@ -219,5 +219,44 @@
     "diameter": 31,
     "thickness": 7.7,
     "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "CHRONOGRAPH", "DATE"]
+  },
+  {
+    "id": "casio--5154",
+    "name": "5154",
+    "manufacturer": "CASIO",
+    "type": "QUARTZ",
+    "vph": null,
+    "powerReserve": null,
+    "hackingSeconds": true,
+    "jewels": null,
+    "diameter": null,
+    "thickness": null,
+    "functions": ["HOURS", "MINUTES", "DIGITAL"]
+  },
+  {
+    "id": "cartier--1847-mc",
+    "name": "1847 MC",
+    "manufacturer": "CARTIER",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 42,
+    "hackingSeconds": true,
+    "jewels": 23,
+    "diameter": 25.6,
+    "thickness": null,
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+  },
+  {
+    "id": "panerai--p-9010",
+    "name": "P.9010",
+    "manufacturer": "PANERAI",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 72,
+    "hackingSeconds": true,
+    "jewels": 31,
+    "diameter": 25.6,
+    "thickness": 6,
+    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE"]
   }
 ]

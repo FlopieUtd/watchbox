@@ -7,7 +7,7 @@ import {
   MovementType,
 } from "src/types";
 
-export const SIDE_PANEL_WIDTH = 250;
+export const SIDE_PANEL_WIDTH = 280;
 
 export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   NOMOS: "Nomos",
@@ -25,6 +25,9 @@ export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   BREITLING: "Breitling",
   GRAND_SEIKO: "Grand Seiko",
   JAEGER_LECOULTRE: "Jaeger-LeCoultre",
+  CASIO: "Casio",
+  CARTIER: "Cartier",
+  PANERAI: "Panerai",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {

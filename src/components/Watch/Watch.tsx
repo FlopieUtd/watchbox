@@ -9,7 +9,14 @@ import {
 import { DiameterOverlay } from "src/components/Watch/Overlays/DiameterOverlay";
 import { LugToLugOverlay } from "src/components/Watch/Overlays/LugToLugOverlay";
 import { LugWidthOverlay } from "src/components/Watch/Overlays/LugWidthOverlay";
-import { MANUFACTURER, CASE_MATERIAL, MOVEMENT } from "src/constants";
+import {
+  MANUFACTURER,
+  CASE_MATERIAL,
+  MOVEMENT,
+  DIAL_COLOUR,
+  HOUR_MARKER_NUMERALS,
+} from "src/constants";
+import { MovementType } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
 import { getWatchById } from "src/utils/watches";
 import { useElementSize } from "usehooks-ts";
@@ -22,7 +29,7 @@ export const Watch = () => {
   }
   const watch = getWatchById(watchId);
 
-  const { reference, manufacturer, model, caliber, watchCase } = watch;
+  const { reference, manufacturer, model, caliber, watchCase, dial } = watch;
 
   const {
     diameter,
@@ -34,7 +41,16 @@ export const Watch = () => {
     waterResistance,
   } = watchCase;
 
-  const { type } = caliber;
+  const {
+    type,
+    name: caliberName,
+    vph,
+    powerReserve,
+    hackingSeconds,
+    jewels,
+  } = caliber;
+
+  const { colour, hourMarkerNumerals } = dial;
 
   const { isDiameterActive, handleDiameterOn, handleDiameterOff } =
     useDiameter();
@@ -129,8 +145,23 @@ export const Watch = () => {
             </div>
             <div className="mb-4">
               <h2>Movement</h2>
+              <DescriptionLine label="Caliber" value={caliberName} />
               <DescriptionLine label="Type" value={MOVEMENT[type]} />
-              <DescriptionLine label="Caliber" value={caliber.name} />
+              {type !== MovementType.Quartz && (
+                <>
+                  <DescriptionLine label="Vibrations per hour" value={vph} />
+                  <DescriptionLine
+                    label="Power reserve"
+                    value={powerReserve}
+                    postfix="hours"
+                  />
+                  <DescriptionLine label="Jewels" value={jewels} />
+                  <DescriptionLine
+                    label="Hacking seconds"
+                    value={hackingSeconds ? "Yes" : "No"}
+                  />
+                </>
+              )}
             </div>
             <div className="mb-4">
               <h2>Case</h2>
@@ -167,12 +198,11 @@ export const Watch = () => {
             </div>
             <div className="mb-4">
               <h2>Dial</h2>
-              <DescriptionLine label="Type" value={MOVEMENT[type]} />
-              <DescriptionLine label="Caliber" value={caliber.name} />
-            </div>
-            <div className="mb-4">
-              <h2>Complications</h2>
-              <DescriptionLine label="Type" value={MOVEMENT[type]} />
+              <DescriptionLine label="Color" value={DIAL_COLOUR[colour]} />
+              <DescriptionLine
+                label="Hour marker numerals"
+                value={HOUR_MARKER_NUMERALS[hourMarkerNumerals]}
+              />
             </div>
           </div>
         </div>

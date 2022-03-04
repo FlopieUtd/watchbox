@@ -52,6 +52,9 @@ export enum WatchManufacturer {
   Breitling = "BREITLING",
   GrandSeiko = "GRAND_SEIKO",
   JaegerLecoultre = "JAEGER_LECOULTRE",
+  Casio = "CASIO",
+  Cartier = "CARTIER",
+  Panerai = "PANERAI",
 }
 
 export enum CaliberManufacturer {
@@ -93,28 +96,6 @@ export interface RectangularDiameter {
 
 export type DetailedDiameter = RoundDiameter | RectangularDiameter;
 
-export interface BareWatch {
-  id: string;
-  manufacturer: WatchManufacturer;
-  model: string;
-  reference: string;
-  caliberId: string;
-  watchCase: {
-    material: CaseMaterial;
-    waterResistance: number;
-    diameter: number;
-    detailedDiameter: DetailedDiameter;
-    thickness: number;
-    lugToLug: number;
-    lugWidth: number;
-  };
-  dial: {
-    colour: DialColour;
-    hourMarkerNumerals: HourMarkerNumerals;
-  };
-  complications: string[];
-}
-
 export interface Watch {
   id: string;
   manufacturer: WatchManufacturer;
@@ -134,7 +115,6 @@ export interface Watch {
     colour: DialColour;
     hourMarkerNumerals: HourMarkerNumerals;
   };
-  complications: string[];
 }
 
 export enum CaliberFunction {
