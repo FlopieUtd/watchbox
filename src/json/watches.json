@@ -232,7 +232,7 @@
   {
     "id": "tag-heuer--caw211r-fc6401",
     "manufacturer": "TAG_HEUER",
-    "model": "Monaco",
+    "model": "Monaco Gulf",
     "reference": "CAW211R.FC6401",
     "caliberId": "tag-heuer--11",
     "watchCase": {
@@ -300,7 +300,7 @@
     }
   },
   {
-    "id": "omega-227-90-55-21-01-001",
+    "id": "omega--227-90-55-21-01-001",
     "manufacturer": "OMEGA",
     "model": "Seamaster Ploprof 1200m",
     "reference": "227.90.55.21.01.001",
@@ -372,7 +372,7 @@
     }
   },
   {
-    "id": "jlc--1362510",
+    "id": "jaeger-lecoultre--1362510",
     "manufacturer": "JAEGER_LECOULTRE",
     "model": "Master Ultra Thin Moon",
     "reference": "1362510",
@@ -395,7 +395,7 @@
     }
   },
   {
-    "id": "casio--aq230a-7dmqyes",
+    "id": "casio--aq-230a-7dmqyes",
     "manufacturer": "CASIO",
     "model": "AQ-230A-7DMQYES",
     "reference": "AQ-230A-7DMQYES",

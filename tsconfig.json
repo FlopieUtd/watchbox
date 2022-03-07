@@ -17,6 +17,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strictPropertyInitialization": false,
+    "downlevelIteration": true
   },
   "include": ["src", "components"]
 }

@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { DescriptionLine } from "src/components/Watch/DescriptionLine";
 import {
@@ -59,9 +60,21 @@ export const Watch = () => {
   const { isLugWidthActive, handleLugWidthOn, handleLugWidthOff } =
     useLugWidth();
 
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  };
+
+  const imageOverlayClass = classNames(
+    (isDiameterActive || isLugToLugActive || isLugWidthActive) &&
+      "transition opacity-20"
+  );
+
   const imageClass = classNames(
     " max-w-full h-full object-scale-down transition max-h-[80vh]",
-    (isDiameterActive || isLugToLugActive || isLugWidthActive) && "opacity-20"
+    isImageLoaded && "opacity-100",
+    !isImageLoaded && "opacity-0"
   );
 
   const [imageRef, { width: imageWidth }] = useElementSize();
@@ -75,12 +88,15 @@ export const Watch = () => {
         <img src="/icons/chevron_right.svg" alt="Back" className="rotate-180" />
       </Link>
       <div className="relative w-full flex justify-center items-center overflow-hidden">
-        <img
-          className={imageClass}
-          src={getImageSrc(watch)}
-          alt={reference}
-          ref={imageRef}
-        />
+        <div className={imageOverlayClass}>
+          <img
+            className={imageClass}
+            src={getImageSrc(watch)}
+            alt={reference}
+            ref={imageRef}
+            onLoad={handleImageLoad}
+          />
+        </div>
         {isDiameterActive && (
           <DiameterOverlay
             detailedDiameter={detailedDiameter}

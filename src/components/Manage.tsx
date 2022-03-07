@@ -80,8 +80,6 @@ export const Manage = () => {
         hourMarkerNumerals,
       },
     };
-
-    console.log(result);
   };
 
   return (
@@ -319,7 +317,7 @@ export const Manage = () => {
           <input
             type="submit"
             className="bg-slate-200 px-4 py-1 rounded-sm cursor-pointer"
-          ></input>
+          />
         </div>
       </form>
     </div>

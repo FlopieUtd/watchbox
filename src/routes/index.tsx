@@ -1,4 +1,4 @@
-import { Box } from "src/components/Box";
+import { Collect } from "src/components/Collect/Collect";
 import { Explore } from "src/components/Explore";
 import { Manage } from "src/components/Manage";
 import { Watch } from "src/components/Watch/Watch";
@@ -6,7 +6,11 @@ import { Watch } from "src/components/Watch/Watch";
 export const routes = [
   { path: "/", name: "Explore", element: <Explore /> },
   { path: "/compare", name: "Compare", element: <Explore /> },
-  { path: "/collect", name: "Collect", element: <Box rows={1} columns={3} /> },
+  {
+    path: "/collect",
+    name: "Collect",
+    element: <Collect />,
+  },
   {
     path: "/watches/:watchId",
     name: "Watch",
