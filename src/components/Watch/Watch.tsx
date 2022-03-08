@@ -218,7 +218,14 @@ export const Watch = () => {
             </div>
             <div className="mb-4">
               <h2>Dial</h2>
-              <DescriptionLine label="Color" value={DIAL_COLOUR[colour]} />
+              <DescriptionLine
+                label="Color"
+                value={
+                  typeof colour === "string"
+                    ? DIAL_COLOUR[colour]
+                    : colour.map((colour) => DIAL_COLOUR[colour]).join(", ")
+                }
+              />
               <DescriptionLine
                 label="Hour marker numerals"
                 value={HOUR_MARKER_NUMERALS[hourMarkerNumerals]}

@@ -116,7 +116,7 @@ export interface Watch {
     lugWidth: number;
   };
   dial: {
-    colour: DialColour;
+    colour: DialColour | DialColour[];
     hourMarkerNumerals: HourMarkerNumerals;
   };
 }

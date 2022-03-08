@@ -249,7 +249,7 @@
       }
     },
     "dial": {
-      "colour": "BLUE",
+      "colour": ["BLUE", "ORANGE"],
       "hourMarkerNumerals": "NO_NUMERALS"
     }
   },

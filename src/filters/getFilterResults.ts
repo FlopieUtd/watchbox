@@ -19,9 +19,12 @@ export const getFilterResults = ({
     name: categoryFilter.name,
     filterOptions: categoryFilter.filterOptions.map((option) => ({
       value: option,
-      results: watches.filter(
-        (watch) => get(watch, categoryFilter.accessor) === option
-      ).length,
+      results: watches.filter((watch) => {
+        const accessorResult = get(watch, categoryFilter.accessor);
+        return typeof accessorResult === "string"
+          ? accessorResult === option
+          : accessorResult.includes(option);
+      }).length,
     })),
   }));
 };

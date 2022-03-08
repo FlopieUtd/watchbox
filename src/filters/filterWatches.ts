@@ -35,11 +35,19 @@ export const filterWatches = ({
   categoryFilters
     .filter((categoryFilter) => categoryFilter.activeFilterOptions.length)
     .forEach((categoryFilter) => {
-      result = result.filter((watch) =>
-        categoryFilter.activeFilterOptions.includes(
-          get(watch, categoryFilter.accessor)
-        )
-      );
+      result = result.filter((watch) => {
+        const accessorResult = get(watch, categoryFilter.accessor);
+
+        if (typeof accessorResult === "string") {
+          return categoryFilter.activeFilterOptions.includes(accessorResult);
+        } else if (typeof accessorResult === "object") {
+          return categoryFilter.activeFilterOptions.some((item) =>
+            accessorResult.includes(item)
+          );
+        } else {
+          throw new Error("Unexpected accessor result");
+        }
+      });
     });
 
   // Range filters
