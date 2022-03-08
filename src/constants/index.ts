@@ -31,6 +31,7 @@ export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   TUDOR: "Tudor",
   AUDEMARS_PIGUET: "Audemars Piguet",
   GLASHUTTE_ORIGINAL: "Glashütte Original",
+  TISSOT: "Tissot",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {

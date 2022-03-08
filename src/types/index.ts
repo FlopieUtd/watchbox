@@ -58,6 +58,7 @@ export enum WatchManufacturer {
   Tudor = "TUDOR",
   AUDEMARS_PIGUET = "AUDEMARS_PIGUET",
   GLASHUTTE_ORIGINAL = "GLASHUTTE_ORIGINAL",
+  TISSOT = "TISSOT",
 }
 
 export enum CaliberManufacturer {

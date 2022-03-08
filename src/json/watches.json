@@ -581,5 +581,28 @@
       "colour": "BLACK",
       "hourMarkerNumerals": "MIXED"
     }
+  },
+  {
+    "id": "tissot--t137-407-11-041-00",
+    "manufacturer": "TISSOT",
+    "model": "PRX Powermatic 80",
+    "reference": "T137.407.11.041.00",
+    "caliberId": "tissot--powermatic-80-111",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 40,
+      "thickness": 11,
+      "lugToLug": 44,
+      "lugWidth": 12,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkerNumerals": "NO_NUMERALS"
+    }
   }
 ]
