@@ -93,6 +93,7 @@
       "MINUTES",
       "CENTRAL SECONDS",
       "DATE",
+      "BIG_DATE",
       "POWER_RESERVE_INDICATOR"
     ]
   },
@@ -309,7 +310,14 @@
     "jewels": 47,
     "diameter": 32.6,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE", "MOON_PHASE"]
+    "functions": [
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "DATE",
+      "BIG_DATE",
+      "MOON_PHASE"
+    ]
   },
   {
     "id": "tissot--powermatic-80-111",

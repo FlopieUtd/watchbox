@@ -6,6 +6,7 @@ import {
   DIAL_COLOUR,
   MANUFACTURER,
   HOUR_MARKER_NUMERALS,
+  COMPLICATION,
 } from "src/constants";
 import { BaseFilter, FilterOption, FilterType } from "src/filters";
 import {
@@ -14,6 +15,7 @@ import {
   DialColour,
   WatchManufacturer,
   HourMarkerNumerals,
+  Complication,
 } from "src/types";
 
 export interface CategoryFilter extends BaseFilter {
@@ -57,6 +59,13 @@ const categoryFilters: CategoryFilter[] = [
     type: FilterType.Category,
     filterOptions: Object.values(HourMarkerNumerals),
     accessor: "dial.hourMarkerNumerals",
+  },
+  {
+    name: "Complications",
+    dict: COMPLICATION,
+    type: FilterType.Category,
+    filterOptions: Object.values(Complication),
+    accessor: "caliber.functions",
   },
 ];
 

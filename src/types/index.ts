@@ -30,12 +30,6 @@ export enum DialColour {
   Champagne = "CHAMPAGNE",
 }
 
-export enum Complication {
-  Tachymetre = "TACHYMETER",
-  Alarm = "ALARM",
-  Gmt = "GMT",
-}
-
 export enum WatchManufacturer {
   Nomos = "NOMOS",
   Junghans = "JUNGHANS",
@@ -121,17 +115,17 @@ export interface Watch {
   };
 }
 
-export enum CaliberFunction {
+export enum Complication {
   Hours = "HOURS",
   Minutes = "MINUTES",
   CentralSeconds = "CENTRAL_SECONDS",
   SmallSeconds = "SMALL_SECONDS",
   Day = "DAY",
   Date = "DATE",
+  BigDate = "BIG_DATE",
   PowerReserveIndicator = "POWER_RESERVE_INDICATOR",
   Chronograph = "CHRONOGRAPH",
   MoonPhase = "MOON_PHASE",
-  SpringDrive = "SPRING_DRIVE",
 }
 
 export interface Caliber {
@@ -145,7 +139,7 @@ export interface Caliber {
   jewels: number;
   diameter: number;
   thickness: number;
-  functions: CaliberFunction[];
+  functions: Complication[];
 }
 
 export type Vph = 18000 | 19800 | 21600 | 25200 | 28800 | 36000 | 43200 | 72000;

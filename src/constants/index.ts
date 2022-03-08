@@ -5,6 +5,7 @@ import {
   DiameterType,
   HourMarkerNumerals,
   MovementType,
+  Complication,
 } from "src/types";
 
 export const SIDE_PANEL_WIDTH = 280;
@@ -76,4 +77,17 @@ export const HOUR_MARKER_NUMERALS: { [key in HourMarkerNumerals]: string } = {
   ROMAN: "Roman",
   MIXED: "Mixed",
   NO_NUMERALS: "No numerals",
+};
+
+export const COMPLICATION: { [key in Complication]: string } = {
+  HOURS: "Hours",
+  MINUTES: "Minutes",
+  CENTRAL_SECONDS: "Central seconds",
+  SMALL_SECONDS: "Small seconds",
+  DAY: "Day",
+  DATE: "Date",
+  BIG_DATE: "Big date",
+  POWER_RESERVE_INDICATOR: "Power reserve indicator",
+  CHRONOGRAPH: "Chronograph",
+  MOON_PHASE: "Moon phase",
 };
