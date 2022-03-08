@@ -7,7 +7,7 @@ export const getCaliberById = (caliberId: string) => {
   const result = calibers.find((caliber) => caliber.id === caliberId);
 
   if (!result) {
-    throw new Error("Caliber not found in calibers JSON!");
+    throw new Error(`Caliber ${caliberId} not found in calibers JSON!`);
   }
 
   return result;

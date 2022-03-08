@@ -1,5 +1,4 @@
 import { BoxSlot } from "src/components/Collect/BoxSlot";
-import { TrashBin } from "src/components/Collect/TrashBin";
 
 export interface Box {
   id: string;
@@ -12,7 +11,7 @@ export interface Box {
 }
 export interface BoxProps {
   box: Box;
-  onRemove: (e: { id: string; row: number; column: number }) => void;
+  onRemove: (e: { row: number; column: number }) => void;
   onAssignWatchToSlot: (e: {
     id: string;
     row: number;
@@ -39,14 +38,13 @@ export const Box = ({ box, onRemove, onAssignWatchToSlot }: BoxProps) => {
                   columnIndex={columnIndex}
                   onAssignWatchToSlot={onAssignWatchToSlot}
                   box={box}
+                  onRemove={onRemove}
                 ></BoxSlot>
               ))}
             </div>
           ))}
         </div>
       </div>
-
-      <TrashBin onRemove={onRemove} />
     </div>
   );
 };

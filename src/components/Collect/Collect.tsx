@@ -39,7 +39,13 @@ export const Collect = () => {
   );
 
   const handleRemove = ({ row, column }: { row: number; column: number }) => {
-    boxes[0].state[row - 1][column - 1].watch = null;
+    if (!activeBox) {
+      return null;
+    }
+
+    activeBox.state[row - 1][column - 1].watch = null;
+
+    setBoxes([...boxes.filter((box) => box.id !== activeBox.id), activeBox]);
   };
 
   const handleAssignWatchToSlot = ({

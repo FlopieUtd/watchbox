@@ -466,5 +466,120 @@
       "colour": "WHITE",
       "hourMarkerNumerals": "ARABIC"
     }
+  },
+  {
+    "id": "tudor--m79030b-0001",
+    "manufacturer": "TUDOR",
+    "model": "Black Bay Fifty-Eight",
+    "reference": "M79030B-0001",
+    "caliberId": "tudor--mt5402",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 39,
+      "thickness": 12,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 39
+      }
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkerNumerals": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "tudor--m79500-0007",
+    "manufacturer": "TUDOR",
+    "model": "Black Bay 36",
+    "reference": "M79500-0007",
+    "caliberId": "tudor--t600",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 15,
+      "diameter": 36,
+      "thickness": 10.5,
+      "lugToLug": 44,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36
+      }
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkerNumerals": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "audemars-piguet--15550st-OO-1356st-02",
+    "manufacturer": "AUDEMARS_PIGUET",
+    "model": "Royal Oak Selfwinding",
+    "reference": "15550ST.OO.1356ST.02",
+    "caliberId": "audemars-piguet--5900",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 5,
+      "diameter": 37,
+      "thickness": 10,
+      "lugToLug": 46.5,
+      "lugWidth": 23,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37
+      }
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkerNumerals": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "glashutte-original--1-90-02-42-32-05",
+    "manufacturer": "GLASHUTTE_ORIGINAL",
+    "model": "PanoMatic Lunar",
+    "reference": "1-90-02-42-32-05",
+    "caliberId": "glashutte-original--90-02",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 5,
+      "diameter": 40,
+      "thickness": 12.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkerNumerals": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "nomos--736",
+    "manufacturer": "NOMOS",
+    "model": "Club Campus 38 Night",
+    "reference": "736",
+    "caliberId": "nomos--alpha",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 38.5,
+      "thickness": 8.5,
+      "lugToLug": 49,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkerNumerals": "MIXED"
+    }
   }
 ]

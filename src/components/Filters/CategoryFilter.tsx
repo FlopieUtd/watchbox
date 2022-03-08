@@ -9,30 +9,35 @@ interface CategoryFilterProps {
 export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
   return (
     <Filter filter={filter}>
-      {filter.filterOptions.map((filterOption) => {
-        const className = filterOption.results
-          ? "cursor-pointer"
-          : "opacity-20";
+      {filter.filterOptions
+        .sort((a, b) => a.option.toString().localeCompare(b.option.toString()))
+        .map((filterOption) => {
+          const className = filterOption.results
+            ? "cursor-pointer"
+            : "opacity-20";
 
-        return (
-          <div key={filterOption.option}>
-            <label htmlFor={String(filterOption.option)} className={className}>
-              <input
-                type="checkbox"
-                id={String(filterOption.option)}
-                className="mr-2 cursor-pointer"
-                onChange={filter.onFilter}
-                checked={filter.activeFilterOptions.includes(
-                  filterOption.option
-                )}
-                disabled={!filterOption.results}
-              />
-              {filter.dict[filterOption.option]}{" "}
-              {!!filterOption.results && `(${filterOption.results})`}
-            </label>
-          </div>
-        );
-      })}
+          return (
+            <div key={filterOption.option}>
+              <label
+                htmlFor={String(filterOption.option)}
+                className={className}
+              >
+                <input
+                  type="checkbox"
+                  id={String(filterOption.option)}
+                  className="mr-2 cursor-pointer"
+                  onChange={filter.onFilter}
+                  checked={filter.activeFilterOptions.includes(
+                    filterOption.option
+                  )}
+                  disabled={!filterOption.results}
+                />
+                {filter.dict[filterOption.option]}{" "}
+                {!!filterOption.results && `(${filterOption.results})`}
+              </label>
+            </div>
+          );
+        })}
     </Filter>
   );
 });

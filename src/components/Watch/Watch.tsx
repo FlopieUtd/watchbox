@@ -17,7 +17,7 @@ import {
   DIAL_COLOUR,
   HOUR_MARKER_NUMERALS,
 } from "src/constants";
-import { MovementType } from "src/types";
+import { DiameterType, MovementType } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
 import { getWatchById } from "src/utils/watches";
 import { useElementSize } from "usehooks-ts";
@@ -193,7 +193,11 @@ export const Watch = () => {
 
               <DescriptionLine
                 label="Case diameter"
-                value={diameter}
+                value={
+                  detailedDiameter.type === DiameterType.Round
+                    ? diameter
+                    : `${detailedDiameter.width} x ${detailedDiameter.height}`
+                }
                 postfix=" mm"
               />
               <DescriptionLine

@@ -258,5 +258,57 @@
     "diameter": 25.6,
     "thickness": 6,
     "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE"]
+  },
+  {
+    "id": "tudor--mt5402",
+    "name": "MT5402",
+    "manufacturer": "TUDOR",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 70,
+    "hackingSeconds": true,
+    "jewels": 27,
+    "diameter": 26,
+    "thickness": null,
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+  },
+  {
+    "id": "tudor--t600",
+    "name": "T600",
+    "manufacturer": "TUDOR",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 38,
+    "hackingSeconds": true,
+    "jewels": 26,
+    "diameter": 25.6,
+    "thickness": 5.5,
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+  },
+  {
+    "id": "audemars-piguet--5900",
+    "name": "5900",
+    "manufacturer": "AUDEMARS_PIGUET",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 60,
+    "hackingSeconds": true,
+    "jewels": 29,
+    "diameter": 26.2,
+    "thickness": null,
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+  },
+  {
+    "id": "glashutte-original--90-02",
+    "name": "90-02",
+    "manufacturer": "GLASSHUTTE_ORIGINAL",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 42,
+    "hackingSeconds": true,
+    "jewels": 47,
+    "diameter": 32.6,
+    "thickness": null,
+    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE", "MOON_PHASE"]
   }
 ]

@@ -28,6 +28,9 @@ export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   CASIO: "Casio",
   CARTIER: "Cartier",
   PANERAI: "Panerai",
+  TUDOR: "Tudor",
+  AUDEMARS_PIGUET: "Audemars Piguet",
+  GLASHUTTE_ORIGINAL: "Glashütte Original",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {
