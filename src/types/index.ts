@@ -11,6 +11,17 @@ export enum CaseMaterial {
   Titanium = "TITANIUM",
 }
 
+export enum CrystalMaterial {
+  Acrylic = "ACRYLIC",
+  Mineral = "MINERAL",
+  Sapphire = "SAPPHIRE",
+}
+
+export enum CrystalShape {
+  Flat = "FLAT",
+  Domed = "DOMED",
+}
+
 export enum DialColour {
   Black = "BLACK",
   White = "WHITE",
@@ -53,6 +64,8 @@ export enum WatchManufacturer {
   AUDEMARS_PIGUET = "AUDEMARS_PIGUET",
   GLASHUTTE_ORIGINAL = "GLASHUTTE_ORIGINAL",
   TISSOT = "TISSOT",
+  BULGARI = "BULGARI",
+  VACHERON_CONSTANTIN = "VACHERON_CONSTANTIN",
 }
 
 export enum CaliberManufacturer {
@@ -66,7 +79,7 @@ export enum DiameterType {
   Rectangular = "RECTANGULAR",
 }
 
-export enum HourMarkerNumerals {
+export enum HourMarkers {
   Arabic = "ARABIC",
   Roman = "ROMAN",
   Mixed = "MIXED",
@@ -109,9 +122,13 @@ export interface Watch {
     lugToLug: number;
     lugWidth: number;
   };
+  crystal: {
+    material: CrystalMaterial;
+    shape: CrystalShape;
+  };
   dial: {
     colour: DialColour | DialColour[];
-    hourMarkerNumerals: HourMarkerNumerals;
+    hourMarkers: HourMarkers;
   };
 }
 
@@ -126,6 +143,8 @@ export enum Complication {
   PowerReserveIndicator = "POWER_RESERVE_INDICATOR",
   Chronograph = "CHRONOGRAPH",
   MoonPhase = "MOON_PHASE",
+  SecondTimeZone = "SECOND_TIME_ZONE",
+  AmPm = "AM_PM",
 }
 
 export interface Caliber {

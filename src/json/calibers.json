@@ -10,7 +10,7 @@
     "jewels": 26,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
   },
   {
     "id": "nomos--alpha",
@@ -36,7 +36,7 @@
     "jewels": 17,
     "diameter": 25.6,
     "thickness": 3.4,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "seiko--7s26",
@@ -49,7 +49,7 @@
     "jewels": 21,
     "diameter": 27.4,
     "thickness": 4.8,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "DAY", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DAY", "DATE"]
   },
   {
     "id": "miyota--9039",
@@ -62,7 +62,7 @@
     "jewels": 24,
     "diameter": 26,
     "thickness": 3.9,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "eta--2824-2",
@@ -75,7 +75,7 @@
     "jewels": 25,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
   },
   {
     "id": "a-lange-sohne--l121-3",
@@ -91,7 +91,7 @@
     "functions": [
       "HOURS",
       "MINUTES",
-      "CENTRAL SECONDS",
+      "SMALL_SECONDS",
       "DATE",
       "BIG_DATE",
       "POWER_RESERVE_INDICATOR"
@@ -134,7 +134,7 @@
     "jewels": 25,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
   },
   {
     "id": "omega--8912",
@@ -147,7 +147,7 @@
     "jewels": 38,
     "diameter": 29,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "patek-philippe--324-s-c",
@@ -160,7 +160,7 @@
     "jewels": 45,
     "diameter": 27,
     "thickness": 3.3,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
   },
   {
     "id": "rolex--1520",
@@ -173,7 +173,7 @@
     "jewels": 45,
     "diameter": 28.5,
     "thickness": 3.95,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
   },
   {
     "id": "jaeger-lecoultre--925aa",
@@ -186,7 +186,7 @@
     "jewels": 30,
     "diameter": null,
     "thickness": 4.9,
-    "functions": ["HOURS", "MINUTES", "CENTRAL SECONDS", "MOON_PHASE", "DATE"]
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "MOON_PHASE", "DATE"]
   },
   {
     "id": "grand-seiko--9r65",
@@ -202,7 +202,7 @@
     "functions": [
       "HOURS",
       "MINUTES",
-      "CENTRAL SECONDS",
+      "CENTRAL_SECONDS",
       "POWER_RESERVE_INDICATOR",
       "DATE",
       "SPRING_DRIVE"
@@ -331,5 +331,51 @@
     "diameter": 25.6,
     "thickness": null,
     "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+  },
+  {
+    "id": "iwc--35111",
+    "name": "35111",
+    "manufacturer": "IWC",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 42,
+    "hackingSeconds": true,
+    "jewels": 25,
+    "diameter": 25.6,
+    "thickness": null,
+    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+  },
+  {
+    "id": "bulgari--bvl-138",
+    "name": "BVL 138",
+    "manufacturer": "BULGARI",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 60,
+    "hackingSeconds": true,
+    "jewels": 36,
+    "diameter": 36.6,
+    "thickness": 2.23,
+    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE"]
+  },
+  {
+    "id": "vacheron-constantin--5110-dt",
+    "name": "5110 DT",
+    "manufacturer": "VACHERON_CONSTANTIN",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 60,
+    "hackingSeconds": true,
+    "jewels": 37,
+    "diameter": 30,
+    "thickness": 6,
+    "functions": [
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE",
+      "SECOND_TIME_ZONE",
+      "AM_PM"
+    ]
   }
 ]

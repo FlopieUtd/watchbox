@@ -25,14 +25,19 @@ export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
                 <input
                   type="checkbox"
                   id={String(filterOption.option)}
-                  className="mr-2 cursor-pointer"
+                  className="mr-2"
                   onChange={filter.onFilter}
                   checked={filter.activeFilterOptions.includes(
-                    filterOption.option
+                    filterOption.option.toString()
                   )}
                   disabled={!filterOption.results}
+                  style={{
+                    cursor: filterOption.results ? "pointer" : "default",
+                  }}
                 />
-                {filter.dict[filterOption.option]}{" "}
+                {filter.dict
+                  ? filter.dict[filterOption.option]
+                  : filterOption.option}{" "}
                 {!!filterOption.results && `(${filterOption.results})`}
               </label>
             </div>

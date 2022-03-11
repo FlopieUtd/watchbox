@@ -15,7 +15,7 @@ import {
   CASE_MATERIAL,
   MOVEMENT,
   DIAL_COLOUR,
-  HOUR_MARKER_NUMERALS,
+  HOUR_MARKERS,
 } from "src/constants";
 import { DiameterType, MovementType } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
@@ -51,7 +51,7 @@ export const Watch = () => {
     jewels,
   } = caliber;
 
-  const { colour, hourMarkerNumerals } = dial;
+  const { colour, hourMarkers } = dial;
 
   const { isDiameterActive, handleDiameterOn, handleDiameterOff } =
     useDiameter();
@@ -228,7 +228,7 @@ export const Watch = () => {
               />
               <DescriptionLine
                 label="Hour marker numerals"
-                value={HOUR_MARKER_NUMERALS[hourMarkerNumerals]}
+                value={HOUR_MARKERS[hourMarkers]}
               />
             </div>
           </div>

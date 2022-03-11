@@ -21,9 +21,14 @@ export const getFilterResults = ({
       value: option,
       results: watches.filter((watch) => {
         const accessorResult = get(watch, categoryFilter.accessor);
-        return typeof accessorResult === "string"
-          ? accessorResult === option
-          : accessorResult.includes(option);
+
+        if (accessorResult === null) {
+          return false;
+        }
+
+        return typeof accessorResult === "object"
+          ? accessorResult.includes(option)
+          : accessorResult === option;
       }).length,
     })),
   }));

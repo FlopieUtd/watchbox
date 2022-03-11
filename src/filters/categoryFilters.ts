@@ -5,8 +5,11 @@ import {
   CASE_MATERIAL,
   DIAL_COLOUR,
   MANUFACTURER,
-  HOUR_MARKER_NUMERALS,
+  HOUR_MARKERS,
   COMPLICATION,
+  CRYSTAL_MATERIAL,
+  CRYSTAL_SHAPE,
+  VPH,
 } from "src/constants";
 import { BaseFilter, FilterOption, FilterType } from "src/filters";
 import {
@@ -14,12 +17,14 @@ import {
   CaseMaterial,
   DialColour,
   WatchManufacturer,
-  HourMarkerNumerals,
+  HourMarkers,
   Complication,
+  CrystalMaterial,
+  CrystalShape,
 } from "src/types";
 
 export interface CategoryFilter extends BaseFilter {
-  dict: Record<string, string>;
+  dict: Record<string, string> | null;
   type: FilterType;
   filterOptions: FilterOption[];
 }
@@ -40,7 +45,7 @@ const categoryFilters: CategoryFilter[] = [
     accessor: "caliber.type",
   },
   {
-    name: "Material",
+    name: "Case material",
     dict: CASE_MATERIAL,
     type: FilterType.Category,
     filterOptions: Object.values(CaseMaterial),
@@ -54,11 +59,11 @@ const categoryFilters: CategoryFilter[] = [
     accessor: "dial.colour",
   },
   {
-    name: "Hour marker numerals",
-    dict: HOUR_MARKER_NUMERALS,
+    name: "Hour markers",
+    dict: HOUR_MARKERS,
     type: FilterType.Category,
-    filterOptions: Object.values(HourMarkerNumerals),
-    accessor: "dial.hourMarkerNumerals",
+    filterOptions: Object.values(HourMarkers),
+    accessor: "dial.hourMarkers",
   },
   {
     name: "Complications",
@@ -67,6 +72,27 @@ const categoryFilters: CategoryFilter[] = [
     filterOptions: Object.values(Complication),
     accessor: "caliber.functions",
   },
+  {
+    name: "Crystal material",
+    dict: CRYSTAL_MATERIAL,
+    type: FilterType.Category,
+    filterOptions: Object.values(CrystalMaterial),
+    accessor: "crystal.material",
+  },
+  {
+    name: "Crystal shape",
+    dict: CRYSTAL_SHAPE,
+    type: FilterType.Category,
+    filterOptions: Object.values(CrystalShape),
+    accessor: "crystal.shape",
+  },
+  {
+    name: "Vibrations per hour",
+    dict: null,
+    type: FilterType.Category,
+    filterOptions: VPH,
+    accessor: "caliber.vph",
+  },
 ];
 
 export class StatefulCategoryFilter {
@@ -74,7 +100,7 @@ export class StatefulCategoryFilter {
   filterOptions: FilterOption[] = [];
   activeFilterOptions: FilterOption[] = [];
   accessor: string;
-  dict: Record<string, string>;
+  dict: Record<string, string> | null;
   type: FilterType.Category;
   isActive = false;
 
@@ -87,7 +113,7 @@ export class StatefulCategoryFilter {
     name: string;
     filterOptions: FilterOption[];
     accessor: string;
-    dict: Record<string, string>;
+    dict: Record<string, string> | null;
   }) {
     makeAutoObservable(this);
     this.name = name;

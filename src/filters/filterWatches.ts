@@ -37,9 +37,15 @@ export const filterWatches = ({
     .forEach((categoryFilter) => {
       result = result.filter((watch) => {
         const accessorResult = get(watch, categoryFilter.accessor);
-
+        if (accessorResult === null) {
+          return false;
+        }
         if (typeof accessorResult === "string") {
           return categoryFilter.activeFilterOptions.includes(accessorResult);
+        } else if (typeof accessorResult === "number") {
+          return categoryFilter.activeFilterOptions.includes(
+            accessorResult.toString()
+          );
         } else if (typeof accessorResult === "object") {
           return categoryFilter.activeFilterOptions.some((item) =>
             accessorResult.includes(item)

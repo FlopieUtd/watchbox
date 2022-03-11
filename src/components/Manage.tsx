@@ -4,14 +4,14 @@ import {
   CASE_MATERIAL,
   DIAL_COLOUR,
   DIAMETER_TYPE,
-  HOUR_MARKER_NUMERALS,
+  HOUR_MARKERS,
   MOVEMENT,
 } from "src/constants";
 import {
   CaseMaterial,
   DialColour,
   DiameterType,
-  HourMarkerNumerals,
+  HourMarkers,
   MovementType,
   WatchManufacturer,
 } from "src/types";
@@ -40,8 +40,7 @@ export const Manage = () => {
   const [diameterWidth, setDiameterWidth] = useState<number | null>(null);
   const [diameterHeight, setDiameterHeight] = useState<number | null>(null);
   const [dialColour, setDialColour] = useState<DialColour | null>(null);
-  const [hourMarkerNumerals, setHourMarkerNumerals] =
-    useState<HourMarkerNumerals | null>(null);
+  const [hourMarkers, setHourMarkers] = useState<HourMarkers | null>(null);
 
   const handleSubmit: FormEventHandler = (e) => {
     e.preventDefault();
@@ -77,7 +76,7 @@ export const Manage = () => {
       },
       dial: {
         colour: dialColour,
-        hourMarkerNumerals,
+        hourMarkers,
       },
     };
   };
@@ -298,16 +297,16 @@ export const Manage = () => {
         </div>
 
         <div className="mb-2">
-          <div>Hour marker numerals</div>
+          <div>Hour markers</div>
           <select
             className="border w-72 rounded-sm px-1 py-1 min-h-[30px]"
             onChange={(e) => {
-              setHourMarkerNumerals(e.target.value as HourMarkerNumerals);
+              setHourMarkers(e.target.value as HourMarkers);
             }}
           >
-            {Object.values(HourMarkerNumerals).map((b) => (
+            {Object.values(HourMarkers).map((b) => (
               <option key={b} value={b}>
-                {HOUR_MARKER_NUMERALS[b]}
+                {HOUR_MARKERS[b]}
               </option>
             ))}
           </select>

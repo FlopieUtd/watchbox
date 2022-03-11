@@ -12,7 +12,7 @@ export const Filter = ({ children, filter }: FilterProps) => {
 
   return (
     <div key={name} className="mb-2">
-      <div className="flex justify-between border-b mb-2">
+      <div className="flex justify-between">
         <h3>{name}</h3>
         {isActive && (
           <button

@@ -17,9 +17,13 @@
         "diameter": 33
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -40,9 +44,13 @@
         "diameter": 34
       }
     },
+    "crystal": {
+      "material": "ACRYLIC",
+      "shape": "DOMED"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "ARABIC"
+      "hourMarkers": "ARABIC"
     }
   },
   {
@@ -63,9 +71,13 @@
         "diameter": 37
       }
     },
+    "crystal": {
+      "material": "MINERAL",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -86,9 +98,13 @@
         "diameter": 36.5
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -109,9 +125,13 @@
         "diameter": 38
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -132,9 +152,13 @@
         "diameter": 38.5
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -155,9 +179,13 @@
         "diameter": 42
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
     "dial": {
       "colour": "YELLOW",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -178,9 +206,13 @@
         "diameter": 38.5
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "ROMAN"
+      "hourMarkers": "ROMAN"
     }
   },
   {
@@ -201,9 +233,13 @@
         "diameter": 42
       }
     },
+    "crystal": {
+      "material": "ACRYLIC",
+      "shape": "DOMED"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -224,9 +260,13 @@
         "diameter": 41
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -248,9 +288,13 @@
         "height": 39
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": ["BLUE", "ORANGE"],
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -271,9 +315,13 @@
         "diameter": 41
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "ARABIC"
+      "hourMarkers": "ARABIC"
     }
   },
   {
@@ -294,9 +342,13 @@
         "diameter": 44
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "YELLOW",
-      "hourMarkerNumerals": "ARABIC"
+      "hourMarkers": "ARABIC"
     }
   },
   {
@@ -320,9 +372,13 @@
         "offsetY": 0
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -343,9 +399,13 @@
         "diameter": 40
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLUE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -366,9 +426,13 @@
         "diameter": 40
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -389,9 +453,13 @@
         "diameter": 40
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "CHAMPAGNE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -413,9 +481,13 @@
         "height": 39
       }
     },
+    "crystal": {
+      "material": "MINERAL",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -439,9 +511,13 @@
         "offsetY": 0
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "ROMAN"
+      "hourMarkers": "ROMAN"
     }
   },
   {
@@ -462,9 +538,13 @@
         "diameter": 44
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "ARABIC"
+      "hourMarkers": "ARABIC"
     }
   },
   {
@@ -485,9 +565,13 @@
         "diameter": 39
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLUE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -508,9 +592,13 @@
         "diameter": 36
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -531,9 +619,13 @@
         "diameter": 37
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLUE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -554,9 +646,13 @@
         "diameter": 40
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "WHITE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
     }
   },
   {
@@ -577,9 +673,13 @@
         "diameter": 38.5
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLACK",
-      "hourMarkerNumerals": "MIXED"
+      "hourMarkers": "MIXED"
     }
   },
   {
@@ -600,9 +700,122 @@
         "diameter": 40
       }
     },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
     "dial": {
       "colour": "BLUE",
-      "hourMarkerNumerals": "NO_NUMERALS"
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "iwc--iw327016",
+    "manufacturer": "IWC",
+    "model": "Mark XVIII edition “Le Petit Prince”",
+    "reference": "IW327016",
+    "caliberId": "iwc--35111",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 6,
+      "diameter": 40,
+      "thickness": 11,
+      "lugToLug": 51.1,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "ARABIC"
+    }
+  },
+  {
+    "id": "iwc--iw324010",
+    "manufacturer": "IWC",
+    "model": "Pilot Automatic 36",
+    "reference": "IW324010",
+    "caliberId": "iwc--35111",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 6,
+      "diameter": 36,
+      "thickness": 10.5,
+      "lugToLug": 46.2,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "ARABIC"
+    }
+  },
+  {
+    "id": "bulgari--103431",
+    "manufacturer": "BULGARI",
+    "model": "Octo Finissimo",
+    "reference": "103431",
+    "caliberId": "bulgari--bvl-138",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 40,
+      "thickness": 6.4,
+      "lugToLug": 45,
+      "lugWidth": 30,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 40,
+        "height": 40
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "ARABIC"
+    }
+  },
+  {
+    "id": "vacheron-constantin--7900v-110a-b334",
+    "manufacturer": "VACHERON_CONSTANTIN",
+    "model": "Overseas Dual Time",
+    "reference": "7900V/110A-B334",
+    "caliberId": "vacheron-constantin--5110-dt",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 15,
+      "diameter": 41,
+      "thickness": 12.8,
+      "lugToLug": 49,
+      "lugWidth": 30,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "NO_NUMERALS"
     }
   }
 ]
