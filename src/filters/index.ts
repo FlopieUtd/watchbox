@@ -7,6 +7,7 @@ export enum FilterType {
   Category = "CATEGORY",
   Range = "RANGE",
   Search = "SEARCH",
+  None = "NONE",
 }
 
 export interface BaseFilter {

@@ -5,7 +5,7 @@ import {
   DIAL_COLOUR,
   DIAMETER_TYPE,
   HOUR_MARKERS,
-  MOVEMENT,
+  MOVEMENT_TYPE,
 } from "src/constants";
 import {
   CaseMaterial,
@@ -135,7 +135,7 @@ export const Manage = () => {
           >
             {Object.values(MovementType).map((b) => (
               <option key={b} value={b}>
-                {MOVEMENT[b]}
+                {MOVEMENT_TYPE[b]}
               </option>
             ))}
           </select>

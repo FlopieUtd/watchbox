@@ -9,7 +9,7 @@ interface RangeFilterProps {
 }
 
 export const RangeFilter = observer(({ filter }: RangeFilterProps) => {
-  const { range, onFilter, value, postfix, step } = filter;
+  const { range, onFilter, value, unit, step } = filter;
 
   const handleFilter = (value: number[]) => {
     onFilter(value as NumberRange);
@@ -25,7 +25,7 @@ export const RangeFilter = observer(({ filter }: RangeFilterProps) => {
         onChange={handleFilter}
       />
       <div>
-        {value[0]} {postfix} - {value[1]} {postfix}
+        {value[0]} {unit} - {value[1]} {unit}
       </div>
     </Filter>
   );

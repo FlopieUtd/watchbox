@@ -6,11 +6,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 38,
-    "hackingSeconds": true,
     "jewels": 26,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "nomos--alpha",
@@ -19,11 +24,10 @@
     "type": "MANUAL_WIND",
     "vph": 21600,
     "powerReserve": 43,
-    "hackingSeconds": true,
     "jewels": 17,
     "diameter": 23.3,
     "thickness": 2.6,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
   },
   {
     "id": "junghans--j805-1",
@@ -32,11 +36,10 @@
     "type": "MANUAL_WIND",
     "vph": 28800,
     "powerReserve": 46,
-    "hackingSeconds": true,
     "jewels": 17,
     "diameter": 25.6,
     "thickness": 3.4,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "seiko--7s26",
@@ -45,11 +48,10 @@
     "type": "AUTOMATIC",
     "vph": 21600,
     "powerReserve": 41,
-    "hackingSeconds": false,
     "jewels": 21,
     "diameter": 27.4,
     "thickness": 4.8,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DAY", "DATE"]
+    "complications": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DAY", "DATE"]
   },
   {
     "id": "miyota--9039",
@@ -58,11 +60,10 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 42,
-    "hackingSeconds": true,
     "jewels": 24,
     "diameter": 26,
     "thickness": 3.9,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "eta--2824-2",
@@ -71,11 +72,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 38,
-    "hackingSeconds": true,
     "jewels": 25,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "a-lange-sohne--l121-3",
@@ -84,11 +90,11 @@
     "type": "MANUAL_WIND",
     "vph": 21600,
     "powerReserve": 38,
-    "hackingSeconds": true,
     "jewels": 24,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": [
+    "complications": [
+      "HACKING_SECONDS",
       "HOURS",
       "MINUTES",
       "SMALL_SECONDS",
@@ -104,11 +110,16 @@
     "type": "MANUAL_WIND",
     "vph": 21600,
     "powerReserve": 48,
-    "hackingSeconds": true,
     "jewels": 18,
     "diameter": 27,
     "thickness": 6.9,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "CHRONOGRAPH"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "CHRONOGRAPH"
+    ]
   },
   {
     "id": "iwc--79240",
@@ -117,11 +128,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 44,
-    "hackingSeconds": true,
     "jewels": 31,
     "diameter": 30,
     "thickness": 7.9,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "CHRONOGRAPH"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "CHRONOGRAPH"
+    ]
   },
   {
     "id": "breitling--b17",
@@ -130,11 +146,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 38,
-    "hackingSeconds": true,
     "jewels": 25,
     "diameter": 25.6,
     "thickness": 4.6,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "omega--8912",
@@ -143,11 +164,10 @@
     "type": "AUTOMATIC",
     "vph": 25200,
     "powerReserve": 60,
-    "hackingSeconds": true,
     "jewels": 38,
     "diameter": 29,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "patek-philippe--324-s-c",
@@ -156,11 +176,10 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 45,
-    "hackingSeconds": false,
     "jewels": 45,
     "diameter": 27,
     "thickness": 3.3,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
   },
   {
     "id": "rolex--1520",
@@ -169,11 +188,10 @@
     "type": "AUTOMATIC",
     "vph": 19800,
     "powerReserve": 42,
-    "hackingSeconds": false,
     "jewels": 45,
     "diameter": 28.5,
     "thickness": 3.95,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "jaeger-lecoultre--925aa",
@@ -182,11 +200,17 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 70,
-    "hackingSeconds": false,
     "jewels": 30,
     "diameter": null,
     "thickness": 4.9,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "MOON_PHASE", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "MOON_PHASE",
+      "DATE"
+    ]
   },
   {
     "id": "grand-seiko--9r65",
@@ -195,11 +219,11 @@
     "type": "AUTOMATIC",
     "vph": null,
     "powerReserve": 72,
-    "hackingSeconds": true,
     "jewels": 30,
     "diameter": 27.4,
     "thickness": 5.3,
-    "functions": [
+    "complications": [
+      "HACKING_SECONDS",
       "HOURS",
       "MINUTES",
       "CENTRAL_SECONDS",
@@ -215,11 +239,17 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 40,
-    "hackingSeconds": true,
     "jewels": 59,
     "diameter": 31,
     "thickness": 7.7,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "CHRONOGRAPH", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "CHRONOGRAPH",
+      "DATE"
+    ]
   },
   {
     "id": "casio--5154",
@@ -228,11 +258,10 @@
     "type": "QUARTZ",
     "vph": null,
     "powerReserve": null,
-    "hackingSeconds": true,
     "jewels": null,
     "diameter": null,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "DIGITAL"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "DIGITAL"]
   },
   {
     "id": "cartier--1847-mc",
@@ -241,11 +270,10 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 42,
-    "hackingSeconds": true,
     "jewels": 23,
     "diameter": 25.6,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "panerai--p-9010",
@@ -254,11 +282,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 72,
-    "hackingSeconds": true,
     "jewels": 31,
     "diameter": 25.6,
     "thickness": 6,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "tudor--mt5402",
@@ -267,11 +300,10 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 70,
-    "hackingSeconds": true,
     "jewels": 27,
     "diameter": 26,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "tudor--t600",
@@ -280,11 +312,10 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 38,
-    "hackingSeconds": true,
     "jewels": 26,
     "diameter": 25.6,
     "thickness": 5.5,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
   },
   {
     "id": "audemars-piguet--5900",
@@ -293,11 +324,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 60,
-    "hackingSeconds": true,
     "jewels": 29,
     "diameter": 26.2,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "glashutte-original--90-02",
@@ -306,11 +342,11 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 42,
-    "hackingSeconds": true,
     "jewels": 47,
     "diameter": 32.6,
     "thickness": null,
-    "functions": [
+    "complications": [
+      "HACKING_SECONDS",
       "HOURS",
       "MINUTES",
       "SMALL_SECONDS",
@@ -326,11 +362,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 80,
-    "hackingSeconds": true,
     "jewels": 23,
     "diameter": 25.6,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "iwc--35111",
@@ -339,11 +380,16 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 42,
-    "hackingSeconds": true,
     "jewels": 25,
     "diameter": 25.6,
     "thickness": null,
-    "functions": ["HOURS", "MINUTES", "CENTRAL_SECONDS", "DATE"]
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
   },
   {
     "id": "bulgari--bvl-138",
@@ -352,11 +398,10 @@
     "type": "AUTOMATIC",
     "vph": 21600,
     "powerReserve": 60,
-    "hackingSeconds": true,
     "jewels": 36,
     "diameter": 36.6,
     "thickness": 2.23,
-    "functions": ["HOURS", "MINUTES", "SMALL_SECONDS", "DATE"]
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
   },
   {
     "id": "vacheron-constantin--5110-dt",
@@ -365,11 +410,11 @@
     "type": "AUTOMATIC",
     "vph": 28800,
     "powerReserve": 60,
-    "hackingSeconds": true,
     "jewels": 37,
     "diameter": 30,
     "thickness": 6,
-    "functions": [
+    "complications": [
+      "HACKING_SECONDS",
       "HOURS",
       "MINUTES",
       "CENTRAL_SECONDS",

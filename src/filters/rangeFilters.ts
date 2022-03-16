@@ -1,57 +1,15 @@
 import { makeAutoObservable } from "mobx";
 import { BaseFilter, FilterType } from "src/filters";
 import { getRange } from "src/utils/getRange";
+import { RangeFilterWatchAttribute, WATCH_ATTRIBUTES } from "src/constants";
 
 export type NumberRange = [number, number];
 
 export interface RangeFilter extends BaseFilter {
   range: NumberRange;
-  postfix?: string;
+  unit?: string;
   step: number;
 }
-
-const rangeFilters: RangeFilter[] = [
-  {
-    name: "Case diameter",
-    type: FilterType.Range,
-    range: getRange("watchCase.diameter"),
-    accessor: "watchCase.diameter",
-    postfix: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Case thickness",
-    type: FilterType.Range,
-    range: getRange("watchCase.thickness"),
-    accessor: "watchCase.thickness",
-    postfix: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Water resistance",
-    type: FilterType.Range,
-    range: getRange("watchCase.waterResistance"),
-    accessor: "watchCase.waterResistance",
-    postfix: "bar",
-    step: 1,
-  },
-  {
-    name: "Lug to lug",
-    type: FilterType.Range,
-    range: getRange("watchCase.lugToLug"),
-    accessor: "watchCase.lugToLug",
-    postfix: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Lug width",
-    type: FilterType.Range,
-    range: getRange("watchCase.lugWidth"),
-    accessor: "watchCase.lugWidth",
-    postfix: "mm",
-    step: 1,
-  },
-];
 
 export class StatefulRangeFilter {
   name: string;
@@ -59,29 +17,27 @@ export class StatefulRangeFilter {
   type: FilterType.Category;
   range: NumberRange;
   value: NumberRange;
-  postfix?: string;
+  unit?: string;
   step: number;
   isActive = false;
 
   constructor({
     name,
     accessor,
-    range,
-    postfix,
+    unit,
     step,
   }: {
     name: string;
     accessor: string;
-    range: NumberRange;
-    postfix?: string;
+    unit?: string;
     step: number;
   }) {
     makeAutoObservable(this);
     this.name = name;
     this.accessor = accessor;
-    this.range = range;
-    this.value = range;
-    this.postfix = postfix;
+    this.range = getRange(accessor);
+    this.value = getRange(accessor);
+    this.unit = unit;
     this.onFilter = this.onFilter.bind(this);
     this.onClear = this.onClear.bind(this);
     this.step = step;
@@ -100,6 +56,11 @@ export class StatefulRangeFilter {
     this.isActive = false;
   }
 }
+
+// @ts-ignore TS doesn't narrow down output type
+const rangeFilters: RangeFilterWatchAttribute[] = WATCH_ATTRIBUTES.filter(
+  (filter) => filter.filterType === FilterType.Range
+);
 
 export const statefulRangeFilters = rangeFilters.map(
   (filter) =>

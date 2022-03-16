@@ -1,19 +1,19 @@
 interface DescriptionLineProps {
   label: string;
   value: string | number;
-  postfix?: string;
+  unit?: string;
 }
 
 export const DescriptionLine = ({
   label,
   value,
-  postfix,
+  unit,
 }: DescriptionLineProps) => {
   return (
     <div className="grid grid-cols-2 w-full min-h-[24px] items-center">
       <div className="">{label}</div>
       <div>
-        {value} {postfix}
+        {value} {unit}
       </div>
     </div>
   );

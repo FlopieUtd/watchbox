@@ -13,9 +13,12 @@ import { LugWidthOverlay } from "src/components/Watch/Overlays/LugWidthOverlay";
 import {
   MANUFACTURER,
   CASE_MATERIAL,
-  MOVEMENT,
+  MOVEMENT_TYPE,
   DIAL_COLOUR,
   HOUR_MARKERS,
+  CRYSTAL_MATERIAL,
+  CRYSTAL_SHAPE,
+  COMPLICATION,
 } from "src/constants";
 import { DiameterType, MovementType } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
@@ -30,7 +33,8 @@ export const Watch = () => {
   }
   const watch = getWatchById(watchId);
 
-  const { reference, manufacturer, model, caliber, watchCase, dial } = watch;
+  const { reference, manufacturer, model, caliber, watchCase, dial, crystal } =
+    watch;
 
   const {
     diameter,
@@ -47,9 +51,11 @@ export const Watch = () => {
     name: caliberName,
     vph,
     powerReserve,
-    hackingSeconds,
     jewels,
+    complications,
   } = caliber;
+
+  const { material: crystalMaterial, shape: crystalShape } = crystal;
 
   const { colour, hourMarkers } = dial;
 
@@ -151,75 +157,57 @@ export const Watch = () => {
           </h1>
           <div>
             <div className="mb-4">
-              <h2>General</h2>
-              <DescriptionLine
-                label="Manufacturer"
-                value={MANUFACTURER[manufacturer]}
-              />
-              <DescriptionLine label="Model" value={model} />
               <DescriptionLine label="Reference" value={reference} />
             </div>
             <div className="mb-4">
-              <h2>Movement</h2>
-              <DescriptionLine label="Caliber" value={caliberName} />
-              <DescriptionLine label="Type" value={MOVEMENT[type]} />
+              <h2>Caliber</h2>
+              <DescriptionLine label="Reference" value={caliberName} />
+              <DescriptionLine label="Type" value={MOVEMENT_TYPE[type]} />
               {type !== MovementType.Quartz && (
                 <>
                   <DescriptionLine label="Vibrations per hour" value={vph} />
                   <DescriptionLine
                     label="Power reserve"
                     value={powerReserve}
-                    postfix="hours"
+                    unit="hours"
                   />
                   <DescriptionLine label="Jewels" value={jewels} />
-                  <DescriptionLine
-                    label="Hacking seconds"
-                    value={hackingSeconds ? "Yes" : "No"}
-                  />
                 </>
               )}
             </div>
             <div className="mb-4">
               <h2>Case</h2>
               <DescriptionLine
-                label="Case material"
+                label="Material"
                 value={CASE_MATERIAL[material]}
               />
               <DescriptionLine
                 label="Water resistance"
                 value={waterResistance}
-                postfix=" bar"
+                unit=" bar"
               />
 
               <DescriptionLine
-                label="Case diameter"
+                label="Diameter"
                 value={
                   detailedDiameter.type === DiameterType.Round
                     ? diameter
                     : `${detailedDiameter.width} x ${detailedDiameter.height}`
                 }
-                postfix=" mm"
+                unit=" mm"
               />
-              <DescriptionLine
-                label="Case thickness"
-                value={thickness}
-                postfix=" mm"
-              />
+              <DescriptionLine label="Thickness" value={thickness} unit=" mm" />
               <DescriptionLine
                 label="Lug to lug width"
                 value={lugToLug}
-                postfix=" mm"
+                unit=" mm"
               />
-              <DescriptionLine
-                label="Lug width"
-                value={lugWidth}
-                postfix=" mm"
-              />
+              <DescriptionLine label="Lug width" value={lugWidth} unit=" mm" />
             </div>
             <div className="mb-4">
               <h2>Dial</h2>
               <DescriptionLine
-                label="Color"
+                label="Colour"
                 value={
                   typeof colour === "string"
                     ? DIAL_COLOUR[colour]
@@ -227,9 +215,28 @@ export const Watch = () => {
                 }
               />
               <DescriptionLine
-                label="Hour marker numerals"
+                label="Hour markers"
                 value={HOUR_MARKERS[hourMarkers]}
               />
+            </div>
+            <div className="mb-4">
+              <h2>Crystal</h2>
+              <DescriptionLine
+                label="Material"
+                value={CRYSTAL_MATERIAL[crystalMaterial]}
+              />
+              <DescriptionLine
+                label="Flat / domed"
+                value={CRYSTAL_SHAPE[crystalShape]}
+              />
+            </div>
+            <div className="mb-4">
+              <h2>Complications</h2>
+              <div>
+                {complications.map((complication) => (
+                  <div key={complication}>{COMPLICATION[complication]}</div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

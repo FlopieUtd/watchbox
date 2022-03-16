@@ -39,7 +39,7 @@ export const Box = ({ box, onRemove, onAssignWatchToSlot }: BoxProps) => {
                   onAssignWatchToSlot={onAssignWatchToSlot}
                   box={box}
                   onRemove={onRemove}
-                ></BoxSlot>
+                />
               ))}
             </div>
           ))}

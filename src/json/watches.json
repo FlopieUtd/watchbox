@@ -540,7 +540,7 @@
     },
     "crystal": {
       "material": "SAPPHIRE",
-      "shape": "FLAT"
+      "shape": "DOMED"
     },
     "dial": {
       "colour": "WHITE",

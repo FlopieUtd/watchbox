@@ -145,6 +145,7 @@ export enum Complication {
   MoonPhase = "MOON_PHASE",
   SecondTimeZone = "SECOND_TIME_ZONE",
   AmPm = "AM_PM",
+  HackingSeconds = "HACKING_SECONDS",
 }
 
 export interface Caliber {
@@ -154,11 +155,37 @@ export interface Caliber {
   type: MovementType;
   powerReserve: number;
   vph: Vph;
-  hackingSeconds: boolean;
   jewels: number;
   diameter: number;
   thickness: number;
-  functions: Complication[];
+  complications: Complication[];
 }
 
 export type Vph = 18000 | 19800 | 21600 | 25200 | 28800 | 36000 | 43200 | 72000;
+
+export type Accessor =
+  | "id"
+  | "manufacturer"
+  | "model"
+  | "reference"
+  | "caliber.id"
+  | "caliber.name"
+  | "caliber.manufacturer"
+  | "caliber.type"
+  | "caliber.powerReserve"
+  | "caliber.vph"
+  | "caliber.jewels"
+  | "caliber.diameter"
+  | "caliber.thickness"
+  | "caliber.complications"
+  | "watchCase.material"
+  | "watchCase.waterResistance"
+  | "watchCase.diameter"
+  | "watchCase.detailedDiameter"
+  | "watchCase.thickness"
+  | "watchCase.lugToLug"
+  | "watchCase.lugWidth"
+  | "dial.colour"
+  | "dial.hourMarkers"
+  | "crystal.material"
+  | "crystal.shape";
