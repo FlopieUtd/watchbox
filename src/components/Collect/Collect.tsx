@@ -103,6 +103,24 @@ export const Collect = () => {
     ]);
   };
 
+  const handleRenameBox = ({
+    boxId,
+    name,
+  }: {
+    boxId: string;
+    name: string;
+  }) => {
+    const box = boxes.find((box) => box.id === boxId);
+
+    if (!box) {
+      return;
+    }
+
+    box.name = name;
+
+    setBoxes([...boxes.filter((box) => box.id !== boxId), box]);
+  };
+
   const activeBox = boxes.find((box) => box.id === activeBoxId);
 
   return (
@@ -120,6 +138,7 @@ export const Collect = () => {
                 box={activeBox}
                 onRemove={handleRemove}
                 onAssignWatchToSlot={handleAssignWatchToSlot}
+                onRenameBox={handleRenameBox}
               />
             )}
             <Catalog />

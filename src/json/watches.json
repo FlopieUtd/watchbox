@@ -817,5 +817,32 @@
       "colour": "BLUE",
       "hourMarkers": "NO_NUMERALS"
     }
+  },
+  {
+    "id": "omega--231-10-39-21-01-001",
+    "manufacturer": "OMEGA",
+    "model": "Aqua Terra 150M Co-Axial 38.5MM",
+    "reference": "231.10.39.21.01.001",
+    "caliberId": "omega-8500",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 15,
+      "diameter": 38.5,
+      "thickness": 13,
+      "lugToLug": 45.5,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "NO_NUMERALS"
+    }
   }
 ]

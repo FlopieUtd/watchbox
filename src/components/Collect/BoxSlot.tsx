@@ -30,7 +30,7 @@ export const BoxSlot = ({
   onRemove,
 }: BoxSlotProps) => {
   const id = slot.watch;
-  const [{ opacity }, drag] = useDrag(
+  const [, drag] = useDrag(
     () => ({
       type: "box",
       item: {
@@ -88,10 +88,10 @@ export const BoxSlot = ({
             />
           </div>
           <button
-            className="transition absolute top-0 right-0 opacity-0 group-hover:opacity-100 bg-slate-100 rounded-sm hover:bg-slate-200 px-2 py-1"
+            className="transition absolute top-0 right-0 opacity-0 group-hover:opacity-100 bg-slate-100 rounded-sm hover:bg-slate-200 w-10 h-10 flex items-center justify-center"
             onClick={handleRemove}
           >
-            Remove
+            <img src="/icons/trash.svg" alt="Back" />
           </button>
         </>
       )}

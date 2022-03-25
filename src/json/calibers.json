@@ -261,7 +261,7 @@
     "jewels": null,
     "diameter": null,
     "thickness": null,
-    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "DIGITAL"]
+    "complications": ["HOURS", "MINUTES", "DIGITAL"]
   },
   {
     "id": "cartier--1847-mc",
@@ -421,6 +421,24 @@
       "DATE",
       "SECOND_TIME_ZONE",
       "AM_PM"
+    ]
+  },
+  {
+    "id": "omega-8500",
+    "name": "8500",
+    "manufacturer": "OMEGA",
+    "type": "AUTOMATIC",
+    "vph": 25200,
+    "powerReserve": 60,
+    "jewels": 39,
+    "diameter": 29,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
     ]
   }
 ]

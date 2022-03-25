@@ -1,5 +1,7 @@
 import { get } from "lodash";
+import { useState } from "react";
 import { Catalog } from "src/components/Compare/Catalog";
+import { VisualCompareModal } from "src/components/Compare/VisualCompareModal";
 import {
   AnyWatchAttribute,
   MANUFACTURER,
@@ -61,62 +63,84 @@ export const Compare = () => {
     setWatches([...watches, getWatchById(id)]);
   };
 
-  return (
-    <div className="w-full flex">
-      <div className="w-full flex justify-center overflow-auto">
-        {!!watches.length && (
-          <table className="mb-8">
-            <tbody>
-              <tr>
-                <th></th>
-                {watches.map((watch) => {
-                  if (!watch.id) {
-                    return <th key={watch.id}></th>;
-                  }
+  const [isVisualCompareModalVisible, setIsVisualCompareModalVisible] =
+    useState(false);
 
-                  return (
-                    <th key={watch.id}>
-                      <div className="flex flex-col items-center">
-                        <img
-                          className="w-[260px] min-w-[260px]"
-                          src={getImageSrc(watch)}
-                          alt="alt"
-                        />
-                        <h2>
-                          {MANUFACTURER[watch.manufacturer]} - {watch.model}{" "}
-                          <span
-                            onClick={() => {
-                              setWatches([
-                                ...watches.filter((w) => w.id !== watch.id),
-                              ]);
-                            }}
-                            className="cursor-pointer text-red-500"
-                          >
-                            remove
-                          </span>
-                        </h2>
-                      </div>
-                    </th>
-                  );
-                })}
-              </tr>
-              {WATCH_ATTRIBUTES.filter(
-                (attribute) =>
-                  !["ID", "Manufacturer", "Model", "Caliber ID"].includes(
-                    attribute.name
-                  )
-              ).map((attribute) => (
-                <CompareLine
-                  key={attribute.name}
-                  watches={watches}
-                  attribute={attribute}
-                />
-              ))}
-            </tbody>
-          </table>
-        )}
+  const handleCloseVisualCompareModal = () => {
+    setIsVisualCompareModalVisible(false);
+  };
+
+  const handleOpenVisualCompareModal = () => {
+    setIsVisualCompareModalVisible(true);
+  };
+
+  return (
+    <>
+      <div className="w-full flex">
+        <div className="w-full flex justify-center overflow-auto">
+          {!!watches.length && (
+            <table className="mb-8">
+              <tbody>
+                <tr>
+                  <th>
+                    <button onClick={handleOpenVisualCompareModal}>
+                      Visual
+                    </button>
+                  </th>
+                  {watches.map((watch) => {
+                    if (!watch.id) {
+                      return <th key={watch.id}></th>;
+                    }
+
+                    return (
+                      <th key={watch.id} className="max-w-[260px] p-4">
+                        <div className="flex flex-col items-center">
+                          <img
+                            className="w-[260px] min-w-[260px]"
+                            src={getImageSrc(watch)}
+                            alt="alt"
+                          />
+                          <h2>
+                            {MANUFACTURER[watch.manufacturer]} - {watch.model}{" "}
+                            <span
+                              onClick={() => {
+                                setWatches([
+                                  ...watches.filter((w) => w.id !== watch.id),
+                                ]);
+                              }}
+                              className="cursor-pointer text-red-500"
+                            >
+                              remove
+                            </span>
+                          </h2>
+                        </div>
+                      </th>
+                    );
+                  })}
+                </tr>
+                {WATCH_ATTRIBUTES.filter(
+                  (attribute) =>
+                    !["ID", "Manufacturer", "Model", "Caliber ID"].includes(
+                      attribute.name
+                    )
+                ).map((attribute) => (
+                  <CompareLine
+                    key={attribute.name}
+                    watches={watches}
+                    attribute={attribute}
+                  />
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+        <Catalog onAdd={handleAddWatch} />
       </div>
-      <Catalog onAdd={handleAddWatch} />
-    </div>
+      <VisualCompareModal
+        isVisible={isVisualCompareModalVisible}
+        onClose={handleCloseVisualCompareModal}
+        watches={watches}
+      />
+    </>
   );
 };

@@ -1,4 +1,5 @@
 import { BoxSlot } from "src/components/Collect/BoxSlot";
+import { InlineEdit } from "src/components/InlineEdit";
 
 export interface Box {
   id: string;
@@ -11,6 +12,7 @@ export interface Box {
 }
 export interface BoxProps {
   box: Box;
+  onRenameBox: ({ boxId, name }: { boxId: string; name: string }) => void;
   onRemove: (e: { row: number; column: number }) => void;
   onAssignWatchToSlot: (e: {
     id: string;
@@ -20,11 +22,20 @@ export interface BoxProps {
   }) => void;
 }
 
-export const Box = ({ box, onRemove, onAssignWatchToSlot }: BoxProps) => {
+export const Box = ({
+  box,
+  onRemove,
+  onAssignWatchToSlot,
+  onRenameBox,
+}: BoxProps) => {
+  const handleRename = (name: string) => {
+    onRenameBox({ boxId: box.id, name });
+  };
+
   return (
     <div className="flex flex-col h-full w-full">
       <div className="flex justify-center mt-4">
-        <h1>{box.name}</h1>
+        <InlineEdit value={box.name} setValue={handleRename} />
       </div>
       <div className="p-4 flex w-full h-full justify-center items-center flex-col relative">
         <div key={box.id} className="flex flex-col w-[40vw] gap-4">

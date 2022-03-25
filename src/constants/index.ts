@@ -206,22 +206,17 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
   {
     name: "Jewels",
     accessor: "caliber.jewels",
-    filterType: FilterType.Range,
-    step: 1,
+    filterType: FilterType.None,
   },
   {
     name: "Caliber diameter",
     accessor: "caliber.diameter",
-    filterType: FilterType.Range,
-    unit: "mm",
-    step: 0.5,
+    filterType: FilterType.None,
   },
   {
     name: "Caliber thickness",
     accessor: "caliber.thickness",
-    filterType: FilterType.Range,
-    unit: "mm",
-    step: 0.5,
+    filterType: FilterType.None,
   },
   {
     name: "Complications",

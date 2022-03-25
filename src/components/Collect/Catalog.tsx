@@ -6,7 +6,7 @@ export const Catalog = () => {
   return (
     <div className="min-w-[280px] max-w-[280px] border-l grid grid-cols-2 h-full overflow-auto">
       {watches.map((watch) => {
-        const [{ opacity }, drag] = useDrag(
+        const [, drag] = useDrag(
           () => ({
             type: "catalog",
             item: {
