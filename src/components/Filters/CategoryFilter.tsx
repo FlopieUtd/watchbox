@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import { Filter } from "src/components/Filters/Filter";
-import { StatefulCategoryFilterWithResults } from "src/filters/categoryFilters";
+import { StatefulCategoryFilterWithResults } from "src/state/categoryFilters";
 
 interface CategoryFilterProps {
   filter: StatefulCategoryFilterWithResults;
@@ -9,40 +9,42 @@ interface CategoryFilterProps {
 export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
   return (
     <Filter filter={filter}>
-      {filter.filterOptions
-        .sort((a, b) => a.option.toString().localeCompare(b.option.toString()))
-        .map((filterOption) => {
-          const className = filterOption.results
-            ? "cursor-pointer"
-            : "opacity-20";
+      {filter.filterOptions.map((filterOption) => {
+        const className = filterOption.results
+          ? "cursor-pointer"
+          : "opacity-20";
 
-          return (
-            <div key={filterOption.option}>
-              <label
-                htmlFor={String(filterOption.option)}
-                className={className}
-              >
-                <input
-                  type="checkbox"
-                  id={String(filterOption.option)}
-                  className="mr-2"
-                  onChange={filter.onFilter}
-                  checked={filter.activeFilterOptions.includes(
-                    filterOption.option.toString()
-                  )}
-                  disabled={!filterOption.results}
-                  style={{
-                    cursor: filterOption.results ? "pointer" : "default",
-                  }}
-                />
-                {filter.dict
-                  ? filter.dict[filterOption.option]
-                  : filterOption.option}{" "}
-                {!!filterOption.results && `(${filterOption.results})`}
-              </label>
-            </div>
-          );
-        })}
+        const id = `${filter.name}-${filterOption.option}`;
+
+        const handleChange = () => {
+          filter.onFilter(filterOption.option.toString());
+        };
+
+        return (
+          <div key={id}>
+            <label htmlFor={id} className={className}>
+              <input
+                type="checkbox"
+                id={id}
+                className="mr-2"
+                onChange={handleChange}
+                checked={filter.activeFilterOptions.includes(
+                  filterOption.option.toString()
+                )}
+                disabled={!filterOption.results}
+                style={{
+                  cursor: filterOption.results ? "pointer" : "default",
+                }}
+              />
+              {filter.dict
+                ? filter.dict[filterOption.option]
+                : filterOption.option}{" "}
+              {filter.unit && `${filter.unit} `}
+              {!!filterOption.results && `(${filterOption.results})`}
+            </label>
+          </div>
+        );
+      })}
     </Filter>
   );
 });

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { Box } from "src/components/Collect/Box";
@@ -80,16 +80,11 @@ export const Collect = () => {
     setIsModalVisible(false);
   };
 
-  useEffect(() => {
-    console.log(boxes);
-  }, [boxes.length]);
-
   const handleActiveBox = (id: string) => {
     setActiveBoxId(id);
   };
 
   const handleCreateNewBox = ({ name, rows, columns }: HandleCreateNewBox) => {
-    console.log("add new box");
     setBoxes([
       ...boxes,
       {

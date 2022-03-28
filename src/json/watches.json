@@ -6,7 +6,7 @@
     "reference": "1170",
     "caliberId": "nomos--alpha",
     "watchCase": {
-      "material": "GOLD",
+      "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 33,
       "thickness": 7.5,
@@ -137,7 +137,7 @@
   {
     "id": "sinn--556-010",
     "manufacturer": "SINN",
-    "model": "556 i",
+    "model": "556 I",
     "reference": "556.010",
     "caliberId": "sellita--sw2001",
     "watchCase": {
@@ -158,6 +158,33 @@
     },
     "dial": {
       "colour": "BLACK",
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "sinn--556-0102",
+    "manufacturer": "SINN",
+    "model": "556 I Mother-of-Pearl W",
+    "reference": "556.0102",
+    "caliberId": "sellita--sw2001",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 38.5,
+      "thickness": 11,
+      "lugToLug": 46,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["MOTHER_OF_PEARL", "WHITE"],
       "hourMarkers": "NO_NUMERALS"
     }
   },
@@ -195,7 +222,7 @@
     "reference": "192.032",
     "caliberId": "a-lange-sohne--l121-3",
     "watchCase": {
-      "material": "GOLD",
+      "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 38.5,
       "thickness": 10,
@@ -442,7 +469,7 @@
     "reference": "1362510",
     "caliberId": "jaeger-lecoultre--925aa",
     "watchCase": {
-      "material": "GOLD",
+      "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 39,
       "thickness": 9.5,
@@ -823,7 +850,7 @@
     "manufacturer": "OMEGA",
     "model": "Aqua Terra 150M Co-Axial 38.5MM",
     "reference": "231.10.39.21.01.001",
-    "caliberId": "omega-8500",
+    "caliberId": "omega--8500",
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 15,
@@ -842,6 +869,169 @@
     },
     "dial": {
       "colour": "BLACK",
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "hamilton--h38416711",
+    "manufacturer": "HAMILTON",
+    "model": "Intra-Matic Auto Chrono",
+    "reference": "H38416711",
+    "caliberId": "hamilton--h31",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 40,
+      "thickness": 14.5,
+      "lugToLug": 49.2,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["BLACK", "WHITE"],
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "omega--210-30-42-20-04-001",
+    "manufacturer": "OMEGA",
+    "model": "Seamaster 300M",
+    "reference": "210.30.42.20.04.001",
+    "caliberId": "omega--8800",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 30,
+      "diameter": 42,
+      "thickness": 13.85,
+      "lugToLug": 50,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["WHITE"],
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "rolex--124270",
+    "manufacturer": "ROLEX",
+    "model": "Explorer I",
+    "reference": "124270",
+    "caliberId": "rolex--3230",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 36,
+      "thickness": 11.5,
+      "lugToLug": 43,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["BLACK"],
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "rolex--226570",
+    "manufacturer": "ROLEX",
+    "model": "Explorer II",
+    "reference": "226570",
+    "caliberId": "rolex--3285",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 42,
+      "thickness": 11.5,
+      "lugToLug": 50.1,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["WHITE"],
+      "hourMarkers": "NO_NUMERALS"
+    }
+  },
+  {
+    "id": "jaeger-lecoultre--q3848422",
+    "manufacturer": "JAEGER_LECOULTRE",
+    "model": "Reverso Classic Duoface Small Seconds",
+    "reference": "Q3848422",
+    "caliberId": "jaeger-lecoultre--854A",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 28.3,
+      "thickness": 11.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "height": 47,
+        "width": 28.3
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["GREY"],
+      "hourMarkers": "ARABIC"
+    }
+  },
+  {
+    "id": "patek-philippe--5196j",
+    "manufacturer": "PATEK_PHILIPPE",
+    "model": "Calatrava Manual Winding",
+    "reference": "5196J",
+    "caliberId": "patek-philippe--215-ps",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 37,
+      "thickness": 7.68,
+      "lugToLug": 45.5,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["WHITE"],
       "hourMarkers": "NO_NUMERALS"
     }
   }

@@ -3,24 +3,21 @@ import { createContext, ReactNode, useContext } from "react";
 import {
   StatefulCategoryFilter,
   statefulCategoryFilters,
-} from "src/filters/categoryFilters";
-import { filterWatches } from "src/filters/filterWatches";
-import {
-  StatefulRangeFilter,
-  statefulRangeFilters,
-} from "src/filters/rangeFilters";
+} from "src/state/categoryFilters";
+import { filterWatches } from "src/utils/filterWatches";
 import {
   StatefulSearchFilter,
   statefulSearchFilter,
-} from "src/filters/searchFilter";
+} from "src/state/searchFilter";
 import { Watch } from "src/types";
 import { watches } from "src/utils/watches";
+import { statefulSort } from "src/state/sort";
+import { sortWatches } from "src/utils/sortWatches";
 
 interface ExploreContextInterface {
   allWatches: Watch[];
   filteredWatches: Watch[];
   categoryFilters: StatefulCategoryFilter[];
-  rangeFilters: StatefulRangeFilter[];
   searchFilter: StatefulSearchFilter;
 }
 
@@ -35,15 +32,18 @@ const ExploreProvider = observer(({ children }: ExploreProviderProps) => {
     watches,
     searchFilter: statefulSearchFilter,
     categoryFilters: statefulCategoryFilters,
-    rangeFilters: statefulRangeFilters,
+  });
+
+  const sortedWatches = sortWatches({
+    watches: filteredWatches,
+    sort: statefulSort,
   });
 
   const value = {
     allWatches: watches,
-    filteredWatches,
+    filteredWatches: sortedWatches,
     searchFilter: statefulSearchFilter,
     categoryFilters: statefulCategoryFilters,
-    rangeFilters: statefulRangeFilters,
   };
 
   return (

@@ -1,13 +1,11 @@
 import { get } from "lodash";
-import { StatefulCategoryFilter } from "src/filters/categoryFilters";
-import { StatefulRangeFilter } from "src/filters/rangeFilters";
-import { StatefulSearchFilter } from "src/filters/searchFilter";
+import { StatefulCategoryFilter } from "src/state/categoryFilters";
+import { StatefulSearchFilter } from "src/state/searchFilter";
 import { Watch } from "src/types";
 
 interface GetFilterResults {
   watches: Watch[];
   categoryFilters: StatefulCategoryFilter[];
-  rangeFilters: StatefulRangeFilter[];
   searchFilter: StatefulSearchFilter;
 }
 
@@ -26,9 +24,19 @@ export const getFilterResults = ({
           return false;
         }
 
-        return typeof accessorResult === "object"
-          ? accessorResult.includes(option)
-          : accessorResult === option;
+        if (typeof accessorResult === "number") {
+          return Math.floor(accessorResult) === option;
+        }
+
+        if (typeof accessorResult === "string") {
+          return accessorResult === option;
+        }
+
+        if (typeof accessorResult === "object") {
+          return accessorResult.includes(option);
+        }
+
+        throw new Error("Unknown accessor result");
       }).length,
     })),
   }));

@@ -1,19 +1,18 @@
 import { ReactNode } from "react";
-import { StatefulCategoryFilterWithResults } from "src/filters/categoryFilters";
-import { StatefulRangeFilter } from "src/filters/rangeFilters";
+import { StatefulCategoryFilterWithResults } from "src/state/categoryFilters";
 
 interface FilterProps {
   children: ReactNode;
-  filter: StatefulCategoryFilterWithResults | StatefulRangeFilter;
+  filter: StatefulCategoryFilterWithResults;
 }
 
 export const Filter = ({ children, filter }: FilterProps) => {
   const { name, onClear, isActive } = filter;
 
   return (
-    <div key={name} className="mb-2">
+    <div key={name} className="mb-4">
       <div className="flex justify-between">
-        <h3>{name}</h3>
+        <div className="uppercase tracking-wide mb-1">{name}</div>
         {isActive && (
           <button
             onClick={onClear}

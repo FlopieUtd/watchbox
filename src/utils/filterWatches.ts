@@ -1,8 +1,7 @@
 import { get } from "lodash";
 import { MANUFACTURER } from "src/constants";
-import { StatefulCategoryFilter } from "src/filters/categoryFilters";
-import { StatefulRangeFilter } from "src/filters/rangeFilters";
-import { StatefulSearchFilter } from "src/filters/searchFilter";
+import { StatefulCategoryFilter } from "src/state/categoryFilters";
+import { StatefulSearchFilter } from "src/state/searchFilter";
 import { Watch } from "src/types";
 import { normalizeString } from "src/utils/normalizeString";
 
@@ -10,14 +9,12 @@ interface FilterWatches {
   watches: Watch[];
   searchFilter: StatefulSearchFilter;
   categoryFilters: StatefulCategoryFilter[];
-  rangeFilters: StatefulRangeFilter[];
 }
 
 export const filterWatches = ({
   watches,
   searchFilter,
   categoryFilters,
-  rangeFilters,
 }: FilterWatches) => {
   let result = watches;
 
@@ -44,7 +41,7 @@ export const filterWatches = ({
           return categoryFilter.activeFilterOptions.includes(accessorResult);
         } else if (typeof accessorResult === "number") {
           return categoryFilter.activeFilterOptions.includes(
-            accessorResult.toString()
+            Math.floor(accessorResult).toString()
           );
         } else if (typeof accessorResult === "object") {
           return categoryFilter.activeFilterOptions.some((item) =>
@@ -54,23 +51,6 @@ export const filterWatches = ({
           throw new Error("Unexpected accessor result");
         }
       });
-    });
-
-  // Range filters
-  rangeFilters
-    .filter(
-      (rangeFilter) =>
-        !(
-          rangeFilter.value[0] === rangeFilter.range[0] &&
-          rangeFilter.value[1] === rangeFilter.range[1]
-        )
-    )
-    .forEach((rangeFilter) => {
-      result = result.filter(
-        (watch) =>
-          get(watch, rangeFilter.accessor) >= rangeFilter.value[0] &&
-          get(watch, rangeFilter.accessor) <= rangeFilter.value[1]
-      );
     });
 
   return result;

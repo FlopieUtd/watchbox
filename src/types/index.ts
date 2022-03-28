@@ -6,7 +6,8 @@ export enum MovementType {
 
 export enum CaseMaterial {
   StainlessSteel = "STAINLESS_STEEL",
-  Gold = "GOLD",
+  YellowGold = "YELLOW_GOLD",
+  RoseGold = "ROSE_GOLD",
   Bronze = "BRONZE",
   Titanium = "TITANIUM",
 }
@@ -66,6 +67,7 @@ export enum WatchManufacturer {
   TISSOT = "TISSOT",
   BULGARI = "BULGARI",
   VACHERON_CONSTANTIN = "VACHERON_CONSTANTIN",
+  HAMILTON = "HAMILTON",
 }
 
 export enum CaliberManufacturer {

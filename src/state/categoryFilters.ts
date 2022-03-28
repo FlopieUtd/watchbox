@@ -1,44 +1,37 @@
 import { makeAutoObservable } from "mobx";
-import { ChangeEvent } from "react";
-import { DIAL_COLOUR } from "src/constants";
-import { BaseFilter, FilterOption, FilterType } from "src/filters";
-import { DialColour } from "src/types";
+import { CategoryFilterWatchAttribute } from "src/constants";
+import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
+import { BaseFilter, FilterOption, FilterType } from "src/state";
+import { Accessor } from "src/types";
 
-export interface CategoryArrayFilter extends BaseFilter {
-  dict: Record<string, string>;
+export interface CategoryFilter extends BaseFilter {
+  dict: Record<string, string> | null;
   type: FilterType;
   filterOptions: FilterOption[];
 }
 
-const categoryArrayFilters: CategoryArrayFilter[] = [
-  {
-    name: "Dial colours",
-    dict: DIAL_COLOUR,
-    type: FilterType.Category,
-    filterOptions: Object.values(DialColour),
-    accessor: "manufacturer",
-  },
-];
-
-export class StatefulCategoryArrayFilter {
+export class StatefulCategoryFilter {
   name: string;
   filterOptions: FilterOption[] = [];
   activeFilterOptions: FilterOption[] = [];
   accessor: string;
-  dict: Record<string, string>;
+  dict: Record<string, string> | null;
   type: FilterType.Category;
   isActive = false;
+  unit: string | null;
 
   constructor({
     name,
     filterOptions,
     accessor,
     dict,
+    unit,
   }: {
     name: string;
     filterOptions: FilterOption[];
-    accessor: string;
-    dict: Record<string, string>;
+    accessor: Accessor;
+    dict: Record<string, string> | null;
+    unit: string | null;
   }) {
     makeAutoObservable(this);
     this.name = name;
@@ -49,10 +42,10 @@ export class StatefulCategoryArrayFilter {
 
     this.accessor = accessor;
     this.dict = dict;
+    this.unit = unit;
   }
 
-  onFilter(event: ChangeEvent) {
-    const value = event.target.id;
+  onFilter(value: FilterOption) {
     if (this.activeFilterOptions.includes(value)) {
       this.activeFilterOptions = this.activeFilterOptions.filter(
         (option) => option !== value
@@ -69,15 +62,22 @@ export class StatefulCategoryArrayFilter {
   }
 }
 
-export const statefulCategoryArrayFilters = categoryArrayFilters.map(
+// @ts-ignore TS doesn't narrow down output type
+const categoryFilters: CategoryFilterWatchAttribute[] = WATCH_ATTRIBUTES.filter(
+  (filter) => filter.filterType === FilterType.Category
+);
+
+export const statefulCategoryFilters = categoryFilters.map(
   (filter) =>
-    new StatefulCategoryArrayFilter({
+    new StatefulCategoryFilter({
       ...filter,
+      dict: filter.dict ?? null,
+      unit: filter.unit ?? null,
     })
 );
 
-export interface StatefulCategoryArrayFilterWithResults
-  extends Omit<StatefulCategoryArrayFilter, "filterOptions"> {
+export interface StatefulCategoryFilterWithResults
+  extends Omit<StatefulCategoryFilter, "filterOptions"> {
   filterOptions: {
     option: FilterOption;
     results: number;

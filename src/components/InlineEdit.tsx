@@ -7,7 +7,6 @@ interface InlineEditProps {
 
 export const InlineEdit = ({ value, setValue }: InlineEditProps) => {
   const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
-    console.log("waddup");
     setValue(e.target.value);
   };
 

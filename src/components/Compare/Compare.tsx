@@ -2,11 +2,8 @@ import { get } from "lodash";
 import { useState } from "react";
 import { Catalog } from "src/components/Compare/Catalog";
 import { VisualCompareModal } from "src/components/Compare/VisualCompareModal";
-import {
-  AnyWatchAttribute,
-  MANUFACTURER,
-  WATCH_ATTRIBUTES,
-} from "src/constants";
+import { AnyWatchAttribute, MANUFACTURER } from "src/constants";
+import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
 
 import { Watch } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
@@ -27,7 +24,6 @@ const CompareLine = ({ watches, attribute }: CompareLineProps) => {
         const value = get(watch, accessor);
 
         if (Array.isArray(value)) {
-          console.log(value, dict);
           return (
             <td key={watch.id} className="max-w-[260px] p-4">
               {value
@@ -55,8 +51,6 @@ export const Compare = () => {
 
   const handleAddWatch = (id: string) => {
     if (watches.find((watch) => watch.id === id)) {
-      console.log("Watch is already being compared");
-
       return;
     }
 

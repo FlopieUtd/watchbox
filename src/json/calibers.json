@@ -424,7 +424,7 @@
     ]
   },
   {
-    "id": "omega-8500",
+    "id": "omega--8500",
     "name": "8500",
     "manufacturer": "OMEGA",
     "type": "AUTOMATIC",
@@ -440,5 +440,97 @@
       "CENTRAL_SECONDS",
       "DATE"
     ]
+  },
+  {
+    "id": "hamilton--h31",
+    "name": "H31",
+    "manufacturer": "HAMILTON",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 60,
+    "jewels": 27,
+    "diameter": 30,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "DATE",
+      "CHRONOGRAPH"
+    ]
+  },
+  {
+    "id": "omega--8800",
+    "name": "8800",
+    "manufacturer": "OMEGA",
+    "type": "AUTOMATIC",
+    "vph": 25200,
+    "powerReserve": 55,
+    "jewels": 35,
+    "diameter": 26,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
+  },
+  {
+    "id": "rolex--3230",
+    "name": "3230",
+    "manufacturer": "ROLEX",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 70,
+    "jewels": 31,
+    "diameter": 28.5,
+    "thickness": null,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
+  },
+  {
+    "id": "rolex--3285",
+    "name": "3285",
+    "manufacturer": "ROLEX",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 70,
+    "jewels": 31,
+    "diameter": 28.5,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE",
+      "GMT"
+    ]
+  },
+  {
+    "id": "jaeger-lecoultre--854A",
+    "name": "854A",
+    "manufacturer": "JAEGER_LECOULTRE",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 42,
+    "jewels": 19,
+    "diameter": null,
+    "thickness": null,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
+  },
+  {
+    "id": "patek-philippe--215-ps",
+    "name": "215 PS",
+    "manufacturer": "PATEK_PHILIPPE",
+    "type": "MANUAL_WIND",
+    "vph": 28800,
+    "powerReserve": 44,
+    "jewels": 21,
+    "diameter": 21.9,
+    "thickness": 2.55,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
   }
 ]

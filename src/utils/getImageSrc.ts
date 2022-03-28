@@ -6,5 +6,5 @@ export const getCompressedImageSrc = (watch: Watch) => {
 };
 
 export const getImageSrc = (watch: Watch) => {
-  return `/images/${getWatchId(watch)}.jpg`;
+  return `/images/uncompressed/${getWatchId(watch)}.jpg`;
 };

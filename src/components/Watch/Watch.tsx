@@ -93,7 +93,7 @@ export const Watch = () => {
       >
         <img src="/icons/chevron_right.svg" alt="Back" className="rotate-180" />
       </Link>
-      <div className="relative w-full flex justify-center items-center overflow-hidden">
+      <div className="relative w-full max-w-[550px] flex justify-center items-center overflow-hidden mb-[100px]">
         <div className={imageOverlayClass}>
           <img
             className={imageClass}
@@ -150,7 +150,7 @@ export const Watch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full border-l p-4 flex justify-center">
+      <div className="w-full h-full border-l p-8 flex items-center justify-center">
         <div className="max-w-[480px] w-full">
           <h1>
             {MANUFACTURER[manufacturer]} - {model}
@@ -160,7 +160,7 @@ export const Watch = () => {
               <DescriptionLine label="Reference" value={reference} />
             </div>
             <div className="mb-4">
-              <h2>Caliber</h2>
+              <h2 className="border-b mb-1 pb-1">Caliber</h2>
               <DescriptionLine label="Reference" value={caliberName} />
               <DescriptionLine label="Type" value={MOVEMENT_TYPE[type]} />
               {type !== MovementType.Quartz && (
@@ -176,7 +176,7 @@ export const Watch = () => {
               )}
             </div>
             <div className="mb-4">
-              <h2>Case</h2>
+              <h2 className="border-b mb-1 pb-1">Case</h2>
               <DescriptionLine
                 label="Material"
                 value={CASE_MATERIAL[material]}
@@ -205,7 +205,7 @@ export const Watch = () => {
               <DescriptionLine label="Lug width" value={lugWidth} unit=" mm" />
             </div>
             <div className="mb-4">
-              <h2>Dial</h2>
+              <h2 className="border-b mb-1 pb-1">Dial</h2>
               <DescriptionLine
                 label="Colour"
                 value={
@@ -220,7 +220,7 @@ export const Watch = () => {
               />
             </div>
             <div className="mb-4">
-              <h2>Crystal</h2>
+              <h2 className="border-b mb-1 pb-1">Crystal</h2>
               <DescriptionLine
                 label="Material"
                 value={CRYSTAL_MATERIAL[crystalMaterial]}
@@ -231,7 +231,7 @@ export const Watch = () => {
               />
             </div>
             <div className="mb-4">
-              <h2>Complications</h2>
+              <h2 className="border-b mb-1 pb-1">Complications</h2>
               <div>
                 {complications.map((complication) => (
                   <div key={complication}>{COMPLICATION[complication]}</div>

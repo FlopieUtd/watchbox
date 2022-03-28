@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../public/fonts/OmegaCTRegular.ttf");
+  }
+
 * {
     font-size: 14px;
+    font-family: "Noto Sans";
 }
 
 h1 {

@@ -1,4 +1,4 @@
-import { FilterOption, FilterType } from "src/filters";
+import { FilterOption, FilterType } from "src/state";
 import {
   WatchManufacturer,
   CaseMaterial,
@@ -40,11 +40,13 @@ export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   TISSOT: "Tissot",
   BULGARI: "BVLGARI",
   VACHERON_CONSTANTIN: "Vacheron Constantin",
+  HAMILTON: "Hamilton",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {
   STAINLESS_STEEL: "Stainless steel",
-  GOLD: "Gold",
+  YELLOW_GOLD: "Yellow gold",
+  ROSE_GOLD: "Rose gold",
   BRONZE: "Bronze",
   TITANIUM: "Titanium",
 };
@@ -122,17 +124,12 @@ export interface BaseWatchAttribute {
   accessor: Accessor;
   dict?: Record<string, string>;
   unit?: string;
+  isSortable: boolean;
 }
 
 export interface CategoryFilterWatchAttribute extends BaseWatchAttribute {
   filterType: FilterType.Category;
   filterOptions: FilterOption[];
-}
-
-export interface RangeFilterWatchAttribute extends BaseWatchAttribute {
-  filterType: FilterType.Range;
-  unit?: string;
-  step: number;
 }
 
 export interface NoFilterWatchAttribute extends BaseWatchAttribute {
@@ -141,158 +138,4 @@ export interface NoFilterWatchAttribute extends BaseWatchAttribute {
 
 export type AnyWatchAttribute =
   | CategoryFilterWatchAttribute
-  | RangeFilterWatchAttribute
   | NoFilterWatchAttribute;
-
-export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
-  {
-    name: "ID",
-    accessor: "id",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Manufacturer",
-    accessor: "manufacturer",
-    dict: MANUFACTURER,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(WatchManufacturer),
-  },
-  {
-    name: "Model",
-    accessor: "model",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Reference",
-    accessor: "reference",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Caliber ID",
-    accessor: "caliber.id",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Caliber name",
-    accessor: "caliber.name",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Caliber manufacturer",
-    accessor: "caliber.manufacturer",
-    dict: MANUFACTURER,
-    filterType: FilterType.None,
-  },
-  {
-    name: "Movement type",
-    accessor: "caliber.type",
-    dict: MOVEMENT_TYPE,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(MovementType),
-  },
-  {
-    name: "Power reserve",
-    accessor: "caliber.powerReserve",
-    filterType: FilterType.Range,
-    unit: "hours",
-    step: 1,
-  },
-  {
-    name: "Vibrations per hour",
-    accessor: "caliber.vph",
-    filterType: FilterType.Category,
-    filterOptions: VPH,
-  },
-  {
-    name: "Jewels",
-    accessor: "caliber.jewels",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Caliber diameter",
-    accessor: "caliber.diameter",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Caliber thickness",
-    accessor: "caliber.thickness",
-    filterType: FilterType.None,
-  },
-  {
-    name: "Complications",
-    accessor: "caliber.complications",
-    dict: COMPLICATION,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(Complication),
-  },
-  {
-    name: "Case material",
-    accessor: "watchCase.material",
-    dict: CASE_MATERIAL,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(CaseMaterial),
-  },
-  {
-    name: "Water resistance",
-    accessor: "watchCase.waterResistance",
-    filterType: FilterType.Range,
-    unit: "bar",
-    step: 0.5,
-  },
-  {
-    name: "Case diameter",
-    accessor: "watchCase.diameter",
-    filterType: FilterType.Range,
-    unit: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Case thickness",
-    accessor: "watchCase.thickness",
-    filterType: FilterType.Range,
-    unit: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Lug to lug",
-    accessor: "watchCase.lugToLug",
-    filterType: FilterType.Range,
-    unit: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Lug width",
-    accessor: "watchCase.lugWidth",
-    filterType: FilterType.Range,
-    unit: "mm",
-    step: 0.5,
-  },
-  {
-    name: "Dial colour",
-    accessor: "dial.colour",
-    dict: DIAL_COLOUR,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(DialColour),
-  },
-  {
-    name: "Hour markers",
-    accessor: "dial.hourMarkers",
-    dict: HOUR_MARKERS,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(HourMarkers),
-  },
-  {
-    name: "Crystal material",
-    accessor: "crystal.material",
-    dict: CRYSTAL_MATERIAL,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(CrystalMaterial),
-  },
-  {
-    name: "Crystal shape",
-    accessor: "crystal.shape",
-    dict: CRYSTAL_SHAPE,
-    filterType: FilterType.Category,
-    filterOptions: Object.values(CrystalShape),
-  },
-];
