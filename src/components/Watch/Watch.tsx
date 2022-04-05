@@ -151,14 +151,15 @@ export const Watch = () => {
         </div>
       </div>
       <div className="w-full h-full border-l p-8 flex items-center justify-center">
-        <div className="max-w-[480px] w-full">
-          <h1>
-            {MANUFACTURER[manufacturer]} - {model}
-          </h1>
+        <div className="max-w-[540px] w-full">
+          <div className="text-[28px] leading-[32px]">
+            {MANUFACTURER[manufacturer]}
+          </div>
+          <div className="text-[40px] leading-[40px]">{model}</div>
+          <div className="text-[14px] mb-6 tracking-widest">
+            Reference {reference}
+          </div>
           <div>
-            <div className="mb-4">
-              <DescriptionLine label="Reference" value={reference} />
-            </div>
             <div className="mb-4">
               <h2 className="border-b mb-1 pb-1">Caliber</h2>
               <DescriptionLine label="Reference" value={caliberName} />

@@ -82,7 +82,7 @@ export const BoxSlot = ({
           <div>
             <img
               className="scale-[1.1]"
-              src={`/images/${slot.watch}.jpg`}
+              src={`/images/uncompressed/${slot.watch}.jpg`}
               alt="alt"
               ref={drag}
             />

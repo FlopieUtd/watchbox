@@ -39,6 +39,6 @@ export class StatefulSort {
 }
 
 export const statefulSort = new StatefulSort({
-  activeSort: "Case diameter",
+  activeSort: "Case size",
   direction: SortDirection.Ascending,
 });

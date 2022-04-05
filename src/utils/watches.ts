@@ -4,6 +4,18 @@ import watchesJson from "../json/watches.json";
 export const watches = watchesJson.map((watch) => ({
   ...watch,
   caliber: getCaliberById(watch.caliberId),
+  watchCase: {
+    ...watch.watchCase,
+    detailedDiameter: {
+      ...watch.watchCase.detailedDiameter,
+      area:
+        watch.watchCase.detailedDiameter.type === DiameterType.Rectangular
+          ? watch.watchCase.detailedDiameter.width! *
+            watch.watchCase.detailedDiameter.height!
+          : Math.pow(watch.watchCase.detailedDiameter.diameter! / 2, 2) *
+            Math.PI,
+    },
+  },
 })) as Watch[];
 
 export const getWatchById = (watchId: string) => {
@@ -16,7 +28,7 @@ export const getWatchById = (watchId: string) => {
   return result;
 };
 
-import { Watch } from "../types";
+import { DiameterType, Watch } from "../types";
 
 const urlSafe = (string: string) =>
   string

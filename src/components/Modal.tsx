@@ -1,4 +1,5 @@
-import { MouseEventHandler, ReactNode } from "react";
+import { ReactNode, useRef } from "react";
+import { useOnClickOutside } from "usehooks-ts";
 
 export interface ModalProps {
   children: ReactNode;
@@ -7,21 +8,18 @@ export interface ModalProps {
 }
 
 export const Modal = ({ children, isVisible, onClose }: ModalProps) => {
-  const handleClose: MouseEventHandler<HTMLDivElement> = (e) => {
-    e.preventDefault();
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
+  const ref = useRef(null);
+
+  useOnClickOutside(ref, onClose);
 
   return isVisible ? (
     <>
       <div className="fixed w-full h-full bg-black top-0 opacity-20"></div>
-      <div
-        className="fixed w-full h-full top-0 flex items-center justify-center"
-        onClick={handleClose}
-      >
-        <div className="bg-white rounded-md px-8 py-4 cursor-default min-w-[320px]">
+      <div className="fixed w-full h-full top-0 flex items-center justify-center">
+        <div
+          className="bg-white rounded-md p-8 cursor-default min-w-[320px] max-h-[90vh] h-auto z-10"
+          ref={ref}
+        >
           {children}
         </div>
       </div>

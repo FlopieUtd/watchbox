@@ -1,5 +1,5 @@
 import {
-  AnyWatchAttribute,
+  WatchAttribute,
   MANUFACTURER,
   MOVEMENT_TYPE,
   VPH,
@@ -9,6 +9,8 @@ import {
   HOUR_MARKERS,
   CRYSTAL_MATERIAL,
   CRYSTAL_SHAPE,
+  BEZEL,
+  WatchAttributeCategory,
 } from "src/constants";
 import { FilterType } from "src/state";
 import {
@@ -20,18 +22,20 @@ import {
   HourMarkers,
   CrystalMaterial,
   CrystalShape,
+  Bezel,
 } from "src/types";
 import { getRangeFilterOptions } from "src/utils/getRangeFilterOptions";
 
 const alphabetical = (array: string[]) =>
   array.sort((a, b) => a.localeCompare(b));
 
-export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
+export const WATCH_ATTRIBUTES: WatchAttribute[] = [
   {
     name: "ID",
     accessor: "id",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.General,
   },
   {
     name: "Manufacturer",
@@ -40,30 +44,35 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(WatchManufacturer)),
     isSortable: false,
+    category: WatchAttributeCategory.Manufacturer,
   },
   {
     name: "Model",
     accessor: "model",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Manufacturer,
   },
   {
     name: "Reference",
     accessor: "reference",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Manufacturer,
   },
   {
     name: "Caliber ID",
     accessor: "caliber.id",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Caliber name",
     accessor: "caliber.name",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Caliber manufacturer",
@@ -71,6 +80,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     dict: MANUFACTURER,
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Movement type",
@@ -79,6 +89,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(MovementType)),
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Power reserve",
@@ -87,6 +98,15 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: getRangeFilterOptions("caliber.powerReserve"),
     unit: "hours",
     isSortable: true,
+    category: WatchAttributeCategory.Caliber,
+  },
+  {
+    name: "Case size",
+    accessor: "watchCase.detailedDiameter.area",
+    filterType: FilterType.None,
+    unit: "square mm",
+    isSortable: true,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Vibrations per hour",
@@ -95,24 +115,28 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: VPH,
     unit: "vph",
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Jewels",
     accessor: "caliber.jewels",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Caliber diameter",
     accessor: "caliber.diameter",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Caliber thickness",
     accessor: "caliber.thickness",
     filterType: FilterType.None,
     isSortable: false,
+    category: WatchAttributeCategory.Caliber,
   },
   {
     name: "Complications",
@@ -121,6 +145,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(Complication)),
     isSortable: false,
+    category: WatchAttributeCategory.Complications,
   },
   {
     name: "Case material",
@@ -129,6 +154,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(CaseMaterial)),
     isSortable: false,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Water resistance",
@@ -137,6 +163,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: getRangeFilterOptions("watchCase.waterResistance"),
     unit: "bar",
     isSortable: true,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Case diameter",
@@ -145,6 +172,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: getRangeFilterOptions("watchCase.diameter"),
     unit: "mm",
     isSortable: true,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Case thickness",
@@ -153,6 +181,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: getRangeFilterOptions("watchCase.thickness"),
     unit: "mm",
     isSortable: true,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Lug to lug",
@@ -161,6 +190,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: getRangeFilterOptions("watchCase.lugToLug"),
     unit: "mm",
     isSortable: true,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Lug width",
@@ -169,6 +199,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterOptions: getRangeFilterOptions("watchCase.lugWidth"),
     unit: "mm",
     isSortable: false,
+    category: WatchAttributeCategory.Case,
   },
   {
     name: "Dial colour",
@@ -177,6 +208,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(DialColour)),
     isSortable: false,
+    category: WatchAttributeCategory.Dial,
   },
   {
     name: "Hour markers",
@@ -185,6 +217,16 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(HourMarkers)),
     isSortable: false,
+    category: WatchAttributeCategory.Dial,
+  },
+  {
+    name: "Bezel",
+    accessor: "watchCase.bezel",
+    dict: BEZEL,
+    filterType: FilterType.Category,
+    filterOptions: alphabetical(Object.values(Bezel)),
+    isSortable: false,
+    category: WatchAttributeCategory.Bezel,
   },
   {
     name: "Crystal material",
@@ -193,6 +235,7 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(CrystalMaterial)),
     isSortable: false,
+    category: WatchAttributeCategory.Crystal,
   },
   {
     name: "Crystal shape",
@@ -201,5 +244,6 @@ export const WATCH_ATTRIBUTES: AnyWatchAttribute[] = [
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(CrystalShape)),
     isSortable: false,
+    category: WatchAttributeCategory.Crystal,
   },
 ];

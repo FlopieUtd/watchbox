@@ -6,6 +6,7 @@
     "reference": "1170",
     "caliberId": "nomos--alpha",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 33,
@@ -23,7 +24,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -33,6 +34,7 @@
     "reference": "027/3701.00",
     "caliberId": "junghans--j805-1",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 34,
@@ -60,6 +62,7 @@
     "reference": "SNXF05",
     "caliberId": "seiko--7s26",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 37,
@@ -77,7 +80,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -87,6 +90,7 @@
     "reference": "commuter-slate-black",
     "caliberId": "miyota--9039",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 36.5,
@@ -104,7 +108,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -114,6 +118,7 @@
     "reference": "1109",
     "caliberId": "nomos--alpha",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 38,
@@ -131,7 +136,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -141,6 +146,7 @@
     "reference": "556.010",
     "caliberId": "sellita--sw2001",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 38.5,
@@ -158,7 +164,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -168,6 +174,7 @@
     "reference": "556.0102",
     "caliberId": "sellita--sw2001",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 38.5,
@@ -185,7 +192,7 @@
     },
     "dial": {
       "colour": ["MOTHER_OF_PEARL", "WHITE"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -195,6 +202,7 @@
     "reference": "799.10.361.10",
     "caliberId": "eta--2824-2",
     "watchCase": {
+      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 42,
@@ -212,7 +220,7 @@
     },
     "dial": {
       "colour": "YELLOW",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -222,6 +230,7 @@
     "reference": "192.032",
     "caliberId": "a-lange-sohne--l121-3",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 38.5,
@@ -249,6 +258,7 @@
     "reference": "3570.50.00",
     "caliberId": "omega--1861",
     "watchCase": {
+      "bezel": "TACHYMETER",
       "material": "STAINLESS_STEEL",
       "waterResistance": 5,
       "diameter": 42,
@@ -266,7 +276,35 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
+    }
+  },
+  {
+    "id": "omega--3510-50-00",
+    "manufacturer": "OMEGA",
+    "model": "Speedmaster Reduced",
+    "reference": "3510.50.00",
+    "caliberId": "omega--3220",
+    "watchCase": {
+      "bezel": "TACHYMETER",
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 5,
+      "diameter": 39,
+      "thickness": 12,
+      "lugToLug": 44.5,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 39
+      }
+    },
+    "crystal": {
+      "material": "ACRYLIC",
+      "shape": "DOMED"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -276,6 +314,7 @@
     "reference": "SBGA211",
     "caliberId": "grand-seiko--9r65",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "TITANIUM",
       "waterResistance": 10,
       "diameter": 41,
@@ -289,11 +328,11 @@
     },
     "crystal": {
       "material": "SAPPHIRE",
-      "shape": "FLAT"
+      "shape": "DOMED"
     },
     "dial": {
       "colour": "WHITE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -303,6 +342,7 @@
     "reference": "CAW211R.FC6401",
     "caliberId": "tag-heuer--11",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 39,
@@ -321,7 +361,7 @@
     },
     "dial": {
       "colour": ["BLUE", "ORANGE"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -331,6 +371,7 @@
     "reference": "IW371401",
     "caliberId": "iwc--79240",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 41,
@@ -358,6 +399,7 @@
     "reference": "A17367021I1A1",
     "caliberId": "breitling--b17",
     "watchCase": {
+      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
       "waterResistance": 100,
       "diameter": 44,
@@ -385,6 +427,7 @@
     "reference": "227.90.55.21.01.001",
     "caliberId": "omega--8912",
     "watchCase": {
+      "bezel": "COUNT_UP",
       "material": "TITANIUM",
       "waterResistance": 120,
       "diameter": 55,
@@ -405,7 +448,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -415,6 +458,7 @@
     "reference": "5711/1A-010",
     "caliberId": "patek-philippe--324-s-c",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 12,
       "diameter": 40,
@@ -432,7 +476,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -442,6 +486,7 @@
     "reference": "5513",
     "caliberId": "rolex--1520",
     "watchCase": {
+      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 40,
@@ -459,7 +504,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -469,6 +514,7 @@
     "reference": "1362510",
     "caliberId": "jaeger-lecoultre--925aa",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 39,
@@ -486,7 +532,7 @@
     },
     "dial": {
       "colour": "CHAMPAGNE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -496,6 +542,7 @@
     "reference": "AQ-230A-7DMQYES",
     "caliberId": "casio--5154",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 28,
@@ -514,7 +561,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -524,6 +571,7 @@
     "reference": "WSSA0029",
     "caliberId": "cartier--1847-mc",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 35,
@@ -532,9 +580,9 @@
       "lugWidth": 18.5,
       "detailedDiameter": {
         "type": "RECTANGULAR",
-        "width": 35,
+        "width": 32.5,
         "height": 42,
-        "offsetX": 3,
+        "offsetX": 0,
         "offsetY": 0
       }
     },
@@ -554,6 +602,7 @@
     "reference": "PAM01314",
     "caliberId": "panerai--p-9010",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 30,
       "diameter": 44,
@@ -561,8 +610,9 @@
       "lugToLug": 53.5,
       "lugWidth": 24,
       "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 44
+        "type": "RECTANGULAR",
+        "width": 44,
+        "height": 44
       }
     },
     "crystal": {
@@ -581,6 +631,7 @@
     "reference": "M79030B-0001",
     "caliberId": "tudor--mt5402",
     "watchCase": {
+      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 39,
@@ -598,7 +649,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -608,6 +659,7 @@
     "reference": "M79500-0007",
     "caliberId": "tudor--t600",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 15,
       "diameter": 36,
@@ -625,7 +677,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -635,6 +687,7 @@
     "reference": "15550ST.OO.1356ST.02",
     "caliberId": "audemars-piguet--5900",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 5,
       "diameter": 37,
@@ -652,7 +705,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -662,6 +715,7 @@
     "reference": "1-90-02-42-32-05",
     "caliberId": "glashutte-original--90-02",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 5,
       "diameter": 40,
@@ -679,7 +733,7 @@
     },
     "dial": {
       "colour": "WHITE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -689,6 +743,7 @@
     "reference": "736",
     "caliberId": "nomos--alpha",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 38.5,
@@ -716,6 +771,7 @@
     "reference": "T137.407.11.041.00",
     "caliberId": "tissot--powermatic-80-111",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 40,
@@ -733,7 +789,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -743,6 +799,7 @@
     "reference": "IW327016",
     "caliberId": "iwc--35111",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 6,
       "diameter": 40,
@@ -770,6 +827,7 @@
     "reference": "IW324010",
     "caliberId": "iwc--35111",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 6,
       "diameter": 36,
@@ -797,6 +855,7 @@
     "reference": "103431",
     "caliberId": "bulgari--bvl-138",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 40,
@@ -825,6 +884,7 @@
     "reference": "7900V/110A-B334",
     "caliberId": "vacheron-constantin--5110-dt",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 15,
       "diameter": 41,
@@ -842,7 +902,7 @@
     },
     "dial": {
       "colour": "BLUE",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -852,6 +912,7 @@
     "reference": "231.10.39.21.01.001",
     "caliberId": "omega--8500",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 15,
       "diameter": 38.5,
@@ -869,7 +930,7 @@
     },
     "dial": {
       "colour": "BLACK",
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -879,6 +940,7 @@
     "reference": "H38416711",
     "caliberId": "hamilton--h31",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 40,
@@ -896,7 +958,7 @@
     },
     "dial": {
       "colour": ["BLACK", "WHITE"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -906,6 +968,7 @@
     "reference": "210.30.42.20.04.001",
     "caliberId": "omega--8800",
     "watchCase": {
+      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
       "waterResistance": 30,
       "diameter": 42,
@@ -923,7 +986,7 @@
     },
     "dial": {
       "colour": ["WHITE"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -933,6 +996,7 @@
     "reference": "124270",
     "caliberId": "rolex--3230",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 36,
@@ -950,7 +1014,35 @@
     },
     "dial": {
       "colour": ["BLACK"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
+    }
+  },
+  {
+    "id": "rolex--124200",
+    "manufacturer": "ROLEX",
+    "model": "Oyster Perpetual 34",
+    "reference": "124200",
+    "caliberId": "rolex--2232",
+    "watchCase": {
+      "bezel": "PLAIN",
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 34,
+      "thickness": 10.8,
+      "lugToLug": 40,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 34
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["BLUE"],
+      "hourMarkers": "ROMAN"
     }
   },
   {
@@ -960,6 +1052,7 @@
     "reference": "226570",
     "caliberId": "rolex--3285",
     "watchCase": {
+      "bezel": "GMT",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 42,
@@ -977,7 +1070,7 @@
     },
     "dial": {
       "colour": ["WHITE"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
     }
   },
   {
@@ -987,6 +1080,7 @@
     "reference": "Q3848422",
     "caliberId": "jaeger-lecoultre--854A",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 28.3,
@@ -1015,6 +1109,7 @@
     "reference": "5196J",
     "caliberId": "patek-philippe--215-ps",
     "watchCase": {
+      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 37,
@@ -1032,7 +1127,63 @@
     },
     "dial": {
       "colour": ["WHITE"],
-      "hourMarkers": "NO_NUMERALS"
+      "hourMarkers": "INDICES"
+    }
+  },
+  {
+    "id": "a-lange-sohne--219-032",
+    "manufacturer": "A_LANGE_SOHNE",
+    "model": "Saxonia",
+    "reference": "219.032",
+    "caliberId": "a-lange-sohne--l941-1",
+    "watchCase": {
+      "bezel": "PLAIN",
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 35,
+      "thickness": 7.3,
+      "lugToLug": 42,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 35
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    }
+  },
+  {
+    "id": "breitling--ab0121211c1p1",
+    "manufacturer": "BREITLING",
+    "model": "Navitimer B01 Chronograph 43",
+    "reference": "AB0121211C1P1",
+    "caliberId": "breitling--b01",
+    "watchCase": {
+      "bezel": "SLIDE_RULE",
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 43,
+      "thickness": 14.22,
+      "lugToLug": 49.1,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 43
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["BLUE", "BLACK"],
+      "hourMarkers": "INDICES"
     }
   }
 ]

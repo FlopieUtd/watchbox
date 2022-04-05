@@ -11,6 +11,7 @@ import {
   CrystalShape,
   Vph,
   Accessor,
+  Bezel,
 } from "src/types";
 
 export const SIDE_PANEL_WIDTH = 280;
@@ -85,7 +86,20 @@ export const HOUR_MARKERS: { [key in HourMarkers]: string } = {
   ARABIC: "Arabic numerals",
   ROMAN: "Roman numerals",
   MIXED: "Mixed numerals",
-  NO_NUMERALS: "No numerals",
+  INDICES: "Indices",
+};
+
+export const BEZEL: { [key in Bezel]: string } = {
+  PLAIN: "Plain",
+  COUNT_UP: "Count up",
+  COUNT_DOWN: "Count down",
+  GMT: "GMT",
+  TACHYMETER: "Tachymeter",
+  COMPASS: "Compass",
+  DECIMAL: "Decimal",
+  YACHT_TIMER: "Yacht timer",
+  PULSOMETER: "Pulsometer",
+  SLIDE_RULE: "Slide rule",
 };
 
 export const COMPLICATION: { [key in Complication]: string } = {
@@ -102,6 +116,7 @@ export const COMPLICATION: { [key in Complication]: string } = {
   SECOND_TIME_ZONE: "Second time zone",
   AM_PM: "AM / PM",
   HACKING_SECONDS: "Hacking seconds",
+  GMT: "GMT",
 };
 
 export const CRYSTAL_MATERIAL: { [key in CrystalMaterial]: string } = {
@@ -119,12 +134,24 @@ export const VPH: Vph[] = [
   18000, 19800, 21600, 25200, 28800, 36000, 43200, 72000,
 ];
 
+export enum WatchAttributeCategory {
+  General = "GENERAL",
+  Manufacturer = "MANUFACTURER",
+  Caliber = "CALIBER",
+  Case = "CASE",
+  Dial = "DIAL",
+  Bezel = "BEZEL",
+  Crystal = "CRYSTAL",
+  Complications = "COMPLICATIONS",
+}
+
 export interface BaseWatchAttribute {
   name: string;
   accessor: Accessor;
   dict?: Record<string, string>;
   unit?: string;
   isSortable: boolean;
+  category: WatchAttributeCategory;
 }
 
 export interface CategoryFilterWatchAttribute extends BaseWatchAttribute {
@@ -136,6 +163,19 @@ export interface NoFilterWatchAttribute extends BaseWatchAttribute {
   filterType: FilterType.None;
 }
 
-export type AnyWatchAttribute =
+export type WatchAttribute =
   | CategoryFilterWatchAttribute
   | NoFilterWatchAttribute;
+
+export const WATCH_ATTRIBUTE_CATEGORY: {
+  [key in WatchAttributeCategory]: string;
+} = {
+  GENERAL: "General",
+  MANUFACTURER: "Manufacturer",
+  CALIBER: "Caliber",
+  CASE: "Case",
+  DIAL: "Dial",
+  BEZEL: "Bezel",
+  CRYSTAL: "Crystal",
+  COMPLICATIONS: "Complications",
+};

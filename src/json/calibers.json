@@ -122,6 +122,24 @@
     ]
   },
   {
+    "id": "omega--3220",
+    "name": "3220",
+    "manufacturer": "OMEGA",
+    "type": "MANUAL_WIND",
+    "vph": 28800,
+    "powerReserve": 42,
+    "jewels": 47,
+    "diameter": 25.6,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "CHRONOGRAPH"
+    ]
+  },
+  {
     "id": "iwc--79240",
     "name": "79240",
     "manufacturer": "IWC",
@@ -479,6 +497,18 @@
     ]
   },
   {
+    "id": "rolex--2232",
+    "name": "2232",
+    "manufacturer": "ROLEX",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 55,
+    "jewels": 31,
+    "diameter": 20,
+    "thickness": null,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "CENTRAL_SECONDS"]
+  },
+  {
     "id": "rolex--3230",
     "name": "3230",
     "manufacturer": "ROLEX",
@@ -532,5 +562,35 @@
     "diameter": 21.9,
     "thickness": 2.55,
     "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
+  },
+  {
+    "id": "a-lange-sohne--l941-1",
+    "name": "L941.1",
+    "manufacturer": "A_LANGE_SOHNE",
+    "type": "MANUAL_WIND",
+    "vph": 21600,
+    "powerReserve": 45,
+    "jewels": 21,
+    "diameter": 25.6,
+    "thickness": null,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
+  },
+  {
+    "id": "breitling--b01",
+    "name": "B01",
+    "manufacturer": "BREITLING",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 70,
+    "jewels": 47,
+    "diameter": 25.6,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "CHRONOGRAPH"
+    ]
   }
 ]

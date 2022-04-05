@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Modal } from "src/components/Modal";
 import { Watch } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
@@ -14,7 +14,19 @@ export const VisualCompareModal = ({
   onClose,
   watches,
 }: VisualCompareModalProps) => {
-  const [active, setActive] = useState(watches[0]);
+  const [active, setActive] = useState<Watch | null>(
+    watches.length ? watches[0] : null
+  );
+
+  useEffect(() => {
+    if (watches.length) {
+      setActive(watches[0]);
+    }
+  }, [watches]);
+
+  if (!active) {
+    return null;
+  }
 
   return (
     <Modal isVisible={isVisible} onClose={onClose}>

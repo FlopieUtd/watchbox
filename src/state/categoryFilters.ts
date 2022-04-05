@@ -1,5 +1,8 @@
 import { makeAutoObservable } from "mobx";
-import { CategoryFilterWatchAttribute } from "src/constants";
+import {
+  CategoryFilterWatchAttribute,
+  WatchAttributeCategory,
+} from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
 import { BaseFilter, FilterOption, FilterType } from "src/state";
 import { Accessor } from "src/types";
@@ -19,6 +22,7 @@ export class StatefulCategoryFilter {
   type: FilterType.Category;
   isActive = false;
   unit: string | null;
+  category: WatchAttributeCategory;
 
   constructor({
     name,
@@ -26,12 +30,14 @@ export class StatefulCategoryFilter {
     accessor,
     dict,
     unit,
+    category,
   }: {
     name: string;
     filterOptions: FilterOption[];
     accessor: Accessor;
     dict: Record<string, string> | null;
     unit: string | null;
+    category: WatchAttributeCategory;
   }) {
     makeAutoObservable(this);
     this.name = name;
@@ -43,6 +49,7 @@ export class StatefulCategoryFilter {
     this.accessor = accessor;
     this.dict = dict;
     this.unit = unit;
+    this.category = category;
   }
 
   onFilter(value: FilterOption) {

@@ -5,6 +5,7 @@ import { Box } from "src/components/Collect/Box";
 import { BoxMenu } from "src/components/Collect/BoxMenu";
 import { Catalog } from "src/components/Collect/Catalog";
 import { CreateBoxModal } from "src/components/Collect/CreateBoxModal";
+import { useModal } from "src/hooks/useModal";
 import { useLocalStorage } from "usehooks-ts";
 import { v4 as uuid } from "uuid";
 
@@ -15,6 +16,7 @@ export interface HandleCreateNewBox {
 }
 
 export const Collect = () => {
+  const { isModalVisible, handleOpenModal, handleCloseModal } = useModal();
   const [boxes, setBoxes] = useLocalStorage<Box[]>("boxes", [
     {
       id: "1",
@@ -70,16 +72,6 @@ export const Collect = () => {
     setBoxes([...boxes.filter((box) => box.id !== boxId), box]);
   };
 
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const handleOpenCreateBoxModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleCloseCreateBoxModal = () => {
-    setIsModalVisible(false);
-  };
-
   const handleActiveBox = (id: string) => {
     setActiveBoxId(id);
   };
@@ -126,7 +118,7 @@ export const Collect = () => {
             <BoxMenu
               boxes={boxes}
               onActiveBox={handleActiveBox}
-              onOpenCreateBoxModal={handleOpenCreateBoxModal}
+              onOpenCreateBoxModal={handleOpenModal}
             />
             {activeBox && (
               <Box
@@ -142,7 +134,7 @@ export const Collect = () => {
       </DndProvider>
       <CreateBoxModal
         isVisible={isModalVisible}
-        onClose={handleCloseCreateBoxModal}
+        onClose={handleCloseModal}
         onSubmit={handleCreateNewBox}
       />
     </>

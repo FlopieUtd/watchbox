@@ -12,7 +12,7 @@ export const Filter = ({ children, filter }: FilterProps) => {
   return (
     <div key={name} className="mb-4">
       <div className="flex justify-between">
-        <div className="uppercase tracking-wide mb-1">{name}</div>
+        <h2 className="mb-2">{name}</h2>
         {isActive && (
           <button
             onClick={onClear}
@@ -22,7 +22,7 @@ export const Filter = ({ children, filter }: FilterProps) => {
           </button>
         )}
       </div>
-      {children}
+      <div className="columns-3">{children}</div>
     </div>
   );
 };

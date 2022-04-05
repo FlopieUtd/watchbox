@@ -85,13 +85,20 @@ export enum HourMarkers {
   Arabic = "ARABIC",
   Roman = "ROMAN",
   Mixed = "MIXED",
-  NoNumerals = "NO_NUMERALS",
+  Indices = "INDICES",
 }
 
-export enum Country {
-  Switzerland = "SWITZERLAND",
-  Germany = "GERMANY",
-  Japan = "JAPAN",
+export enum Bezel {
+  Plain = "PLAIN",
+  CountUp = "COUNT_UP",
+  CountDown = "COUNT_DOWN",
+  GMT = "GMT",
+  Tachymeter = "TACHYMETER",
+  Compass = "COMPASS",
+  Decimal = "DECIMAL",
+  YachtTimer = "YACHT_TIMER",
+  Pulsometer = "PULSOMETER",
+  SlideRule = "SLIDE_RULE",
 }
 
 export interface RoundDiameter {
@@ -148,6 +155,7 @@ export enum Complication {
   SecondTimeZone = "SECOND_TIME_ZONE",
   AmPm = "AM_PM",
   HackingSeconds = "HACKING_SECONDS",
+  GMT = "GMT",
 }
 
 export interface Caliber {
@@ -184,9 +192,11 @@ export type Accessor =
   | "watchCase.waterResistance"
   | "watchCase.diameter"
   | "watchCase.detailedDiameter"
+  | "watchCase.detailedDiameter.area"
   | "watchCase.thickness"
   | "watchCase.lugToLug"
   | "watchCase.lugWidth"
+  | "watchCase.bezel"
   | "dial.colour"
   | "dial.hourMarkers"
   | "crystal.material"

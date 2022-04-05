@@ -1,3 +1,4 @@
+import { Button } from "src/components/Button";
 import { Box } from "src/components/Collect/Box";
 
 interface BoxMenuProps {
@@ -33,12 +34,7 @@ export const BoxMenu = ({
         </>
       )}
       <div className="flex justify-center items-center p-4">
-        <button
-          className="bg-slate-100 text-slate-500 px-2 py-1 flex justify-center items-center cursor-pointer rounded hover:bg-slate-200"
-          onClick={onOpenCreateBoxModal}
-        >
-          Create new box
-        </button>
+        <Button onClick={onOpenCreateBoxModal}>Create new box</Button>
       </div>
     </div>
   );

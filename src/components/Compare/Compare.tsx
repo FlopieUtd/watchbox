@@ -1,8 +1,9 @@
 import { get } from "lodash";
 import { useState } from "react";
+import { Button } from "src/components/Button";
 import { Catalog } from "src/components/Compare/Catalog";
 import { VisualCompareModal } from "src/components/Compare/VisualCompareModal";
-import { AnyWatchAttribute, MANUFACTURER } from "src/constants";
+import { WatchAttribute, MANUFACTURER } from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
 
 import { Watch } from "src/types";
@@ -12,7 +13,7 @@ import { useLocalStorage } from "usehooks-ts";
 
 interface CompareLineProps {
   watches: Watch[];
-  attribute: AnyWatchAttribute;
+  attribute: WatchAttribute;
 }
 
 const CompareLine = ({ watches, attribute }: CompareLineProps) => {
@@ -77,9 +78,9 @@ export const Compare = () => {
               <tbody>
                 <tr>
                   <th>
-                    <button onClick={handleOpenVisualCompareModal}>
+                    <Button onClick={handleOpenVisualCompareModal}>
                       Visual
-                    </button>
+                    </Button>
                   </th>
                   {watches.map((watch) => {
                     if (!watch.id) {

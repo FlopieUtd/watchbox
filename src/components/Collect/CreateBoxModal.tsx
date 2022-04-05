@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "src/components/Button";
 import { HandleCreateNewBox } from "src/components/Collect/Collect";
 import { Modal } from "src/components/Modal";
 
@@ -66,13 +67,7 @@ export const CreateBoxModal = ({
               />
             </div>
             <div>
-              <button
-                type="submit"
-                className="bg-slate-200 px-4 py-1 rounded-sm cursor-pointer"
-                onClick={handleSubmit}
-              >
-                Create
-              </button>
+              <Button onClick={handleSubmit}>Create</Button>
             </div>
           </form>
         </div>
