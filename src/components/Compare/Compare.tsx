@@ -1,113 +1,108 @@
-import { get } from "lodash";
 import { useState } from "react";
 import { Button } from "src/components/Button";
-import { Catalog } from "src/components/Compare/Catalog";
+import { AddWatchModal } from "src/components/Compare/AddWatchModal";
+import { CompareLine } from "src/components/Compare/CompareLine";
 import { VisualCompareModal } from "src/components/Compare/VisualCompareModal";
-import { WatchAttribute, MANUFACTURER } from "src/constants";
+import { MANUFACTURER } from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
+import { useModal } from "src/hooks/useModal";
 
 import { Watch } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
-import { getWatchById } from "src/utils/watches";
 import { useLocalStorage } from "usehooks-ts";
 
-interface CompareLineProps {
-  watches: Watch[];
-  attribute: WatchAttribute;
-}
-
-const CompareLine = ({ watches, attribute }: CompareLineProps) => {
-  const { name, accessor, dict, unit } = attribute;
-  return (
-    <tr className="border-b">
-      <td className="py-4 pr-16 ">{name}</td>
-      {watches.map((watch) => {
-        const value = get(watch, accessor);
-
-        if (Array.isArray(value)) {
-          return (
-            <td key={watch.id} className="max-w-[260px] p-4">
-              {value
-                .map((v: string | number) => (dict ? dict[v] : v ?? "-"))
-                .join(", ")}
-            </td>
-          );
-        }
-
-        return (
-          <td key={watch.id} className="max-w-[260px] p-4">
-            {dict ? dict[value] : value ?? "-"} {value && unit}
-          </td>
-        );
-      })}
-    </tr>
-  );
-};
-
 export const Compare = () => {
-  const [watches, setWatches] = useLocalStorage("compareSlots", [
-    getWatchById("sinn--556-010"),
-    getWatchById("iwc--iw324010"),
-  ]);
+  const [watches, setWatches] = useLocalStorage<(Watch | null)[]>(
+    "compareSlots",
+    [null, null]
+  );
+  const [addIndex, setAddIndex] = useState<number>(0);
 
-  const handleAddWatch = (id: string) => {
-    if (watches.find((watch) => watch.id === id)) {
-      return;
-    }
+  const {
+    isModalVisible: isAddModalVisible,
+    handleCloseModal: handleCloseAddModal,
+    handleOpenModal: handleOpenAddModal,
+  } = useModal();
 
-    setWatches([...watches, getWatchById(id)]);
+  const {
+    isModalVisible: isCompareModalVisible,
+    handleCloseModal: handleCloseCompareModal,
+    handleOpenModal: handleOpenCompareModal,
+  } = useModal();
+
+  const handleOpenAddWatchModal = (index: number) => {
+    setAddIndex(index);
+    handleOpenAddModal();
   };
 
-  const [isVisualCompareModalVisible, setIsVisualCompareModalVisible] =
-    useState(false);
-
-  const handleCloseVisualCompareModal = () => {
-    setIsVisualCompareModalVisible(false);
+  const handleAddWatch = (watch: Watch) => {
+    setWatches(Object.assign([], watches, { [addIndex]: watch }));
   };
 
-  const handleOpenVisualCompareModal = () => {
-    setIsVisualCompareModalVisible(true);
-  };
+  console.log(watches);
 
   return (
     <>
       <div className="w-full flex">
         <div className="w-full flex justify-center overflow-auto">
-          {!!watches.length && (
-            <table className="mb-8">
+          {
+            <table className="mb-16">
               <tbody>
                 <tr>
-                  <th>
-                    <Button onClick={handleOpenVisualCompareModal}>
-                      Visual
-                    </Button>
-                  </th>
-                  {watches.map((watch) => {
-                    if (!watch.id) {
-                      return <th key={watch.id}></th>;
+                  <th></th>
+                  {watches.map((watch, index) => {
+                    if (!watch) {
+                      return (
+                        <th className="h-[480px] w-[280px] relative">
+                          <button
+                            onClick={() => {
+                              handleOpenAddWatchModal(index);
+                            }}
+                            className="w-full h-full flex flex-col justify-between items-center"
+                          >
+                            <img
+                              className="w-full relative top-[-20px]"
+                              src="/images/placeholder.jpg"
+                              alt="alt"
+                            />
+                            <div className="absolute bottom-4 h-20 flex flex-col justify-between items-center">
+                              Add watch
+                            </div>
+                          </button>
+                        </th>
+                      );
                     }
 
                     return (
-                      <th key={watch.id} className="max-w-[260px] p-4">
-                        <div className="flex flex-col items-center">
+                      <th
+                        key={watch.id}
+                        className="h-[480px] w-[280px] relative"
+                      >
+                        <div className="w-full h-full flex flex-col justify-between items-center">
                           <img
-                            className="w-[260px] min-w-[260px]"
+                            className="w-full cursor-zoom-in absolute top-[-20px]"
                             src={getImageSrc(watch)}
                             alt="alt"
+                            onClick={handleOpenCompareModal}
                           />
-                          <h2>
-                            {MANUFACTURER[watch.manufacturer]} - {watch.model}{" "}
-                            <span
+
+                          <div className="absolute bottom-4 h-20 flex flex-col justify-between items-center">
+                            <div>
+                              {MANUFACTURER[watch.manufacturer]} - {watch.model}
+                            </div>
+                            <Button
                               onClick={() => {
-                                setWatches([
-                                  ...watches.filter((w) => w.id !== watch.id),
-                                ]);
+                                setWatches(
+                                  watches.map((w) =>
+                                    w?.id === watch.id ? null : w
+                                  )
+                                );
                               }}
-                              className="cursor-pointer text-red-500"
+                              className="h-8"
                             >
-                              remove
-                            </span>
-                          </h2>
+                              Remove
+                            </Button>
+                          </div>
                         </div>
                       </th>
                     );
@@ -127,14 +122,18 @@ export const Compare = () => {
                 ))}
               </tbody>
             </table>
-          )}
+          }
         </div>
-        <Catalog onAdd={handleAddWatch} />
       </div>
       <VisualCompareModal
-        isVisible={isVisualCompareModalVisible}
-        onClose={handleCloseVisualCompareModal}
+        isVisible={isCompareModalVisible}
+        onClose={handleCloseCompareModal}
         watches={watches}
+      />
+      <AddWatchModal
+        isVisible={isAddModalVisible}
+        onClose={handleCloseAddModal}
+        onAdd={handleAddWatch}
       />
     </>
   );

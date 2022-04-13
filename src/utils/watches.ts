@@ -8,12 +8,16 @@ export const watches = watchesJson.map((watch) => ({
     ...watch.watchCase,
     detailedDiameter: {
       ...watch.watchCase.detailedDiameter,
-      area:
-        watch.watchCase.detailedDiameter.type === DiameterType.Rectangular
+      size: Math.round(
+        (watch.watchCase.detailedDiameter.type === DiameterType.Rectangular
           ? watch.watchCase.detailedDiameter.width! *
-            watch.watchCase.detailedDiameter.height!
+            watch.watchCase.detailedDiameter.height! *
+            0.9
           : Math.pow(watch.watchCase.detailedDiameter.diameter! / 2, 2) *
-            Math.PI,
+            Math.PI) +
+          watch.watchCase.lugToLug * 10 +
+          watch.watchCase.thickness * 10
+      ),
     },
   },
 })) as Watch[];

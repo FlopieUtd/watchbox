@@ -11,7 +11,7 @@ import { SortDirection, statefulSort } from "src/state/sort";
 
 export const FilterPanel = observer(() => {
   const { isModalVisible, handleCloseModal, handleOpenModal } = useModal();
-  const { searchFilter } = useExplore();
+  const { searchFilter, filteredWatches } = useExplore();
 
   const sortButtonClass = classNames({
     "scale-y-[-1]": statefulSort.direction === SortDirection.Ascending,
@@ -28,42 +28,52 @@ export const FilterPanel = observer(() => {
   return (
     <>
       <div
-        className="border-l p-6 overflow-y-auto"
+        className="border-l p-6 overflow-y-auto h-full justify-between flex flex-col"
         style={{ width: SIDE_PANEL_WIDTH, minWidth: SIDE_PANEL_WIDTH }}
       >
-        Search
-        <input
-          type="search"
-          placeholder="Manufacturer, model or ref"
-          className="border rounded mb-4 w-full px-2 h-10"
-          onChange={debounce(searchFilter.onFilter, 200)}
-        />
-        Sort by
-        <div className="flex gap-4">
-          <select
-            name="sort"
-            className="border rounded w-full px-2 h-10 mb-4"
-            value={statefulSort.activeSort}
-            onChange={statefulSort.onSort}
-          >
-            {WATCH_ATTRIBUTES.filter((attribute) => attribute.isSortable).map(
-              (attribute) => (
-                <option key={attribute.name} value={attribute.name}>
-                  {attribute.name}
-                </option>
-              )
-            )}
-          </select>
-          <button
-            className="bg-slate-100 h-10 min-w-[2.5rem] flex items-center justify-center rounded hover:bg-slate-200"
-            onClick={handleToggleSortDirection}
-          >
-            <img src="/icons/sort.svg" alt="Back" className={sortButtonClass} />
-          </button>
+        <div>
+          Search
+          <input
+            type="search"
+            placeholder="Manufacturer, model or reference"
+            className="border rounded mb-4 w-full px-2 h-10"
+            onChange={debounce(searchFilter.onFilter, 200)}
+          />
+          Sort by
+          <div className="flex gap-4">
+            <select
+              name="sort"
+              className="border rounded w-full px-2 h-10 mb-4"
+              value={statefulSort.activeSort}
+              onChange={statefulSort.onSort}
+            >
+              {WATCH_ATTRIBUTES.filter((attribute) => attribute.isSortable).map(
+                (attribute) => (
+                  <option key={attribute.name} value={attribute.name}>
+                    {attribute.name}
+                  </option>
+                )
+              )}
+            </select>
+            <button
+              className="bg-slate-100 h-10 min-w-[2.5rem] flex items-center justify-center rounded hover:bg-slate-200"
+              onClick={handleToggleSortDirection}
+            >
+              <img
+                src="/icons/sort.svg"
+                alt="Back"
+                className={sortButtonClass}
+              />
+            </button>
+          </div>
+          <Button className="w-full mb-4" onClick={handleOpenModal}>
+            Filters
+          </Button>
         </div>
-        <Button className="w-full mb-4" onClick={handleOpenModal}>
-          Filters
-        </Button>
+        <div className="flex justify-center w-full">
+          {filteredWatches.length} result
+          {filteredWatches.length === 1 ? "" : "s"}
+        </div>
       </div>
       <FilterModal isVisible={isModalVisible} onClose={handleCloseModal} />
     </>

@@ -59,7 +59,7 @@ export const FilterModal = ({ isVisible, onClose }: FilterModalProps) => {
 
   return (
     <Modal isVisible={isVisible} onClose={onClose}>
-      <div className="flex gap-4 h-[80vh]">
+      <div className="flex gap-4 h-[70vh]">
         <div className="flex flex-col">
           {Object.values(WatchAttributeCategory)
             .filter((category) => category !== WatchAttributeCategory.General)

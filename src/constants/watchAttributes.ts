@@ -102,9 +102,8 @@ export const WATCH_ATTRIBUTES: WatchAttribute[] = [
   },
   {
     name: "Case size",
-    accessor: "watchCase.detailedDiameter.area",
+    accessor: "watchCase.detailedDiameter.size",
     filterType: FilterType.None,
-    unit: "square mm",
     isSortable: true,
     category: WatchAttributeCategory.Case,
   },
@@ -130,6 +129,7 @@ export const WATCH_ATTRIBUTES: WatchAttribute[] = [
     filterType: FilterType.None,
     isSortable: false,
     category: WatchAttributeCategory.Caliber,
+    unit: "mm",
   },
   {
     name: "Caliber thickness",
@@ -137,6 +137,7 @@ export const WATCH_ATTRIBUTES: WatchAttribute[] = [
     filterType: FilterType.None,
     isSortable: false,
     category: WatchAttributeCategory.Caliber,
+    unit: "mm",
   },
   {
     name: "Complications",
@@ -245,5 +246,12 @@ export const WATCH_ATTRIBUTES: WatchAttribute[] = [
     filterOptions: alphabetical(Object.values(CrystalShape)),
     isSortable: false,
     category: WatchAttributeCategory.Crystal,
+  },
+  {
+    name: "Price",
+    accessor: "price.amount",
+    filterType: FilterType.None,
+    isSortable: true,
+    category: WatchAttributeCategory.General,
   },
 ];

@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useState } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { Box } from "src/components/Collect/Box";
 
@@ -29,6 +30,8 @@ export const BoxSlot = ({
   box,
   onRemove,
 }: BoxSlotProps) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   const id = slot.watch;
   const [, drag] = useDrag(
     () => ({
@@ -75,16 +78,25 @@ export const BoxSlot = ({
     });
   };
 
+  const imageClass = classNames(
+    "scale-[1.1] transition",
+    isImageLoaded && "opacity-100",
+    !isImageLoaded && "opacity-0"
+  );
+
   return (
     <div key={columnIndex} className={slotClass} ref={drop}>
       {slot.watch && (
         <>
           <div>
             <img
-              className="scale-[1.1]"
+              className={imageClass}
               src={`/images/uncompressed/${slot.watch}.jpg`}
               alt="alt"
               ref={drag}
+              onLoad={() => {
+                setIsImageLoaded(true);
+              }}
             />
           </div>
           <button

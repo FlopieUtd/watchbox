@@ -68,10 +68,6 @@ export const Watch = () => {
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
-
   const imageOverlayClass = classNames(
     (isDiameterActive || isLugToLugActive || isLugWidthActive) &&
       "transition opacity-20"
@@ -100,7 +96,9 @@ export const Watch = () => {
             src={getImageSrc(watch)}
             alt={reference}
             ref={imageRef}
-            onLoad={handleImageLoad}
+            onLoad={() => {
+              setIsImageLoaded(true);
+            }}
           />
         </div>
         {isDiameterActive && (
@@ -150,17 +148,19 @@ export const Watch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full border-l p-8 flex items-center justify-center">
-        <div className="max-w-[540px] w-full">
-          <div className="text-[28px] leading-[32px]">
-            {MANUFACTURER[manufacturer]}
+      <div className="w-full h-full border-l p-16 flex items-center justify-center">
+        <div className="max-w-[840px]  w-full">
+          <div className="mb-12">
+            <div className="text-[28px] leading-[28px]">
+              {MANUFACTURER[manufacturer]}
+            </div>
+            <div className="text-[40px] leading-[48px]">{model}</div>
+            <div className="text-[14px] tracking-widest">
+              Reference {reference}
+            </div>
           </div>
-          <div className="text-[40px] leading-[40px]">{model}</div>
-          <div className="text-[14px] mb-6 tracking-widest">
-            Reference {reference}
-          </div>
-          <div>
-            <div className="mb-4">
+          <div className="grid xl:grid-cols-2 gap-4 xl:gap-12">
+            <div>
               <h2 className="border-b mb-1 pb-1">Caliber</h2>
               <DescriptionLine label="Reference" value={caliberName} />
               <DescriptionLine label="Type" value={MOVEMENT_TYPE[type]} />
@@ -176,7 +176,7 @@ export const Watch = () => {
                 </>
               )}
             </div>
-            <div className="mb-4">
+            <div>
               <h2 className="border-b mb-1 pb-1">Case</h2>
               <DescriptionLine
                 label="Material"
@@ -205,7 +205,7 @@ export const Watch = () => {
               />
               <DescriptionLine label="Lug width" value={lugWidth} unit=" mm" />
             </div>
-            <div className="mb-4">
+            <div>
               <h2 className="border-b mb-1 pb-1">Dial</h2>
               <DescriptionLine
                 label="Colour"
@@ -220,7 +220,7 @@ export const Watch = () => {
                 value={HOUR_MARKERS[hourMarkers]}
               />
             </div>
-            <div className="mb-4">
+            <div>
               <h2 className="border-b mb-1 pb-1">Crystal</h2>
               <DescriptionLine
                 label="Material"
@@ -231,7 +231,7 @@ export const Watch = () => {
                 value={CRYSTAL_SHAPE[crystalShape]}
               />
             </div>
-            <div className="mb-4">
+            <div>
               <h2 className="border-b mb-1 pb-1">Complications</h2>
               <div>
                 {complications.map((complication) => (

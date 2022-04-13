@@ -38,7 +38,7 @@ export const Box = ({
         <InlineEdit value={box.name} setValue={handleRename} />
       </div>
       <div className="p-4 flex w-full h-full justify-center items-center flex-col relative">
-        <div key={box.id} className="flex flex-col w-[40vw] gap-4">
+        <div key={box.id} className="flex flex-col w-full gap-4 p-4">
           {box.state.map((row, rowIndex) => (
             <div key={rowIndex} className="flex flex-row w-full gap-4">
               {row.map((column, columnIndex) => (

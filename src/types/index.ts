@@ -68,6 +68,7 @@ export enum WatchManufacturer {
   BULGARI = "BULGARI",
   VACHERON_CONSTANTIN = "VACHERON_CONSTANTIN",
   HAMILTON = "HAMILTON",
+  ZENITH = "ZENITH",
 }
 
 export enum CaliberManufacturer {
@@ -139,6 +140,11 @@ export interface Watch {
     colour: DialColour | DialColour[];
     hourMarkers: HourMarkers;
   };
+  price: {
+    amount: number;
+    date: string;
+    msrp: boolean;
+  } | null;
 }
 
 export enum Complication {
@@ -192,7 +198,7 @@ export type Accessor =
   | "watchCase.waterResistance"
   | "watchCase.diameter"
   | "watchCase.detailedDiameter"
-  | "watchCase.detailedDiameter.area"
+  | "watchCase.detailedDiameter.size"
   | "watchCase.thickness"
   | "watchCase.lugToLug"
   | "watchCase.lugWidth"
@@ -200,4 +206,5 @@ export type Accessor =
   | "dial.colour"
   | "dial.hourMarkers"
   | "crystal.material"
-  | "crystal.shape";
+  | "crystal.shape"
+  | "price.amount";

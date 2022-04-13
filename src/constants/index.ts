@@ -42,6 +42,7 @@ export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   BULGARI: "BVLGARI",
   VACHERON_CONSTANTIN: "Vacheron Constantin",
   HAMILTON: "Hamilton",
+  ZENITH: "Zenith",
 };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {

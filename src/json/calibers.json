@@ -592,5 +592,72 @@
       "SMALL_SECONDS",
       "CHRONOGRAPH"
     ]
+  },
+  {
+    "id": "seiko--6r35",
+    "name": "6R35",
+    "manufacturer": "SEIKO",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 70,
+    "jewels": 24,
+    "diameter": 27.4,
+    "thickness": 5.25,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
+  },
+  {
+    "id": "zenith--el-primero-400-b",
+    "name": "El Primero 400 B",
+    "manufacturer": "ZENITH",
+    "type": "AUTOMATIC",
+    "vph": 36000,
+    "powerReserve": 50,
+    "jewels": 31,
+    "diameter": 30,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "DATE",
+      "CHRONOGRAPH"
+    ]
+  },
+  {
+    "id": "nomos--duw-1001",
+    "name": "DUW 1001",
+    "manufacturer": "NOMOS",
+    "type": "MANUAL_WIND",
+    "vph": 36000,
+    "powerReserve": 84,
+    "jewels": 29,
+    "diameter": 32,
+    "thickness": 3.6,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "POWER_RESERVE_INDICATOR"
+    ]
+  },
+  {
+    "id": "a-lange-sohne--l086-1",
+    "name": "L086.1",
+    "manufacturer": "A_LANGE_SOHNE",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 72,
+    "jewels": 31,
+    "diameter": 30.4,
+    "thickness": null,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
   }
 ]

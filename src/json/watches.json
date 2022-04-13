@@ -25,6 +25,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 6800,
+      "date": "2022-04-06"
     }
   },
   {
@@ -53,12 +57,16 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 695,
+      "date": "2022-04-06"
     }
   },
   {
     "id": "seiko--snxf05",
     "manufacturer": "SEIKO",
-    "model": "SNXF05",
+    "model": "5",
     "reference": "SNXF05",
     "caliberId": "seiko--7s26",
     "watchCase": {
@@ -81,6 +89,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 91.56,
+      "date": "2022-04-06"
     }
   },
   {
@@ -109,6 +121,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 517.29,
+      "date": "2022-04-06"
     }
   },
   {
@@ -137,6 +153,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 1900,
+      "date": "2022-04-06"
     }
   },
   {
@@ -165,6 +185,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 1190,
+      "date": "2022-04-06"
     }
   },
   {
@@ -193,6 +217,10 @@
     "dial": {
       "colour": ["MOTHER_OF_PEARL", "WHITE"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 1290,
+      "date": "2022-04-06"
     }
   },
   {
@@ -221,6 +249,10 @@
     "dial": {
       "colour": "YELLOW",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 950,
+      "date": "2022-04-06"
     }
   },
   {
@@ -249,6 +281,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "ROMAN"
+    },
+    "price": {
+      "amount": 44600,
+      "date": "2022-04-06"
     }
   },
   {
@@ -277,6 +313,11 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 4950,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -305,6 +346,11 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 3500,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -333,6 +379,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 6000,
+      "date": "2022-04-06"
     }
   },
   {
@@ -362,6 +412,10 @@
     "dial": {
       "colour": ["BLUE", "ORANGE"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 6458.15,
+      "date": "2022-04-06"
     }
   },
   {
@@ -390,6 +444,11 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 4750,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -418,6 +477,10 @@
     "dial": {
       "colour": "YELLOW",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 3950,
+      "date": "2022-04-06"
     }
   },
   {
@@ -449,6 +512,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 12000,
+      "date": "2022-04-06"
     }
   },
   {
@@ -477,6 +544,11 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 145000,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -505,6 +577,11 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 26500,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -533,6 +610,10 @@
     "dial": {
       "colour": "CHAMPAGNE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 22000,
+      "date": "2022-04-06"
     }
   },
   {
@@ -562,6 +643,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 35,
+      "date": "2022-04-06"
     }
   },
   {
@@ -593,6 +678,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "ROMAN"
+    },
+    "price": {
+      "amount": 6700,
+      "date": "2022-04-06"
     }
   },
   {
@@ -622,6 +711,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 7700,
+      "date": "2022-04-06"
     }
   },
   {
@@ -650,6 +743,10 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 3480,
+      "date": "2022-04-06"
     }
   },
   {
@@ -678,6 +775,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 2800,
+      "date": "2022-04-06"
     }
   },
   {
@@ -706,6 +807,10 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 21100,
+      "date": "2022-04-06"
     }
   },
   {
@@ -734,6 +839,10 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 10200,
+      "date": "2022-04-06"
     }
   },
   {
@@ -762,6 +871,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "MIXED"
+    },
+    "price": {
+      "amount": 1200,
+      "date": "2022-04-06"
     }
   },
   {
@@ -790,6 +903,10 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 695,
+      "date": "2022-04-06"
     }
   },
   {
@@ -818,6 +935,10 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 5600,
+      "date": "2022-04-06"
     }
   },
   {
@@ -846,6 +967,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 5500,
+      "date": "2022-04-06"
     }
   },
   {
@@ -875,6 +1000,10 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 13000,
+      "date": "2022-04-06"
     }
   },
   {
@@ -903,6 +1032,10 @@
     "dial": {
       "colour": "BLUE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 27675,
+      "date": "2022-04-06"
     }
   },
   {
@@ -931,6 +1064,10 @@
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 7100,
+      "date": "2022-04-06"
     }
   },
   {
@@ -959,6 +1096,10 @@
     "dial": {
       "colour": ["BLACK", "WHITE"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 2145,
+      "date": "2022-04-06"
     }
   },
   {
@@ -987,6 +1128,10 @@
     "dial": {
       "colour": ["WHITE"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 4950,
+      "date": "2022-04-06"
     }
   },
   {
@@ -1015,6 +1160,11 @@
     "dial": {
       "colour": ["BLACK"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 9000,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -1043,6 +1193,10 @@
     "dial": {
       "colour": ["BLUE"],
       "hourMarkers": "ROMAN"
+    },
+    "price": {
+      "amount": 5200,
+      "date": "2022-04-06"
     }
   },
   {
@@ -1071,6 +1225,10 @@
     "dial": {
       "colour": ["WHITE"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 9000,
+      "date": "2022-04-06"
     }
   },
   {
@@ -1100,6 +1258,10 @@
     "dial": {
       "colour": ["GREY"],
       "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 9100,
+      "date": "2022-04-06"
     }
   },
   {
@@ -1128,6 +1290,11 @@
     "dial": {
       "colour": ["WHITE"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 20000,
+      "date": "2022-04-06",
+      "msrp": false
     }
   },
   {
@@ -1156,6 +1323,42 @@
     "dial": {
       "colour": "WHITE",
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 17300,
+      "date": "2022-04-06"
+    }
+  },
+  {
+    "id": "a-lange-sohne--380-033",
+    "manufacturer": "A_LANGE_SOHNE",
+    "model": "Saxonia Automatic",
+    "reference": "380.033",
+    "caliberId": "a-lange-sohne--l086-1",
+    "watchCase": {
+      "bezel": "PLAIN",
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 38.5,
+      "thickness": 7.8,
+      "lugToLug": 45,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 24500,
+      "date": "2022-04-06"
     }
   },
   {
@@ -1184,6 +1387,139 @@
     "dial": {
       "colour": ["BLUE", "BLACK"],
       "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 8400,
+      "date": "2022-04-06"
+    }
+  },
+  {
+    "id": "seiko--spb155j1",
+    "manufacturer": "SEIKO",
+    "model": "Prospex Alpinist",
+    "reference": "SPB155J1",
+    "caliberId": "seiko--6r35",
+    "watchCase": {
+      "bezel": "PLAIN",
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 38,
+      "thickness": 12,
+      "lugToLug": 46,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "GREEN",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 730,
+      "date": "2022-04-06"
+    }
+  },
+  {
+    "id": "seiko--spb103j1",
+    "manufacturer": "SEIKO",
+    "model": "Prospex",
+    "reference": "SPB103J1",
+    "caliberId": "seiko--6r35",
+    "watchCase": {
+      "bezel": "COUNT_UP",
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 45,
+      "thickness": 12.9,
+      "lugToLug": 52.6,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 45
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "GREEN",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 830,
+      "date": "2022-04-06"
+    }
+  },
+  {
+    "id": "zenith--03-2040-400-69-c494",
+    "manufacturer": "ZENITH",
+    "model": "El Primero",
+    "reference": "03.2040.400/69.C494",
+    "caliberId": "zenith--el-primero-400-b",
+    "watchCase": {
+      "bezel": "PLAIN",
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 42,
+      "thickness": 12.75,
+      "lugToLug": 50,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["GREY", "BLACK", "BLUE", "WHITE"],
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 5872,
+      "date": "2022-04-06",
+      "msrp": false
+    }
+  },
+  {
+    "id": "nomos--953",
+    "manufacturer": "NOMOS",
+    "model": "Lambda 39",
+    "reference": "953",
+    "caliberId": "nomos--duw-1001",
+    "watchCase": {
+      "bezel": "PLAIN",
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 39,
+      "thickness": 9.1,
+      "lugToLug": 47.9,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 39
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 12800,
+      "date": "2022-04-06"
     }
   }
 ]

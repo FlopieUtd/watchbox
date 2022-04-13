@@ -16,7 +16,7 @@ export const Catalog = ({ onAdd }: CatalogProps) => {
         return (
           <div key={watch.id} className="">
             <img
-              className=""
+              className="cursor-pointer"
               src={getCompressedImageSrc(watch)}
               alt="alt"
               onClick={handleAdd}

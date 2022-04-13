@@ -8,6 +8,8 @@ import { getCompressedImageSrc } from "src/utils/getImageSrc";
 export const Explore = observer(() => {
   const { filteredWatches } = useExplore();
 
+  console.log(filteredWatches);
+
   return (
     <>
       <div className="w-full overflow-x-hidden overflow-y-auto">
