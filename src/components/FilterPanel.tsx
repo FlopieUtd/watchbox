@@ -7,23 +7,25 @@ import { SIDE_PANEL_WIDTH } from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
 import { useExplore } from "src/context/ExploreContext";
 import { useModal } from "src/hooks/useModal";
-import { SortDirection, statefulSort } from "src/state/sort";
+import { SortDirection, sortState } from "src/state/sortState";
 
 export const FilterPanel = observer(() => {
   const { isModalVisible, handleCloseModal, handleOpenModal } = useModal();
-  const { searchFilter, filteredWatches } = useExplore();
+  const { searchFilter, filteredWatches, categoryFilters } = useExplore();
 
   const sortButtonClass = classNames({
-    "scale-y-[-1]": statefulSort.direction === SortDirection.Ascending,
+    "scale-y-[-1]": sortState.direction === SortDirection.Ascending,
   });
 
   const handleToggleSortDirection = () => {
-    statefulSort.onSortDirection(
-      statefulSort.direction === SortDirection.Ascending
+    sortState.onSortDirection(
+      sortState.direction === SortDirection.Ascending
         ? SortDirection.Descending
         : SortDirection.Ascending
     );
   };
+
+  const activeFilters = categoryFilters.filter((filter) => filter.isActive);
 
   return (
     <>
@@ -44,8 +46,8 @@ export const FilterPanel = observer(() => {
             <select
               name="sort"
               className="border rounded w-full px-2 h-10 mb-4"
-              value={statefulSort.activeSort}
-              onChange={statefulSort.onSort}
+              value={sortState.activeSort}
+              onChange={sortState.onSort}
             >
               {WATCH_ATTRIBUTES.filter((attribute) => attribute.isSortable).map(
                 (attribute) => (
@@ -69,6 +71,34 @@ export const FilterPanel = observer(() => {
           <Button className="w-full mb-4" onClick={handleOpenModal}>
             Filters
           </Button>
+          <div className="flex flex-col gap-4">
+            {activeFilters.map((filter) => (
+              <div
+                key={filter.name}
+                className="bg-slate-100 flex rounded overflow-hidden relative"
+              >
+                <button
+                  className="w-full p-4 bg-slate-100 hover:bg-slate-200 flex flex-col"
+                  onClick={handleOpenModal}
+                >
+                  <div className="underline">{filter.name}</div>
+                  <div>
+                    {filter.activeFilterOptions.map((option) => (
+                      <div key={option}>
+                        {filter.dict ? filter.dict[option] : option}
+                      </div>
+                    ))}
+                  </div>
+                </button>
+                <button
+                  className="h-full flex items-center justify-center bg-slate-100 p-2 hover:bg-slate-200 absolute right-0"
+                  onClick={filter.onClear}
+                >
+                  <img src="/icons/cross.svg" alt="Remove" width={"12px"} />
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="flex justify-center w-full">
           {filteredWatches.length} result

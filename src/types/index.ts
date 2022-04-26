@@ -208,3 +208,17 @@ export type Accessor =
   | "crystal.material"
   | "crystal.shape"
   | "price.amount";
+
+export type FilterOption = string | number;
+
+export enum FilterType {
+  Category = "CATEGORY",
+  Search = "SEARCH",
+  None = "NONE",
+}
+
+export interface BaseFilter {
+  name: string;
+  accessor: string;
+  type: FilterType;
+}

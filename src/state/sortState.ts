@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import { ChangeEvent } from "react";
-import { BaseFilter, FilterType } from "src/state";
+import { BaseFilter, FilterType } from "src/types";
 
 export interface SearchFilter extends BaseFilter {
   type: FilterType;
@@ -11,7 +11,7 @@ export enum SortDirection {
   Descending = "DESCENDING",
 }
 
-export class StatefulSort {
+export class SortState {
   activeSort: string;
   direction: SortDirection;
 
@@ -38,7 +38,7 @@ export class StatefulSort {
   }
 }
 
-export const statefulSort = new StatefulSort({
+export const sortState = new SortState({
   activeSort: "Case size",
   direction: SortDirection.Ascending,
 });

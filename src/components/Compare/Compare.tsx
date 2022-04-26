@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "src/components/Button";
 import { AddWatchModal } from "src/components/Compare/AddWatchModal";
 import { CompareLine } from "src/components/Compare/CompareLine";
@@ -38,8 +39,6 @@ export const Compare = () => {
   const handleAddWatch = (watch: Watch) => {
     setWatches(Object.assign([], watches, { [addIndex]: watch }));
   };
-
-  console.log(watches);
 
   return (
     <>
@@ -86,10 +85,13 @@ export const Compare = () => {
                             onClick={handleOpenCompareModal}
                           />
 
-                          <div className="absolute bottom-4 h-20 flex flex-col justify-between items-center">
-                            <div>
+                          <div className="absolute bottom-4 flex flex-col justify-between items-center px-2">
+                            <Link
+                              to={`/watches/${watch.id}`}
+                              className="hover:underline text-[16px]"
+                            >
                               {MANUFACTURER[watch.manufacturer]} - {watch.model}
-                            </div>
+                            </Link>
                             <Button
                               onClick={() => {
                                 setWatches(
@@ -98,7 +100,7 @@ export const Compare = () => {
                                   )
                                 );
                               }}
-                              className="h-8"
+                              className="h-8 mt-4"
                             >
                               Remove
                             </Button>

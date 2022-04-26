@@ -1,14 +1,14 @@
 import { get } from "lodash";
 import { MANUFACTURER } from "src/constants";
-import { StatefulCategoryFilter } from "src/state/categoryFilters";
-import { StatefulSearchFilter } from "src/state/searchFilter";
+import { CategoryFilterState } from "src/state/categoryFiltersState";
+import { SearchFilterState } from "src/state/searchFilterState";
 import { Watch } from "src/types";
 import { normalizeString } from "src/utils/normalizeString";
 
 interface FilterWatches {
   watches: Watch[];
-  searchFilter: StatefulSearchFilter;
-  categoryFilters: StatefulCategoryFilter[];
+  searchFilter: SearchFilterState;
+  categoryFilters: CategoryFilterState[];
 }
 
 export const filterWatches = ({

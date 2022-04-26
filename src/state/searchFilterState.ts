@@ -1,13 +1,13 @@
 import { makeAutoObservable } from "mobx";
 import { ChangeEvent } from "react";
-import { BaseFilter, FilterType } from "src/state";
+import { BaseFilter, FilterType } from "src/types";
 import { normalizeString } from "src/utils/normalizeString";
 
 export interface SearchFilter extends BaseFilter {
   type: FilterType;
 }
 
-export class StatefulSearchFilter {
+export class SearchFilterState {
   searchString: string;
 
   constructor() {
@@ -21,4 +21,4 @@ export class StatefulSearchFilter {
   }
 }
 
-export const statefulSearchFilter = new StatefulSearchFilter();
+export const searchFilterState = new SearchFilterState();

@@ -1,24 +1,26 @@
 import { observer } from "mobx-react-lite";
 import { createContext, ReactNode, useContext } from "react";
 import {
-  StatefulCategoryFilter,
-  statefulCategoryFilters,
-} from "src/state/categoryFilters";
+  CategoryFilterState,
+  categoryFiltersState,
+} from "src/state/categoryFiltersState";
 import { filterWatches } from "src/utils/filterWatches";
 import {
-  StatefulSearchFilter,
-  statefulSearchFilter,
-} from "src/state/searchFilter";
+  SearchFilterState,
+  searchFilterState,
+} from "src/state/searchFilterState";
 import { Watch } from "src/types";
 import { watches } from "src/utils/watches";
-import { statefulSort } from "src/state/sort";
+import { sortState } from "src/state/sortState";
 import { sortWatches } from "src/utils/sortWatches";
+import { filterModalState, FilterModalState } from "src/state/filterModalState";
 
 interface ExploreContextInterface {
   allWatches: Watch[];
   filteredWatches: Watch[];
-  categoryFilters: StatefulCategoryFilter[];
-  searchFilter: StatefulSearchFilter;
+  categoryFilters: CategoryFilterState[];
+  searchFilter: SearchFilterState;
+  filterModal: FilterModalState;
 }
 
 const ExploreContext = createContext<ExploreContextInterface | null>(null);
@@ -30,20 +32,21 @@ interface ExploreProviderProps {
 const ExploreProvider = observer(({ children }: ExploreProviderProps) => {
   const filteredWatches = filterWatches({
     watches,
-    searchFilter: statefulSearchFilter,
-    categoryFilters: statefulCategoryFilters,
+    searchFilter: searchFilterState,
+    categoryFilters: categoryFiltersState,
   });
 
   const sortedWatches = sortWatches({
     watches: filteredWatches,
-    sort: statefulSort,
+    sort: sortState,
   });
 
   const value = {
     allWatches: watches,
     filteredWatches: sortedWatches,
-    searchFilter: statefulSearchFilter,
-    categoryFilters: statefulCategoryFilters,
+    searchFilter: searchFilterState,
+    categoryFilters: categoryFiltersState,
+    filterModal: filterModalState,
   };
 
   return (

@@ -12,7 +12,6 @@ import {
   BEZEL,
   WatchAttributeCategory,
 } from "src/constants";
-import { FilterType } from "src/state";
 import {
   WatchManufacturer,
   MovementType,
@@ -23,6 +22,7 @@ import {
   CrystalMaterial,
   CrystalShape,
   Bezel,
+  FilterType,
 } from "src/types";
 import { getRangeFilterOptions } from "src/utils/getRangeFilterOptions";
 

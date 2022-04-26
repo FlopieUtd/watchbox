@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { DescriptionLine } from "src/components/Watch/DescriptionLine";
 import {
   useDiameter,
@@ -80,15 +80,18 @@ export const Watch = () => {
   );
 
   const [imageRef, { width: imageWidth }] = useElementSize();
+  const navigate = useNavigate();
 
   return (
     <div className="flex h-full w-full justify-center items-center">
-      <Link
-        to="/"
+      <button
+        onClick={() => {
+          navigate(-1);
+        }}
         className="h-full border-r p-6 flex items-center hover:bg-slate-50"
       >
         <img src="/icons/chevron_right.svg" alt="Back" className="rotate-180" />
-      </Link>
+      </button>
       <div className="relative w-full max-w-[550px] flex justify-center items-center overflow-hidden mb-[100px]">
         <div className={imageOverlayClass}>
           <img

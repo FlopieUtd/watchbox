@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
-import { StatefulCategoryFilterWithResults } from "src/state/categoryFilters";
+import { CategoryFilterStateWithResults } from "src/state/categoryFiltersState";
 
 interface FilterProps {
   children: ReactNode;
-  filter: StatefulCategoryFilterWithResults;
+  filter: CategoryFilterStateWithResults;
 }
 
 export const Filter = ({ children, filter }: FilterProps) => {

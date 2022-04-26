@@ -6,7 +6,7 @@ import {
   WATCH_ATTRIBUTE_CATEGORY,
 } from "src/constants";
 import { useExplore } from "src/context/ExploreContext";
-import { StatefulCategoryFilterWithResults } from "src/state/categoryFilters";
+import { CategoryFilterStateWithResults } from "src/state/categoryFiltersState";
 import { filterWatches } from "src/utils/filterWatches";
 import { getFilterResults } from "src/utils/getFilterResults";
 import { watches } from "src/utils/watches";
@@ -27,7 +27,7 @@ export const FilterModal = ({ isVisible, onClose }: FilterModalProps) => {
     categoryFilters,
   });
 
-  const categoryFiltersWithResults: StatefulCategoryFilterWithResults[] =
+  const categoryFiltersWithResults: CategoryFilterStateWithResults[] =
     categoryFilters.map((categoryFilter, index) => ({
       ...categoryFilter,
       onFilter: categoryFilter.onFilter,

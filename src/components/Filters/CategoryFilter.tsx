@@ -1,9 +1,9 @@
 import { observer } from "mobx-react-lite";
 import { Filter } from "src/components/Filters/Filter";
-import { StatefulCategoryFilterWithResults } from "src/state/categoryFilters";
+import { CategoryFilterStateWithResults } from "src/state/categoryFiltersState";
 
 interface CategoryFilterProps {
-  filter: StatefulCategoryFilterWithResults;
+  filter: CategoryFilterStateWithResults;
 }
 
 export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {

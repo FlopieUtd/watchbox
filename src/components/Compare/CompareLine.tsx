@@ -29,7 +29,9 @@ export const CompareLine = ({ watches, attribute }: CompareLineProps) => {
           <td key={watch.id} className="p-4">
             {dict ? dict[value] : value ?? "-"} {value && unit}
           </td>
-        ) : null;
+        ) : (
+          <td></td>
+        );
       })}
     </tr>
   );

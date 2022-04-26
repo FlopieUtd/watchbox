@@ -4,8 +4,7 @@ import {
   WatchAttributeCategory,
 } from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
-import { BaseFilter, FilterOption, FilterType } from "src/state";
-import { Accessor } from "src/types";
+import { Accessor, BaseFilter, FilterOption, FilterType } from "src/types";
 
 export interface CategoryFilter extends BaseFilter {
   dict: Record<string, string> | null;
@@ -13,7 +12,7 @@ export interface CategoryFilter extends BaseFilter {
   filterOptions: FilterOption[];
 }
 
-export class StatefulCategoryFilter {
+export class CategoryFilterState {
   name: string;
   filterOptions: FilterOption[] = [];
   activeFilterOptions: FilterOption[] = [];
@@ -74,17 +73,17 @@ const categoryFilters: CategoryFilterWatchAttribute[] = WATCH_ATTRIBUTES.filter(
   (filter) => filter.filterType === FilterType.Category
 );
 
-export const statefulCategoryFilters = categoryFilters.map(
+export const categoryFiltersState = categoryFilters.map(
   (filter) =>
-    new StatefulCategoryFilter({
+    new CategoryFilterState({
       ...filter,
       dict: filter.dict ?? null,
       unit: filter.unit ?? null,
     })
 );
 
-export interface StatefulCategoryFilterWithResults
-  extends Omit<StatefulCategoryFilter, "filterOptions"> {
+export interface CategoryFilterStateWithResults
+  extends Omit<CategoryFilterState, "filterOptions"> {
   filterOptions: {
     option: FilterOption;
     results: number;

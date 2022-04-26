@@ -1,4 +1,3 @@
-import { FilterOption, FilterType } from "src/state";
 import {
   WatchManufacturer,
   CaseMaterial,
@@ -12,6 +11,8 @@ import {
   Vph,
   Accessor,
   Bezel,
+  FilterOption,
+  FilterType,
 } from "src/types";
 
 export const SIDE_PANEL_WIDTH = 280;
