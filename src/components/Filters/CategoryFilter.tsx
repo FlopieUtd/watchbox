@@ -10,9 +10,12 @@ export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
   return (
     <Filter filter={filter}>
       {filter.filterOptions.map((filterOption) => {
-        const className = filterOption.results
-          ? "cursor-pointer"
-          : "opacity-20";
+        const isChecked = filter.activeFilterOptions.includes(
+          filterOption.option.toString()
+        );
+
+        const className =
+          filterOption.results || isChecked ? "cursor-pointer" : "opacity-20";
 
         const id = `${filter.name}-${filterOption.option}`;
 
@@ -28,10 +31,8 @@ export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
                 id={id}
                 className="mr-2"
                 onChange={handleChange}
-                checked={filter.activeFilterOptions.includes(
-                  filterOption.option.toString()
-                )}
-                disabled={!filterOption.results}
+                checked={isChecked}
+                disabled={!filterOption.results && !isChecked}
                 style={{
                   cursor: filterOption.results ? "pointer" : "default",
                 }}

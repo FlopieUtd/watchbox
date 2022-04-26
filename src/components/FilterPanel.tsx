@@ -1,9 +1,10 @@
 import classNames from "classnames";
 import { debounce } from "lodash";
 import { observer } from "mobx-react-lite";
+import { ActiveFilter } from "src/components/ActiveFilter";
 import { Button } from "src/components/Button";
 import { FilterModal } from "src/components/FilterModal";
-import { SIDE_PANEL_WIDTH } from "src/constants";
+import { SIDE_PANEL_WIDTH, WatchAttributeCategory } from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
 import { useExplore } from "src/context/ExploreContext";
 import { useModal } from "src/hooks/useModal";
@@ -11,7 +12,9 @@ import { SortDirection, sortState } from "src/state/sortState";
 
 export const FilterPanel = observer(() => {
   const { isModalVisible, handleCloseModal, handleOpenModal } = useModal();
-  const { searchFilter, filteredWatches, categoryFilters } = useExplore();
+  const { searchFilter, filteredWatches, categoryFilters, filterModal } =
+    useExplore();
+  const { setActiveCategory } = filterModal;
 
   const sortButtonClass = classNames({
     "scale-y-[-1]": sortState.direction === SortDirection.Ascending,
@@ -26,6 +29,12 @@ export const FilterPanel = observer(() => {
   };
 
   const activeFilters = categoryFilters.filter((filter) => filter.isActive);
+
+  const handleActiveFilterEdit = (category: WatchAttributeCategory) => {
+    console.log(category);
+    setActiveCategory(category);
+    handleOpenModal();
+  };
 
   return (
     <>
@@ -73,30 +82,11 @@ export const FilterPanel = observer(() => {
           </Button>
           <div className="flex flex-col gap-4">
             {activeFilters.map((filter) => (
-              <div
+              <ActiveFilter
                 key={filter.name}
-                className="bg-slate-100 flex rounded overflow-hidden relative"
-              >
-                <button
-                  className="w-full p-4 bg-slate-100 hover:bg-slate-200 flex flex-col"
-                  onClick={handleOpenModal}
-                >
-                  <div className="underline">{filter.name}</div>
-                  <div>
-                    {filter.activeFilterOptions.map((option) => (
-                      <div key={option}>
-                        {filter.dict ? filter.dict[option] : option}
-                      </div>
-                    ))}
-                  </div>
-                </button>
-                <button
-                  className="h-full flex items-center justify-center bg-slate-100 p-2 hover:bg-slate-200 absolute right-0"
-                  onClick={filter.onClear}
-                >
-                  <img src="/icons/cross.svg" alt="Remove" width={"12px"} />
-                </button>
-              </div>
+                filter={filter}
+                onEdit={handleActiveFilterEdit}
+              />
             ))}
           </div>
         </div>
