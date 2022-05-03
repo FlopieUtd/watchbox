@@ -117,7 +117,7 @@ export const Compare = () => {
                     )
                 ).map((attribute) => (
                   <CompareLine
-                    key={attribute.name}
+                    key={`${attribute.category}-${attribute.name}`}
                     watches={watches}
                     attribute={attribute}
                   />

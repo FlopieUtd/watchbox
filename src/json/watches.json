@@ -4,9 +4,12 @@
     "manufacturer": "NOMOS",
     "model": "Metro Rose Gold",
     "reference": "1170",
+    "description": [
+      "With a rose gold case and a diameter of 33 millimeters, the newest addition to the Metro family is something very special. This particularly delicate model also comes from Berlin designer Mark Braun. Inside, the hand-wound caliber Alpha keeps the pace—as reliably and precisely as ever."
+    ],
+    "source": "https://nomos-glashuette.com/en/metro/metro-rose-gold-33-1170",
     "caliberId": "nomos--alpha",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 33,
@@ -15,7 +18,8 @@
       "lugWidth": 16,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 33
+        "diameter": 33,
+        "size": 1330
       }
     },
     "crystal": {
@@ -29,6 +33,9 @@
     "price": {
       "amount": 6800,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -36,9 +43,12 @@
     "manufacturer": "JUNGHANS",
     "model": "Max Bill Handaufzug",
     "reference": "027/3701.00",
+    "description": [
+      "In 1961, Max Bill designed a range of mechanical wristwatches in collaboration with Junghans, and we continue to produce these watches practically unchanged today – from the puristic dial with the specially designed, distinctly rounded numerals, to the domed glass which emphasises the historical charm of the watch. If we weren’t able to improve on the design – we could certainly enhance both quality and comfort: This watch can now be retrofitted with sapphire crystal upon request."
+    ],
+    "source": "https://www.junghans.de/en/collection/watches/junghans-max-bill/max-bill-handaufzug/27370104",
     "caliberId": "junghans--j805-1",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 34,
@@ -47,7 +57,8 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 34
+        "diameter": 34,
+        "size": 1378
       }
     },
     "crystal": {
@@ -61,25 +72,68 @@
     "price": {
       "amount": 695,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
-    "id": "seiko--snxf05",
-    "manufacturer": "SEIKO",
-    "model": "5",
-    "reference": "SNXF05",
-    "caliberId": "seiko--7s26",
+    "id": "rolex--124200",
+    "manufacturer": "ROLEX",
+    "model": "Oyster Perpetual 34",
+    "reference": "124200",
+    "description": [
+      "Watches in the Oyster Perpetual range are direct descendants of the original Oyster, the world’s first waterproof wristwatch, on which Rolex has built its reputation since 1926. These watches benefit from all the fundamental features of the Oyster Perpetual collection – excellent chronometric precision, a waterproof Oyster case, and self-winding of the movement via a Perpetual rotor. Displaying hours, minutes and seconds, made exclusively of Oystersteel and featuring a sophisticated finish, these are chronometer wristwatches in their purest form. The anti-reflective coating applied to the back of the sapphire crystal on the new generation Oyster Perpetual ensures optimal legibility of the dial."
+    ],
+    "source": "https://www.rolex.com/watches/oyster-perpetual",
+    "caliberId": "rolex--2232",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 37,
-      "thickness": 12,
-      "lugToLug": 42,
-      "lugWidth": 19,
+      "waterResistance": 10,
+      "diameter": 34,
+      "thickness": 10.8,
+      "lugToLug": 40,
+      "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 37
+        "diameter": 34,
+        "size": 1416
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "ROMAN"
+    },
+    "price": {
+      "amount": 5200,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "casio--aq-230a-7dmqyes",
+    "manufacturer": "CASIO",
+    "model": "AQ-230A-7DMQYES",
+    "reference": "AQ-230A-7DMQYES",
+    "caliberId": "casio--5154",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 28,
+      "thickness": 8,
+      "lugToLug": 39,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 28,
+        "height": 39,
+        "size": 1453
       }
     },
     "crystal": {
@@ -91,8 +145,164 @@
       "hourMarkers": "INDICES"
     },
     "price": {
-      "amount": 91.56,
+      "amount": 35,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "a-lange-sohne--219-032",
+    "manufacturer": "A_LANGE_SOHNE",
+    "model": "Saxonia",
+    "reference": "219.032",
+    "description": [
+      "This model was introduced in 2015. The dial is crafted from solid silver and graced with solid-gold appliques. The hands are made of pink gold."
+    ],
+    "source": "https://www.alange-soehne.com/en/timepieces/saxonia/219032-pink-gold",
+    "caliberId": "a-lange-sohne--l941-1",
+    "watchCase": {
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 35,
+      "thickness": 7.3,
+      "lugToLug": 42,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 35,
+        "size": 1455
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 17300,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "tudor--m79500-0007",
+    "manufacturer": "TUDOR",
+    "model": "Black Bay 36",
+    "reference": "M79500-0007",
+    "caliberId": "tudor--t600",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 15,
+      "diameter": 36,
+      "thickness": 10.5,
+      "lugToLug": 44,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36,
+        "size": 1563
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 2800,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "rolex--124270",
+    "manufacturer": "ROLEX",
+    "model": "Explorer",
+    "reference": "124270",
+    "description": [
+      "The Oyster Perpetual Explorer in Oystersteel features a distinctive black dial with characteristic 3, 6, and 9 numerals with a Chromalight display. Its highly legible hour markers, extremely resistant Oystersteel and waterproofness have made it a tool watch for exploration."
+    ],
+    "source": "https://www.rolex.com/watches/explorer/m124270-0001",
+    "caliberId": "rolex--3230",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 36,
+      "thickness": 11.5,
+      "lugToLug": 43,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36,
+        "size": 1563
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 9000,
+      "date": "2022-04-06",
+      "msrp": false
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "iwc--iw324010",
+    "manufacturer": "IWC",
+    "model": "Pilot Automatic 36",
+    "reference": "IW324010",
+    "description": [
+      "IWC's Pilot's Watches were developed over 80 years ago as rugged and reliable instruments for airborne celestial navigation. That also determined the distinctive instrument look that has characterized the watches' design to this day. This version of the Pilot's Watch Automatic 36 was inspired by the iconic design of the Pilot's Watch Mark XVIII. The diameter of just 36 millimetres not only makes the watch a perfect fit for a slightly slimmer wrist: it also marks a return to the original size of the Mark 11 navigation watch, which was produced in Schaffhausen for the Royal Air Force (RAF) from 1948. The watch has a stainless-steel case, a black dial and rhodium-plated hands. The technical features include a soft-iron inner case to protect the movement against magnetic fields and a front glass that was specially secured against sudden drops in pressure."
+    ],
+    "source": "https://www.iwc.com/en/watch-collections/pilot-watches/iw324010-pilot_s-watch-automatic-36.html",
+    "caliberId": "iwc--35111",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 6,
+      "diameter": 36,
+      "thickness": 10.5,
+      "lugToLug": 46.2,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36,
+        "size": 1585
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 5500,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -100,9 +310,12 @@
     "manufacturer": "TRASKA",
     "model": "Commuter Slate Black",
     "reference": "commuter-slate-black",
+    "description": [
+      "Unapologetically understated yet striking in appearance, the Commuter is an all-around sport watch designed to be the perfect companion for any occasion. But don’t let its good looks deceive you — with a 100 meter depth rating and a scratch-resistant exterior, the Commuter has been engineered to perform in even the harshest of conditions."
+    ],
+    "source": "https://www.traskawatch.com/commuter/p/slate-black",
     "caliberId": "miyota--9039",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 36.5,
@@ -111,7 +324,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 36.5
+        "diameter": 36.5,
+        "size": 1586
       }
     },
     "crystal": {
@@ -125,6 +339,119 @@
     "price": {
       "amount": 517.29,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "patek-philippe--5196j",
+    "manufacturer": "PATEK_PHILIPPE",
+    "model": "Calatrava Manual Winding",
+    "reference": "5196J",
+    "caliberId": "patek-philippe--215-ps",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 37,
+      "thickness": 7.68,
+      "lugToLug": 45.5,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37,
+        "size": 1607
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 20000,
+      "date": "2022-04-06",
+      "msrp": false
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "seiko--snxf05",
+    "manufacturer": "SEIKO",
+    "model": "5",
+    "reference": "SNXF05",
+    "caliberId": "seiko--7s26",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 37,
+      "thickness": 12,
+      "lugToLug": 42,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37,
+        "size": 1615
+      }
+    },
+    "crystal": {
+      "material": "MINERAL",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 91.56,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "audemars-piguet--15550st-OO-1356st-02",
+    "manufacturer": "AUDEMARS_PIGUET",
+    "model": "Royal Oak Selfwinding",
+    "reference": "15550ST.OO.1356ST.02",
+    "description": [
+      "This 37 mm timepiece is inspired by the original Royal Oak from 1972 with its body of steel and its Bleu Nuit, Nuage 50 Tapisserie dial. Yet looking to the future, it presents the new Royal Oak ergonomic design as well as the new selfwinding Calibre 5900, fitted with the '50-years' oscillating weight."
+    ],
+    "source": "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak/15550ST.OO.1356ST.02",
+    "caliberId": "audemars-piguet--5900",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 5,
+      "diameter": 37,
+      "thickness": 10,
+      "lugToLug": 46.5,
+      "lugWidth": 23,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37,
+        "size": 1640
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 21100,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -132,9 +459,12 @@
     "manufacturer": "NOMOS",
     "model": "Metro 38",
     "reference": "1109",
+    "description": [
+      "The purist among the NOMOS Metro versions: extra large and pared down, with a clear, refined dial, designed by Mark Braun. A hand-wound watch that concentrates on the important details and gives time plenty of space—while its design remains a little ahead of the times. With delicate hands and minute markers on the white silver-plated dial perfect down to the dot, this is simply a wonderful watch."
+    ],
+    "source": "https://nomos-glashuette.com/en/metro/metro-38-1109",
     "caliberId": "nomos--alpha",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 3,
       "diameter": 38,
@@ -143,7 +473,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38
+        "diameter": 38,
+        "size": 1669
       }
     },
     "crystal": {
@@ -157,6 +488,83 @@
     "price": {
       "amount": 1900,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "a-lange-sohne--380-033",
+    "manufacturer": "A_LANGE_SOHNE",
+    "model": "Saxonia Automatic",
+    "reference": "380.033",
+    "description": [
+      "This model was introduced in 2015. The dial is crafted from solid silver and graced with solid-gold appliques. The hands are made of pink gold."
+    ],
+    "source": "https://www.alange-soehne.com/en/timepieces/saxonia-automatic/380033-pink-gold",
+    "caliberId": "a-lange-sohne--l086-1",
+    "watchCase": {
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 38.5,
+      "thickness": 7.8,
+      "lugToLug": 45,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5,
+        "size": 1692
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 24500,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "seiko--spb155j1",
+    "manufacturer": "SEIKO",
+    "model": "Prospex Alpinist",
+    "reference": "SPB155J1",
+    "caliberId": "seiko--6r35",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 38,
+      "thickness": 12,
+      "lugToLug": 46,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38,
+        "size": 1714
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "GREEN",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 730,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -164,9 +572,12 @@
     "manufacturer": "SINN",
     "model": "556 I",
     "reference": "556.010",
+    "description": [
+      "Striking form, sparse dial design, superior readability – characteristic SINN features which highlight the similarities between the 556 series and our pilot and navigation cockpit clocks. The accentuation of the hours, minutes, seconds and the date plus the satinized stainless steel case are what give the watches their sporty yet elegant appearance. The crystal of the 556 watches is made from sapphire crystal, as is the transparent back which provides an intriguing insight into the filigree mechanical movement inside."
+    ],
+    "source": "https://www.sinn.de/en/Modell/556_I",
     "caliberId": "sellita--sw2001",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 38.5,
@@ -175,7 +586,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5
+        "diameter": 38.5,
+        "size": 1734
       }
     },
     "crystal": {
@@ -189,6 +601,9 @@
     "price": {
       "amount": 1190,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -196,9 +611,12 @@
     "manufacturer": "SINN",
     "model": "556 I Mother-of-Pearl W",
     "reference": "556.0102",
+    "description": [
+      "Striking form, sparse dial design, superior readability – characteristic SINN features which highlight the similarities between the 556 series and our pilot and navigation cockpit clocks. The accentuation of the hours, minutes and seconds plus the satinized stainless steel case are what give the watches their sporty yet elegant appearance. The crystal of the 556 watches is made from sapphire crystal, as is the transparent back which provides an intriguing insight into the filigree mechanical movement inside."
+    ],
+    "source": "https://www.sinn.de/en/Modell/556_I_Mother-of-pearl_W",
     "caliberId": "sellita--sw2001",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 38.5,
@@ -207,7 +625,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5
+        "diameter": 38.5,
+        "size": 1734
       }
     },
     "crystal": {
@@ -221,38 +640,9 @@
     "price": {
       "amount": 1290,
       "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "doxa--799-10-361-10",
-    "manufacturer": "DOXA",
-    "model": "Sub 200 Divingstar",
-    "reference": "799.10.361.10",
-    "caliberId": "eta--2824-2",
-    "watchCase": {
-      "bezel": "COUNT_UP",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 20,
-      "diameter": 42,
-      "thickness": 14,
-      "lugToLug": 46,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 42
-      }
     },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "DOMED"
-    },
-    "dial": {
-      "colour": "YELLOW",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 950,
-      "date": "2022-04-06"
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -260,9 +650,12 @@
     "manufacturer": "A_LANGE_SOHNE",
     "model": "Lange 1 Moon Phase",
     "reference": "192.032",
+    "description": [
+      "This model was introduced in 2016. The dial is crafted from solid silver and graced with solid-gold appliques and hour markers. The hands are made of pink gold. The hour, minute, and power-reserve hands as well as the hour and power-reserve markers are luminous."
+    ],
+    "source": "https://www.alange-soehne.com/en/timepieces/lange1-moonphase/192032-pink-gold",
     "caliberId": "a-lange-sohne--l121-3",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "ROSE_GOLD",
       "waterResistance": 3,
       "diameter": 38.5,
@@ -271,7 +664,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5
+        "diameter": 38.5,
+        "size": 1734
       }
     },
     "crystal": {
@@ -285,39 +679,129 @@
     "price": {
       "amount": 44600,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
-    "id": "omega--3570-50-00",
-    "manufacturer": "OMEGA",
-    "model": "Speedmaster Professional",
-    "reference": "3570.50.00",
-    "caliberId": "omega--1861",
+    "id": "cartier--wssa0029",
+    "manufacturer": "CARTIER",
+    "model": "Santos Medium",
+    "reference": "WSSA0029",
+    "description": [
+      "Santos watch, medium model, Manufacture mechanical movement with automatic winding, caliber 1847 MC. Steel case, 7-sided crown set with a faceted synthetic spinel, silvered opaline dial, steel sword-shaped hands, sapphire crystal. Steel bracelet with “SmartLink” adjustment system. Second bracelet in calfskin, with interchangeable steel folding buckle. Both bracelets are fitted with the “QuickSwitch” interchangeability system. Case width: 35.1 mm, thickness: 8.83 mm. Water-resistant up to 10 bar (approx. 100 meters/100 feet)."
+    ],
+    "source": "https://www.cartier.com/en-us/watches/womens-watches/santos-de-cartier-watch-CRWSSA0029",
+    "caliberId": "cartier--1847-mc",
     "watchCase": {
-      "bezel": "TACHYMETER",
       "material": "STAINLESS_STEEL",
-      "waterResistance": 5,
-      "diameter": 42,
-      "thickness": 14.5,
-      "lugToLug": 47,
-      "lugWidth": 20,
+      "waterResistance": 3,
+      "diameter": 35,
+      "thickness": 9,
+      "lugToLug": 42,
+      "lugWidth": 18.5,
       "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 42
+        "type": "RECTANGULAR",
+        "width": 32.5,
+        "height": 42,
+        "offsetX": 0,
+        "offsetY": 0,
+        "size": 1739
       }
     },
     "crystal": {
-      "material": "ACRYLIC",
-      "shape": "DOMED"
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "ROMAN"
+    },
+    "price": {
+      "amount": 6700,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "nomos--736",
+    "manufacturer": "NOMOS",
+    "model": "Club Campus 38 Night",
+    "reference": "736",
+    "description": [
+      "Ready for the night—with the dark version of Campus. Its numerals and hands also glow in the dark, giving the wearer direction no matter what life brings. Striking, sporty, and straightforward, it is a piece of Glashütte luxury for night owls and early mornings. As well as a watch for life."
+    ],
+    "source": "https://nomos-glashuette.com/en/club/club-campus-38-night-736",
+    "caliberId": "nomos--alpha",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 38.5,
+      "thickness": 8.5,
+      "lugToLug": 49,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5,
+        "size": 1739
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "MIXED"
+    },
+    "price": {
+      "amount": 1200,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "omega--231-10-39-21-01-001",
+    "manufacturer": "OMEGA",
+    "model": "Aqua Terra 150M Co-Axial 38.5MM",
+    "description": [
+      "This classic yet robust timepiece represents a tribute to OMEGA’s rich maritime heritage. The dramatic and easily-recognisable dial design of the OMEGA Seamaster Aqua Terra 150M collection recalls the wooden decks of luxury sailboats. This model features a black dial decorated with the Teak Concept pattern and a date window at the 3 o’clock position. A scratch-resistant sapphire crystal protects this unique dial. The bezel is mounted on a 38.5 mm stainless steel case on a stainless steel bracelet. This certified chronometer is powered by the OMEGA Co-Axial calibre 8500 which can be seen through the transparent caseback."
+    ],
+    "source": "https://www.omegawatches.com/watch-omega-seamaster-aqua-terra-150m-omega-co-axial-38-5-mm-23110392101001",
+    "reference": "231.10.39.21.01.001",
+    "caliberId": "omega--8500",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 15,
+      "diameter": 38.5,
+      "thickness": 13,
+      "lugToLug": 45.5,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5,
+        "size": 1749
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
     },
     "dial": {
       "colour": "BLACK",
       "hourMarkers": "INDICES"
     },
     "price": {
-      "amount": 4950,
-      "date": "2022-04-06",
-      "msrp": false
+      "amount": 7100,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -327,7 +811,6 @@
     "reference": "3510.50.00",
     "caliberId": "omega--3220",
     "watchCase": {
-      "bezel": "TACHYMETER",
       "material": "STAINLESS_STEEL",
       "waterResistance": 5,
       "diameter": 39,
@@ -336,7 +819,8 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 39
+        "diameter": 39,
+        "size": 1760
       }
     },
     "crystal": {
@@ -351,25 +835,111 @@
       "amount": 3500,
       "date": "2022-04-06",
       "msrp": false
+    },
+    "bezel": {
+      "type": "TACHYMETER"
     }
   },
   {
-    "id": "grand-seiko--sbga211",
-    "manufacturer": "GRAND_SEIKO",
-    "model": "SBGA211",
-    "reference": "SBGA211",
-    "caliberId": "grand-seiko--9r65",
+    "id": "nomos--953",
+    "manufacturer": "NOMOS",
+    "model": "Lambda 39",
+    "reference": "953",
+    "description": [
+      "The finest handcraft in a 39-millimeter diameter: This masterpiece in 18 kt rose gold contains all the watchmaking talent of the NOMOS Atelier. In its gold case ticks a true work of wonder from Glashütte—twin mainspring barrels give the NOMOS caliber DUW 1001 double the power and ensures an impressively long power reserve of three-and-a-half days."
+    ],
+    "source": "https://nomos-glashuette.com/en/lambda/lambda-39-953",
+    "caliberId": "nomos--duw-1001",
     "watchCase": {
-      "bezel": "PLAIN",
-      "material": "TITANIUM",
-      "waterResistance": 10,
-      "diameter": 41,
-      "thickness": 12.5,
-      "lugToLug": 49,
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 39,
+      "thickness": 9.1,
+      "lugToLug": 47.9,
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 41
+        "diameter": 39,
+        "size": 1765
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 12800,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "jaeger-lecoultre--q3848422",
+    "manufacturer": "JAEGER_LECOULTRE",
+    "model": "Reverso Classic Duoface Small Seconds",
+    "reference": "Q3848422",
+    "description": [
+      "The large-format case of the Reverso Classic Large Duo Small Seconds timepiece in steel boasts two dials for two time zones, driven by a single movement. An ideal companion for elegant travelers, it is equipped with a small front second dial that further enhances its charm."
+    ],
+    "source": "https://www.jaeger-lecoultre.com/eu-en/watches/reverso/reverso-classic/reverso-classic-duoface-small-seconds-stainless-steel-q3848422",
+    "caliberId": "jaeger-lecoultre--854A",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 28.3,
+      "thickness": 11.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "height": 47,
+        "width": 28.3,
+        "size": 1782
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "GREY",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 9100,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "farer--lander-iv",
+    "manufacturer": "FARER",
+    "model": "Lander IV",
+    "reference": "lander-iv",
+    "description": [
+      "A Farer best seller since launch, the iconic design of the Lander is characterised by a unique sea green sunray triple step dial, reﬂecting the changing light of the day to give a real sense of life to the watch. Framed by highly legible, ghost white Super-LumiNova Arabic numerals outlined in astronaut silver – pushing the limits of dial design applications with multiple micro over-printing. A detail that gives a subtle depth to the design in daylight while creating functional clarity after dark."
+    ],
+    "source": "https://farer.com/products/lander",
+    "caliberId": "sellita--sw330-2",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 39.5,
+      "thickness": 10.8,
+      "lugToLug": 45,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 39.5,
+        "size": 1783
       }
     },
     "crystal": {
@@ -377,145 +947,89 @@
       "shape": "DOMED"
     },
     "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "INDICES"
+      "colour": "GREEN",
+      "hourMarkers": "ARABIC"
     },
     "price": {
-      "amount": 6000,
-      "date": "2022-04-06"
+      "amount": 1395,
+      "date": "2022-04-27"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
-    "id": "tag-heuer--caw211r-fc6401",
-    "manufacturer": "TAG_HEUER",
-    "model": "Monaco Gulf",
-    "reference": "CAW211R.FC6401",
-    "caliberId": "tag-heuer--11",
+    "id": "tudor--m79030b-0001",
+    "manufacturer": "TUDOR",
+    "model": "Black Bay Fifty-Eight",
+    "reference": "M79030B-0001",
+    "caliberId": "tudor--mt5402",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
-      "waterResistance": 10,
+      "waterResistance": 20,
       "diameter": 39,
-      "thickness": 15,
-      "lugToLug": 48,
-      "lugWidth": 22,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "width": 39,
-        "height": 39
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": ["BLUE", "ORANGE"],
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 6458.15,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "iwc--iw371401",
-    "manufacturer": "IWC",
-    "model": "Portugieser Chronograph",
-    "reference": "IW371401",
-    "caliberId": "iwc--79240",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 41,
-      "thickness": 12.5,
+      "thickness": 12,
       "lugToLug": 47,
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 41
+        "diameter": 39,
+        "size": 1785
       }
     },
     "crystal": {
       "material": "SAPPHIRE",
-      "shape": "FLAT"
+      "shape": "DOMED"
     },
     "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 4750,
-      "date": "2022-04-06",
-      "msrp": false
-    }
-  },
-  {
-    "id": "breitling--a17367021i1a1",
-    "manufacturer": "BREITLING",
-    "model": "Superocean Automatic 44",
-    "reference": "A17367021I1A1",
-    "caliberId": "breitling--b17",
-    "watchCase": {
-      "bezel": "COUNT_UP",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 100,
-      "diameter": 44,
-      "thickness": 14,
-      "lugToLug": 53,
-      "lugWidth": 22,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 44
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "YELLOW",
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 3950,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "omega--227-90-55-21-01-001",
-    "manufacturer": "OMEGA",
-    "model": "Seamaster Ploprof 1200m",
-    "reference": "227.90.55.21.01.001",
-    "caliberId": "omega--8912",
-    "watchCase": {
-      "bezel": "COUNT_UP",
-      "material": "TITANIUM",
-      "waterResistance": 120,
-      "diameter": 55,
-      "thickness": 18,
-      "lugToLug": 48,
-      "lugWidth": 24,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "width": 55,
-        "height": 48,
-        "offsetX": -5,
-        "offsetY": 0
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLACK",
+      "colour": "BLUE",
       "hourMarkers": "INDICES"
     },
     "price": {
-      "amount": 12000,
+      "amount": 3480,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "COUNT_UP"
+    }
+  },
+  {
+    "id": "tissot--t137-407-11-041-00",
+    "manufacturer": "TISSOT",
+    "model": "PRX Powermatic 80",
+    "reference": "T137.407.11.041.00",
+    "description": [
+      "If you’re looking for a slim, smooth watch with an authentic ‘70s feel, look no further than the PRX Powermatic 80. Created for those with an eye for design and packed with twenty-first century features in a Tissot case shape from 1978, the PRX is a must-have on every watch fan’s wish list. The self-winding Powermatic 80 movement delivers reliability and precision thanks to the innovative Nivachron hairspring. With 80 hours of power reserve, it’s a modern movement designed to keep pace with busy lifestyles."
+    ],
+    "source": "https://www.tissotwatches.com/en-gb/t1374071604100.html",
+    "caliberId": "tissot--powermatic-80-111",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 40,
+      "thickness": 11,
+      "lugToLug": 44,
+      "lugWidth": 12,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40,
+        "size": 1807
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 695,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -525,7 +1039,6 @@
     "reference": "5711/1A-010",
     "caliberId": "patek-philippe--324-s-c",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 12,
       "diameter": 40,
@@ -534,7 +1047,8 @@
       "lugWidth": 25,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40
+        "diameter": 40,
+        "size": 1812
       }
     },
     "crystal": {
@@ -549,6 +1063,84 @@
       "amount": 145000,
       "date": "2022-04-06",
       "msrp": false
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "jaeger-lecoultre--1362510",
+    "manufacturer": "JAEGER_LECOULTRE",
+    "model": "Master Ultra Thin Moon",
+    "reference": "1362510",
+    "description": [
+      "Among the intricacies, the moon phase remains one of the most mysterious. Like an open window that overlooks the movement of the stars and their secrets through time, it attracts and fascinates. The jewel of the Master Collection, the Master Ultra Thin Moon range pays special tribute to this complication, which has fascinated our Maison for decades. On this rose gold model for men, the moon phase boasts new credentials. On a deep midnight blue background, the moon and stars sparkle with majesty. Meticulously polished, they are delicately colored in rose gold. On the wrist, the Master Ultra Thin Moon promises an exquisitely refined watchmaking spectacle."
+    ],
+    "source": "https://www.jaeger-lecoultre.com/eu-en/watches/master-ultra-thin/master-ultra-thin-moon-pink-gold-q1362510",
+    "caliberId": "jaeger-lecoultre--925aa",
+    "watchCase": {
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 39,
+      "thickness": 9.5,
+      "lugToLug": 46,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40,
+        "size": 1812
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "CHAMPAGNE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 22000,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "glashutte-original--1-90-02-42-32-05",
+    "manufacturer": "GLASHUTTE_ORIGINAL",
+    "model": "PanoMatic Lunar",
+    "reference": "1-90-02-42-32-05",
+    "source": "https://www.glashuette-original.com/en/watches/pano/panomaticlunar-1-90-02-42-32-61/",
+    "caliberId": "glashutte-original--90-02",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 5,
+      "diameter": 40,
+      "thickness": 12.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 40,
+        "size": 1852
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 10200,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -558,7 +1150,6 @@
     "reference": "5513",
     "caliberId": "rolex--1520",
     "watchCase": {
-      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
       "diameter": 40,
@@ -567,7 +1158,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40
+        "diameter": 40,
+        "size": 1872
       }
     },
     "crystal": {
@@ -582,331 +1174,9 @@
       "amount": 26500,
       "date": "2022-04-06",
       "msrp": false
-    }
-  },
-  {
-    "id": "jaeger-lecoultre--1362510",
-    "manufacturer": "JAEGER_LECOULTRE",
-    "model": "Master Ultra Thin Moon",
-    "reference": "1362510",
-    "caliberId": "jaeger-lecoultre--925aa",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "ROSE_GOLD",
-      "waterResistance": 3,
-      "diameter": 39,
-      "thickness": 9.5,
-      "lugToLug": 46,
-      "lugWidth": 21,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 40
-      }
     },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "CHAMPAGNE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 22000,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "casio--aq-230a-7dmqyes",
-    "manufacturer": "CASIO",
-    "model": "AQ-230A-7DMQYES",
-    "reference": "AQ-230A-7DMQYES",
-    "caliberId": "casio--5154",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 28,
-      "thickness": 8,
-      "lugToLug": 39,
-      "lugWidth": 18,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "width": 28,
-        "height": 39
-      }
-    },
-    "crystal": {
-      "material": "MINERAL",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 35,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "cartier--wssa0029",
-    "manufacturer": "CARTIER",
-    "model": "Santos Medium",
-    "reference": "WSSA0029",
-    "caliberId": "cartier--1847-mc",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 35,
-      "thickness": 9,
-      "lugToLug": 42,
-      "lugWidth": 18.5,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "width": 32.5,
-        "height": 42,
-        "offsetX": 0,
-        "offsetY": 0
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "ROMAN"
-    },
-    "price": {
-      "amount": 6700,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "panerai--pam01314",
-    "manufacturer": "PANERAI",
-    "model": "Luminor Marina 44",
-    "reference": "PAM01314",
-    "caliberId": "panerai--p-9010",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 30,
-      "diameter": 44,
-      "thickness": 16,
-      "lugToLug": 53.5,
-      "lugWidth": 24,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "width": 44,
-        "height": 44
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "DOMED"
-    },
-    "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 7700,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "tudor--m79030b-0001",
-    "manufacturer": "TUDOR",
-    "model": "Black Bay Fifty-Eight",
-    "reference": "M79030B-0001",
-    "caliberId": "tudor--mt5402",
-    "watchCase": {
-      "bezel": "COUNT_UP",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 20,
-      "diameter": 39,
-      "thickness": 12,
-      "lugToLug": 47,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 39
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "DOMED"
-    },
-    "dial": {
-      "colour": "BLUE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 3480,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "tudor--m79500-0007",
-    "manufacturer": "TUDOR",
-    "model": "Black Bay 36",
-    "reference": "M79500-0007",
-    "caliberId": "tudor--t600",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 15,
-      "diameter": 36,
-      "thickness": 10.5,
-      "lugToLug": 44,
-      "lugWidth": 19,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 36
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLACK",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 2800,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "audemars-piguet--15550st-OO-1356st-02",
-    "manufacturer": "AUDEMARS_PIGUET",
-    "model": "Royal Oak Selfwinding",
-    "reference": "15550ST.OO.1356ST.02",
-    "caliberId": "audemars-piguet--5900",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 5,
-      "diameter": 37,
-      "thickness": 10,
-      "lugToLug": 46.5,
-      "lugWidth": 23,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 37
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLUE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 21100,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "glashutte-original--1-90-02-42-32-05",
-    "manufacturer": "GLASHUTTE_ORIGINAL",
-    "model": "PanoMatic Lunar",
-    "reference": "1-90-02-42-32-05",
-    "caliberId": "glashutte-original--90-02",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 5,
-      "diameter": 40,
-      "thickness": 12.5,
-      "lugToLug": 47,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 40
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 10200,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "nomos--736",
-    "manufacturer": "NOMOS",
-    "model": "Club Campus 38 Night",
-    "reference": "736",
-    "caliberId": "nomos--alpha",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 10,
-      "diameter": 38.5,
-      "thickness": 8.5,
-      "lugToLug": 49,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 38.5
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLACK",
-      "hourMarkers": "MIXED"
-    },
-    "price": {
-      "amount": 1200,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "tissot--t137-407-11-041-00",
-    "manufacturer": "TISSOT",
-    "model": "PRX Powermatic 80",
-    "reference": "T137.407.11.041.00",
-    "caliberId": "tissot--powermatic-80-111",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 10,
-      "diameter": 40,
-      "thickness": 11,
-      "lugToLug": 44,
-      "lugWidth": 12,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 40
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLUE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 695,
-      "date": "2022-04-06"
+    "bezel": {
+      "type": "COUNT_UP"
     }
   },
   {
@@ -914,9 +1184,12 @@
     "manufacturer": "IWC",
     "model": "Mark XVIII edition “Le Petit Prince”",
     "reference": "IW327016",
+    "description": [
+      "The Pilot’s Watch Mark XVIII Edition “Le Petit Prince” is a special-edition timepiece dedicated to Antoine de Saint-Exupéry’s little prince. In both form and function, this watch reflects the ideal established by classic pilot’s watches. Like cockpit instrumentation, the clearly organized dial is reduced to essentials, and legibility is a top priority. The watch, which is water-resistant to 6 bar, is powered by an automatic 35111-calibre movement, meets the requirements of professional pilot’s watches in terms of precision and has a 42-hour power reserve. With its soft-iron inner case, it is optimally shielded against the influence of magnetic fields. The midnight blue dial and the brown calfskin strap with its cream coloured quilted stitching, which is reminiscent of Saint-Exupéry’s flight suit, make this a particularly eye-catching timepiece."
+    ],
+    "source": "https://www.iwc.com/en/watch-collections/pilot-watches/iw327010-pilot_s-watch-mark-xviii-edition-le-petit-prince.html",
     "caliberId": "iwc--35111",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 6,
       "diameter": 40,
@@ -925,7 +1198,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40
+        "diameter": 40,
+        "size": 1878
       }
     },
     "crystal": {
@@ -939,135 +1213,9 @@
     "price": {
       "amount": 5600,
       "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "iwc--iw324010",
-    "manufacturer": "IWC",
-    "model": "Pilot Automatic 36",
-    "reference": "IW324010",
-    "caliberId": "iwc--35111",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 6,
-      "diameter": 36,
-      "thickness": 10.5,
-      "lugToLug": 46.2,
-      "lugWidth": 18,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 36
-      }
     },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLACK",
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 5500,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "bulgari--103431",
-    "manufacturer": "BULGARI",
-    "model": "Octo Finissimo",
-    "reference": "103431",
-    "caliberId": "bulgari--bvl-138",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 10,
-      "diameter": 40,
-      "thickness": 6.4,
-      "lugToLug": 45,
-      "lugWidth": 30,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "width": 40,
-        "height": 40
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLUE",
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 13000,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "vacheron-constantin--7900v-110a-b334",
-    "manufacturer": "VACHERON_CONSTANTIN",
-    "model": "Overseas Dual Time",
-    "reference": "7900V/110A-B334",
-    "caliberId": "vacheron-constantin--5110-dt",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 15,
-      "diameter": 41,
-      "thickness": 12.8,
-      "lugToLug": 49,
-      "lugWidth": 30,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 41
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLUE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 27675,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "omega--231-10-39-21-01-001",
-    "manufacturer": "OMEGA",
-    "model": "Aqua Terra 150M Co-Axial 38.5MM",
-    "reference": "231.10.39.21.01.001",
-    "caliberId": "omega--8500",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 15,
-      "diameter": 38.5,
-      "thickness": 13,
-      "lugToLug": 45.5,
-      "lugWidth": 19,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 38.5
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLACK",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 7100,
-      "date": "2022-04-06"
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
@@ -1075,9 +1223,12 @@
     "manufacturer": "HAMILTON",
     "model": "Intra-Matic Auto Chrono",
     "reference": "H38416711",
+    "description": [
+      "The Hamilton Intra-Matic Auto Chrono is a modern reworking of a 1968 signature piece that offers a sporty but classic look. Combining authentic 60s appeal with the exclusive H-31 automatic movement, its distinctive panda dial is a guaranteed eye-catcher."
+    ],
+    "source": "https://www.hamiltonwatch.com/en-int/h38416711-intramatic-auto-chrono.html",
     "caliberId": "hamilton--h31",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 40,
@@ -1086,7 +1237,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40
+        "diameter": 40,
+        "size": 1894
       }
     },
     "crystal": {
@@ -1100,25 +1252,28 @@
     "price": {
       "amount": 2145,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
-    "id": "omega--210-30-42-20-04-001",
-    "manufacturer": "OMEGA",
-    "model": "Seamaster 300M",
-    "reference": "210.30.42.20.04.001",
-    "caliberId": "omega--8800",
+    "id": "iwc--iw371401",
+    "manufacturer": "IWC",
+    "model": "Portugieser Chronograph",
+    "reference": "IW371401",
+    "caliberId": "iwc--79240",
     "watchCase": {
-      "bezel": "COUNT_UP",
       "material": "STAINLESS_STEEL",
-      "waterResistance": 30,
-      "diameter": 42,
-      "thickness": 13.85,
-      "lugToLug": 50,
+      "waterResistance": 3,
+      "diameter": 41,
+      "thickness": 12.5,
+      "lugToLug": 47,
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42
+        "diameter": 41,
+        "size": 1915
       }
     },
     "crystal": {
@@ -1126,77 +1281,255 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": ["WHITE"],
+      "colour": "WHITE",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 4750,
+      "date": "2022-04-06",
+      "msrp": false
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "grand-seiko--sbga211",
+    "manufacturer": "GRAND_SEIKO",
+    "model": "SBGA211",
+    "reference": "SBGA211",
+    "description": [
+      "This Spring Drive classic is made by the craftsmen and women of the Shinshu Watch Studio in Japan’s Nagano Prefecture. The studio is surrounded by the Hotaka mountains that, for several months each year, are covered in snow. In the crisp, dry air, and when driven across the slopes by the wind, this snow has a special light and delicate quality that is captured in the subtly textured surface of the dial. The blue tempered steel seconds hand moves over it in the perfect glide motion that is Spring Drive’s unique signature and reflects the continuous, eternal and beautiful nature of time."
+    ],
+    "source": "https://www.grand-seiko.com/nl-en/collections/sbga211g",
+    "caliberId": "grand-seiko--9r65",
+    "watchCase": {
+      "material": "TITANIUM",
+      "waterResistance": 10,
+      "diameter": 41,
+      "thickness": 12.5,
+      "lugToLug": 49,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41,
+        "size": 1935
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 6000,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "vacheron-constantin--7900v-110a-b334",
+    "manufacturer": "VACHERON_CONSTANTIN",
+    "model": "Overseas Dual Time",
+    "reference": "7900V/110A-B334",
+    "description": [
+      "This steel watch features complications to assist the daily life of the traveler: a dual time zone combined with a day-night indicator and a date hand. An invitation to get away from it all, its blue dial contrasts beautifully with the steel case. Its self-winding movement offers a power reserve of nearly 3 days. Thanks to its clasp and system of three easily interchangeable straps – steel, leather, and rubber – the watch can be personalized according to the owner’s wishes."
+    ],
+    "source": "https://www.vacheron-constantin.com/ww/en/collections/overseas/7900v-110a-b334.html",
+    "caliberId": "vacheron-constantin--5110-dt",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 15,
+      "diameter": 41,
+      "thickness": 12.8,
+      "lugToLug": 49,
+      "lugWidth": 30,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41,
+        "size": 1938
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 27675,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "bulgari--103431",
+    "manufacturer": "BULGARI",
+    "model": "Octo Finissimo",
+    "reference": "103431",
+    "description": [
+      "A true icon of the 21st century, the Octo Finissimo Automatic watch channels the rare fusion of edgy Italian design and Swiss engineering with its innovative satin-polished finishes. With its ultra-appealing look and uncompromisingly forward-thinking mechanics, the groundbreaking timepiece is emblematic of Bvlgari's integral bond between jewelry savoir-faire and watchmaking art. The Maison’s creative approach in working modern materials is here employed to set unforeseen design trends through the world of its Swiss-made timepieces."
+    ],
+    "source": "https://www.bulgari.com/en-int/watches/mens/octo-finissimo-watch-silver-103431",
+    "caliberId": "bulgari--bvl-138",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 40,
+      "thickness": 6.4,
+      "lugToLug": 45,
+      "lugWidth": 30,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 40,
+        "height": 40,
+        "size": 1954
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 13000,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "doxa--799-10-361-10",
+    "manufacturer": "DOXA",
+    "model": "Sub 200 Divingstar",
+    "reference": "799.10.361.10",
+    "description": [
+      "Unveiled at Baselworld 2019, this 3-hand diver's watch has a case made of highest-quality 316L stainless steel. At a diameter of 42 mm, the SUB 200 is topped by a scratch-resistant sapphire crystal with an anti-reflective coating and the distinctive curvature of the domed plexiglass used back in the day. Waterproof to a depth of 200 meters (20 ATM), the model features a unidirectional rotating bezel. All the elements providing dive-relevant information, including the bezel, have a Super‑LumiNova® luminescent coating. The bracelet is 316L stainless steel and features a folding clasp with the DOXA fish symbol."
+    ],
+    "source": "https://eu.doxawatches.com//products/divingstar",
+    "caliberId": "eta--2824-2",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 42,
+      "thickness": 14,
+      "lugToLug": 46,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42,
+        "size": 1985
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
+    "dial": {
+      "colour": "YELLOW",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 950,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "COUNT_UP"
+    }
+  },
+  {
+    "id": "tag-heuer--caw211r-fc6401",
+    "manufacturer": "TAG_HEUER",
+    "model": "Monaco Gulf",
+    "reference": "CAW211R.FC6401",
+    "description": [
+      "The Gulf brand’s iconic racing livery adorns this special edition. All the classic Monaco elements are in place: 39 mm case, left-side crown, sunray dial with pearl white counters at 3 and 9 o’clock, date window at 6, vintage HEUER logo at 12."
+    ],
+    "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW211R.FC6401.html",
+    "caliberId": "tag-heuer--11",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 39,
+      "thickness": 15,
+      "lugToLug": 48,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 39,
+        "height": 39,
+        "size": 1999
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["BLUE", "ORANGE"],
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 6458.15,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "omega--3570-50-00",
+    "manufacturer": "OMEGA",
+    "model": "Speedmaster Professional",
+    "reference": "3570.50.00",
+    "description": [
+      "The OMEGA Speedmaster is one of OMEGA’s most iconic timepieces. Having been a part of all six lunar missions, the legendary Speedmaster is an impressive representation of the brand’s adventurous pioneering spirit.",
+      "This OMEGA Speedmaster Professional “Moonwatch” features a black dial covered by a hesalite crystal and graced by a small seconds sub-dial, 30-minute recorder and 12-hour recorder along with a central chronograph hand. The black bezel, with its tachymetric scale, is mounted on a 42 mm stainless steel case and presented on a matching bracelet.",
+      "At the heart of this chronograph is OMEGA’s mechanical calibre 1861, the famous manual-winding movement that was worn on the Moon."
+    ],
+    "source": "https://www.omegawatches.com/watch-omega-speedmaster-moonwatch-chronograph-42-mm-35705000",
+    "caliberId": "omega--1861",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 5,
+      "diameter": 42,
+      "thickness": 14.5,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 42,
+        "size": 2000
+      }
+    },
+    "crystal": {
+      "material": "ACRYLIC",
+      "shape": "DOMED"
+    },
+    "dial": {
+      "colour": "BLACK",
       "hourMarkers": "INDICES"
     },
     "price": {
       "amount": 4950,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "rolex--124270",
-    "manufacturer": "ROLEX",
-    "model": "Explorer I",
-    "reference": "124270",
-    "caliberId": "rolex--3230",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 10,
-      "diameter": 36,
-      "thickness": 11.5,
-      "lugToLug": 43,
-      "lugWidth": 19,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 36
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": ["BLACK"],
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 9000,
       "date": "2022-04-06",
       "msrp": false
-    }
-  },
-  {
-    "id": "rolex--124200",
-    "manufacturer": "ROLEX",
-    "model": "Oyster Perpetual 34",
-    "reference": "124200",
-    "caliberId": "rolex--2232",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 10,
-      "diameter": 34,
-      "thickness": 10.8,
-      "lugToLug": 40,
-      "lugWidth": 18,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 34
-      }
     },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": ["BLUE"],
-      "hourMarkers": "ROMAN"
-    },
-    "price": {
-      "amount": 5200,
-      "date": "2022-04-06"
+    "bezel": {
+      "type": "TACHYMETER"
     }
   },
   {
@@ -1204,9 +1537,12 @@
     "manufacturer": "ROLEX",
     "model": "Explorer II",
     "reference": "226570",
+    "description": [
+      "This Oyster Perpetual Explorer II in Oystersteel with an Oyster bracelet features a white dial with an arrow-shaped 24-hour hand and hour markers with a Chromalight display."
+    ],
+    "source": "https://www.rolex.com/watches/explorer/m226570-0001.html",
     "caliberId": "rolex--3285",
     "watchCase": {
-      "bezel": "GMT",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 42,
@@ -1215,7 +1551,8 @@
       "lugWidth": 21,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42
+        "diameter": 42,
+        "size": 2001
       }
     },
     "crystal": {
@@ -1229,232 +1566,9 @@
     "price": {
       "amount": 9000,
       "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "jaeger-lecoultre--q3848422",
-    "manufacturer": "JAEGER_LECOULTRE",
-    "model": "Reverso Classic Duoface Small Seconds",
-    "reference": "Q3848422",
-    "caliberId": "jaeger-lecoultre--854A",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 28.3,
-      "thickness": 11.5,
-      "lugToLug": 47,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "RECTANGULAR",
-        "height": 47,
-        "width": 28.3
-      }
     },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": ["GREY"],
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 9100,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "patek-philippe--5196j",
-    "manufacturer": "PATEK_PHILIPPE",
-    "model": "Calatrava Manual Winding",
-    "reference": "5196J",
-    "caliberId": "patek-philippe--215-ps",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 37,
-      "thickness": 7.68,
-      "lugToLug": 45.5,
-      "lugWidth": 21,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 37
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": ["WHITE"],
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 20000,
-      "date": "2022-04-06",
-      "msrp": false
-    }
-  },
-  {
-    "id": "a-lange-sohne--219-032",
-    "manufacturer": "A_LANGE_SOHNE",
-    "model": "Saxonia",
-    "reference": "219.032",
-    "caliberId": "a-lange-sohne--l941-1",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "ROSE_GOLD",
-      "waterResistance": 3,
-      "diameter": 35,
-      "thickness": 7.3,
-      "lugToLug": 42,
-      "lugWidth": 18,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 35
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 17300,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "a-lange-sohne--380-033",
-    "manufacturer": "A_LANGE_SOHNE",
-    "model": "Saxonia Automatic",
-    "reference": "380.033",
-    "caliberId": "a-lange-sohne--l086-1",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "ROSE_GOLD",
-      "waterResistance": 3,
-      "diameter": 38.5,
-      "thickness": 7.8,
-      "lugToLug": 45,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 38.5
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "WHITE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 24500,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "breitling--ab0121211c1p1",
-    "manufacturer": "BREITLING",
-    "model": "Navitimer B01 Chronograph 43",
-    "reference": "AB0121211C1P1",
-    "caliberId": "breitling--b01",
-    "watchCase": {
-      "bezel": "SLIDE_RULE",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 3,
-      "diameter": 43,
-      "thickness": 14.22,
-      "lugToLug": 49.1,
-      "lugWidth": 22,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 43
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": ["BLUE", "BLACK"],
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 8400,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "seiko--spb155j1",
-    "manufacturer": "SEIKO",
-    "model": "Prospex Alpinist",
-    "reference": "SPB155J1",
-    "caliberId": "seiko--6r35",
-    "watchCase": {
-      "bezel": "PLAIN",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 20,
-      "diameter": 38,
-      "thickness": 12,
-      "lugToLug": 46,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 38
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "GREEN",
-      "hourMarkers": "ARABIC"
-    },
-    "price": {
-      "amount": 730,
-      "date": "2022-04-06"
-    }
-  },
-  {
-    "id": "seiko--spb103j1",
-    "manufacturer": "SEIKO",
-    "model": "Prospex",
-    "reference": "SPB103J1",
-    "caliberId": "seiko--6r35",
-    "watchCase": {
-      "bezel": "COUNT_UP",
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 20,
-      "diameter": 45,
-      "thickness": 12.9,
-      "lugToLug": 52.6,
-      "lugWidth": 20,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 45
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "GREEN",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 830,
-      "date": "2022-04-06"
+    "bezel": {
+      "type": "GMT"
     }
   },
   {
@@ -1462,9 +1576,12 @@
     "manufacturer": "ZENITH",
     "model": "El Primero",
     "reference": "03.2040.400/69.C494",
+    "description": [
+      "A living legend among chronographs. The Chronomaster El Primero watch in a 42mm steel case with a brown alligator leather strap, featuring a silver dial with the iconic different-coloured chronograph counters."
+    ],
+    "source": "https://www.zenith-watches.com/en_sg/product/chronomaster-el-primero-03-2040-400-69-c494",
     "caliberId": "zenith--el-primero-400-b",
     "watchCase": {
-      "bezel": "PLAIN",
       "material": "STAINLESS_STEEL",
       "waterResistance": 10,
       "diameter": 42,
@@ -1473,7 +1590,8 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42
+        "diameter": 42,
+        "size": 2013
       }
     },
     "crystal": {
@@ -1488,25 +1606,35 @@
       "amount": 5872,
       "date": "2022-04-06",
       "msrp": false
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   },
   {
-    "id": "nomos--953",
-    "manufacturer": "NOMOS",
-    "model": "Lambda 39",
-    "reference": "953",
-    "caliberId": "nomos--duw-1001",
+    "id": "omega--210-30-42-20-04-001",
+    "manufacturer": "OMEGA",
+    "model": "Seamaster 300M",
+    "reference": "210.30.42.20.04.001",
+    "description": [
+      "Since 1993, the Seamaster Professional Diver 300M has enjoyed a legendary following. Today’s modern collection has embraced that famous ocean heritage and updated it with OMEGA’s best innovation and design.",
+      "This 42 mm model is crafted from stainless steel and includes a black ceramic bezel with a white enamel diving scale. The dial is polished white ceramic and features laser-engraved waves and Seamaster highlighted in red.",
+      "The polished, blackened skeleton hour and minute hands are filled with white Super-LumiNova. The seconds hand features a varnished red tip.",
+      "The watch is presented on a polished-brushed stainless steel bracelet and is driven by the OMEGA Master Chronometer Calibre 8800, which can be seen through the sapphire-crystal on the wave-edged caseback."
+    ],
+    "source": "https://www.omegawatches.com/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422004001",
+    "caliberId": "omega--8800",
     "watchCase": {
-      "bezel": "PLAIN",
-      "material": "ROSE_GOLD",
-      "waterResistance": 3,
-      "diameter": 39,
-      "thickness": 9.1,
-      "lugToLug": 47.9,
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 30,
+      "diameter": 42,
+      "thickness": 13.85,
+      "lugToLug": 50,
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 39
+        "diameter": 42,
+        "size": 2024
       }
     },
     "crystal": {
@@ -1514,12 +1642,239 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": ["WHITE"],
       "hourMarkers": "INDICES"
     },
     "price": {
-      "amount": 12800,
+      "amount": 4950,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "COUNT_UP"
+    }
+  },
+  {
+    "id": "breitling--ab0121211c1p1",
+    "manufacturer": "BREITLING",
+    "model": "Navitimer B01 Chronograph 43",
+    "reference": "AB0121211C1P1",
+    "caliberId": "breitling--b01",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 43,
+      "thickness": 14.22,
+      "lugToLug": 49.1,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 43,
+        "size": 2085
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": ["BLUE", "BLACK"],
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 8400,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "SLIDE_RULE"
+    }
+  },
+  {
+    "id": "breitling--a17367021i1a1",
+    "manufacturer": "BREITLING",
+    "model": "Superocean Automatic 44",
+    "reference": "A17367021I1A1",
+    "description": [
+      "Sporty, fresh and colorful, the Superocean Automatic 44 is designed for men looking for a sports watch combining serious performance with contemporary style. It is up to any challenge: dive with it, surf with it or swim with it! The Superocean Automatic 44 features a sturdy 44mm stainless-steel case, colorful dials and a choice of a stainless-steel bracelet, or a color-matching rubber strap that fits either a stainless-steel pin buckle or folding clasp. Not only ready for the challenges of the deep seas (up to 100 bar / 1000 meters), the fresh and sporty Superocean Automatic 44 will also attract those whose adventures are a little closer to the shore."
+    ],
+    "source": "https://www.breitling.com/nl-en/watches/superocean/44/A17367021I1/",
+    "caliberId": "breitling--b17",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 100,
+      "diameter": 44,
+      "thickness": 14,
+      "lugToLug": 53,
+      "lugWidth": 22,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 44,
+        "size": 2191
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "YELLOW",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 3950,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "COUNT_UP"
+    }
+  },
+  {
+    "id": "seiko--spb103j1",
+    "manufacturer": "SEIKO",
+    "model": "Prospex",
+    "reference": "SPB103J1",
+    "caliberId": "seiko--6r35",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 45,
+      "thickness": 12.9,
+      "lugToLug": 52.6,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 45,
+        "size": 2245
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "GREEN",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 830,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "COUNT_UP"
+    }
+  },
+  {
+    "id": "panerai--pam01314",
+    "manufacturer": "PANERAI",
+    "model": "Luminor Marina 44",
+    "reference": "PAM01314",
+    "caliberId": "panerai--p-9010",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 30,
+      "diameter": 44,
+      "thickness": 16,
+      "lugToLug": 53.5,
+      "lugWidth": 24,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 44,
+        "height": 44,
+        "size": 2437
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 7700,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "omega--227-90-55-21-01-001",
+    "manufacturer": "OMEGA",
+    "model": "Seamaster Ploprof 1200m Co-Axial Master Chronometer 55 x 48 mm",
+    "reference": "227.90.55.21.01.001",
+    "description": [
+      "Reliable even at 4000 feet beneath the waves, the famous Ploprof timepiece has a long history as OMEGA's most water-resistant divers' watch.",
+      "While retaining the original sturdy and bold appearance, this new edition has been updated with OMEGA's Co-Axial Master Chronometer Calibre 8912, featuring revolutionary technology renowned for its anti-magnetic resistance, chronometric performance, and precision.",
+      "The unique case includes a polished black ceramic bezel ring, with the numerals, triangle and scale, all filled with Super-LumiNova for increased visibility. Grade 5 titanium has been used as the case and clasp material for lightweight comfort, while the lacquered black dial is complemented by orange aluminum and varnished white hands. The classic dark style of this watch is ready for the ocean depths, and the polished grade 2 titanium 'sharkproof' mesh bracelet further adds to the sense of exploration and adventure."
+    ],
+    "source": "https://www.omegawatches.com/watch-omega-seamaster-ploprof-1200m-co-axial-master-chronometer-55-x-48-mm-22790552101001",
+    "caliberId": "omega--8912",
+    "watchCase": {
+      "material": "TITANIUM",
+      "waterResistance": 120,
+      "diameter": 55,
+      "thickness": 18,
+      "lugToLug": 48,
+      "lugWidth": 24,
+      "detailedDiameter": {
+        "type": "RECTANGULAR",
+        "width": 55,
+        "height": 48,
+        "offsetX": -5,
+        "offsetY": 0,
+        "size": 3036
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 12000,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "COUNT_UP"
+    }
+  },
+  {
+    "id": "nomos--1303",
+    "manufacturer": "NOMOS",
+    "model": "Autobahn Neomatik 41 Date Sports Gray",
+    "reference": "1303",
+    "caliberId": "nomos--duw-6101",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 41,
+      "thickness": 10.5,
+      "lugToLug": 49.6,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41,
+        "size": 1669
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "DOMED"
+    },
+    "dial": {
+      "colour": "WHITE",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 3800,
+      "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
     }
   }
 ]

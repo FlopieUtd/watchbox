@@ -66,9 +66,10 @@ export const BoxSlot = ({
   });
 
   const slotClass = classNames(
-    "transition w-full aspect-[2/3] flex items-center justify-center overflow-hidden group relative",
-    isOver && "bg-slate-200",
-    !isOver && "bg-slate-100"
+    "transition w-full aspect-[2/3] flex items-center justify-center group relative",
+    isOver && "bg-slate-100",
+    !isOver && slot.watch && "bg-white",
+    !slot.watch && "bg-slate-100"
   );
 
   const handleRemove = () => {
@@ -79,7 +80,7 @@ export const BoxSlot = ({
   };
 
   const imageClass = classNames(
-    "scale-[1.1] transition",
+    "scale-[1.2] transition mix-blend-multiply",
     isImageLoaded && "opacity-100",
     !isImageLoaded && "opacity-0"
   );

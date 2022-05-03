@@ -222,7 +222,7 @@ export const WATCH_ATTRIBUTES: WatchAttribute[] = [
   },
   {
     name: "Bezel",
-    accessor: "watchCase.bezel",
+    accessor: "bezel.type",
     dict: BEZEL,
     filterType: FilterType.Category,
     filterOptions: alphabetical(Object.values(Bezel)),

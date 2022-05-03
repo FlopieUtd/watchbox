@@ -4,20 +4,23 @@ import { FilterPanel } from "src/components/FilterPanel";
 import { MANUFACTURER } from "src/constants";
 import { useExplore } from "src/context/ExploreContext";
 import { getCompressedImageSrc } from "src/utils/getImageSrc";
+import { useScrollRestoration } from "src/utils/useScrollRestoration";
 
 export const Explore = observer(() => {
   const { filteredWatches } = useExplore();
 
+  const scrollRef = useScrollRestoration("explore");
+
   return (
     <>
-      <div className="w-full overflow-x-hidden overflow-y-auto">
+      <div className="w-full overflow-x-hidden overflow-y-auto" ref={scrollRef}>
         <div className="flex justify-center p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-[1080px]">
             {filteredWatches.map((watch) => {
               const { manufacturer, model, id } = watch;
               return (
                 <Link key={id} to={`/watches/${id}`}>
-                  <div className="bg-slate-100 aspect-square overflow-hidden mb-4">
+                  <div className="aspect-square overflow-hidden mb-4">
                     <img
                       src={getCompressedImageSrc(watch)}
                       alt={watch.reference}

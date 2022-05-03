@@ -10,7 +10,7 @@ export const Filter = ({ children, filter }: FilterProps) => {
   const { name, onClear, isActive } = filter;
 
   return (
-    <div key={name} className="mb-4">
+    <div key={name} className="mb-6">
       <div className="flex justify-between">
         <h2 className="mb-2">{name}</h2>
         {isActive && (

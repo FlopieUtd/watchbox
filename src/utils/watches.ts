@@ -34,7 +34,7 @@ export const getWatchById = (watchId: string) => {
 
 import { DiameterType, Watch } from "../types";
 
-const urlSafe = (string: string) =>
+export const urlSafe = (string: string) =>
   string
     .toLowerCase()
     .replace(/[ &/\\#,+()$~%.'":*?<>{}_]/g, "-")

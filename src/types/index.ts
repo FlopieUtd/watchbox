@@ -69,6 +69,7 @@ export enum WatchManufacturer {
   VACHERON_CONSTANTIN = "VACHERON_CONSTANTIN",
   HAMILTON = "HAMILTON",
   ZENITH = "ZENITH",
+  FARER = "FARER",
 }
 
 export enum CaliberManufacturer {
@@ -122,6 +123,8 @@ export interface Watch {
   manufacturer: WatchManufacturer;
   model: string;
   reference: string;
+  description?: string[];
+  source?: string;
   caliber: Caliber;
   watchCase: {
     material: CaseMaterial;
@@ -139,6 +142,9 @@ export interface Watch {
   dial: {
     colour: DialColour | DialColour[];
     hourMarkers: HourMarkers;
+  };
+  bezel: {
+    type: Bezel;
   };
   price: {
     amount: number;
@@ -202,12 +208,12 @@ export type Accessor =
   | "watchCase.thickness"
   | "watchCase.lugToLug"
   | "watchCase.lugWidth"
-  | "watchCase.bezel"
   | "dial.colour"
   | "dial.hourMarkers"
   | "crystal.material"
   | "crystal.shape"
-  | "price.amount";
+  | "price.amount"
+  | "bezel.type";
 
 export type FilterOption = string | number;
 

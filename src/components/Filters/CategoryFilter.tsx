@@ -24,7 +24,7 @@ export const CategoryFilter = observer(({ filter }: CategoryFilterProps) => {
         };
 
         return (
-          <div key={id}>
+          <div key={id} className="py-0.5">
             <label htmlFor={id} className={className}>
               <input
                 type="checkbox"

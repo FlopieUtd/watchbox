@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { DescriptionLine } from "src/components/Watch/DescriptionLine";
 import {
   useDiameter,
@@ -19,10 +19,11 @@ import {
   CRYSTAL_MATERIAL,
   CRYSTAL_SHAPE,
   COMPLICATION,
+  BEZEL,
 } from "src/constants";
 import { DiameterType, MovementType } from "src/types";
 import { getImageSrc } from "src/utils/getImageSrc";
-import { getWatchById } from "src/utils/watches";
+import { getWatchById, urlSafe } from "src/utils/watches";
 import { useElementSize } from "usehooks-ts";
 
 export const Watch = () => {
@@ -33,8 +34,18 @@ export const Watch = () => {
   }
   const watch = getWatchById(watchId);
 
-  const { reference, manufacturer, model, caliber, watchCase, dial, crystal } =
-    watch;
+  const {
+    reference,
+    manufacturer,
+    model,
+    caliber,
+    watchCase,
+    dial,
+    crystal,
+    bezel,
+    description,
+    source,
+  } = watch;
 
   const {
     diameter,
@@ -74,25 +85,31 @@ export const Watch = () => {
   );
 
   const imageClass = classNames(
-    " max-w-full h-full object-scale-down transition max-h-[80vh]",
-    isImageLoaded && "opacity-100",
-    !isImageLoaded && "opacity-0"
+    "max-w-full h-full object-scale-down transition w-full md:max-h-[80vh] max-w-[400px] md:max-w-full",
+    isImageLoaded && "opacity-100 scale-100",
+    !isImageLoaded && "opacity-0 scale-[0.99]"
   );
+
+  const shouldShowReference = reference !== urlSafe(model);
 
   const [imageRef, { width: imageWidth }] = useElementSize();
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-full w-full justify-center items-center">
+    <div className="flex-col flex md:flex-row h-full w-full md:justify-center items-center">
       <button
         onClick={() => {
           navigate(-1);
         }}
-        className="h-full border-r p-6 flex items-center hover:bg-slate-50"
+        className="hidden h-full border-r p-6 md:flex items-center hover:bg-slate-50"
       >
-        <img src="/icons/chevron_right.svg" alt="Back" className="rotate-180" />
+        <img
+          src="/icons/chevron_right.svg"
+          alt="Back"
+          className="rotate-180 w-6"
+        />
       </button>
-      <div className="relative w-full max-w-[550px] flex justify-center items-center overflow-hidden mb-[100px]">
+      <div className="relative md:w-[35vw] flex justify-center items-center md:overflow-hidden md:mb-[100px]">
         <div className={imageOverlayClass}>
           <img
             className={imageClass}
@@ -151,18 +168,36 @@ export const Watch = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full border-l p-16 flex items-center justify-center">
-        <div className="max-w-[840px]  w-full">
-          <div className="mb-12">
-            <div className="text-[28px] leading-[28px]">
+      <div className="md:w-[65vw] h-full border-l flex justify-center md:overflow-y-auto">
+        <div className="max-w-[760px] w-full m-16">
+          <div className="mb-8">
+            <div className="text-[28px] leading-[34px]">
               {MANUFACTURER[manufacturer]}
             </div>
-            <div className="text-[40px] leading-[48px]">{model}</div>
+            <div className="text-[40px] leading-[48px] font-bold">{model}</div>
             <div className="text-[14px] tracking-widest">
-              Reference {reference}
+              {shouldShowReference && <>Reference {reference}</>}
+              {source && shouldShowReference && " | "}
+              {source && (
+                <a
+                  href={source}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 hover:underline text-lg"
+                >
+                  Website
+                </a>
+              )}
             </div>
           </div>
-          <div className="grid xl:grid-cols-2 gap-4 xl:gap-12">
+          {description && (
+            <div className="mb-10 text-lg leading-[28px]">
+              {description.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          )}
+          <div className="grid xl:grid-cols-2 gap-4 xl:gap-8 mb-16">
             <div>
               <h2 className="border-b mb-1 pb-1">Caliber</h2>
               <DescriptionLine label="Reference" value={caliberName} />
@@ -242,7 +277,15 @@ export const Watch = () => {
                 ))}
               </div>
             </div>
+            {}
+            <div>
+              <h2 className="border-b mb-1 pb-1">Bezel</h2>
+              <div>
+                <DescriptionLine label="Type" value={BEZEL[bezel.type]} />
+              </div>
+            </div>
           </div>
+          <div className="h-1" />
         </div>
       </div>
     </div>

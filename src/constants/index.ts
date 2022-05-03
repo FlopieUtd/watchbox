@@ -13,11 +13,12 @@ import {
   Bezel,
   FilterOption,
   FilterType,
+  CaliberManufacturer,
 } from "src/types";
 
 export const SIDE_PANEL_WIDTH = 280;
 
-export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
+export const WATCH_MANUFACTURER: { [key in WatchManufacturer]: string } = {
   NOMOS: "Nomos",
   JUNGHANS: "Junghans",
   ROLEX: "Rolex",
@@ -44,7 +45,16 @@ export const MANUFACTURER: { [key in WatchManufacturer]: string } = {
   VACHERON_CONSTANTIN: "Vacheron Constantin",
   HAMILTON: "Hamilton",
   ZENITH: "Zenith",
+  FARER: "Farer",
 };
+
+export const CALIBER_MANUFACTURER: { [key in CaliberManufacturer]: string } = {
+  SELLITA: "Sellita",
+  MIYOTA: "Miyota",
+  ETA: "ETA",
+};
+
+export const MANUFACTURER = { ...WATCH_MANUFACTURER, ...CALIBER_MANUFACTURER };
 
 export const CASE_MATERIAL: { [key in CaseMaterial]: string } = {
   STAINLESS_STEEL: "Stainless steel",

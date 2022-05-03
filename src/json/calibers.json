@@ -590,7 +590,8 @@
       "HOURS",
       "MINUTES",
       "SMALL_SECONDS",
-      "CHRONOGRAPH"
+      "CHRONOGRAPH",
+      "DATE"
     ]
   },
   {
@@ -659,5 +660,42 @@
     "diameter": 30.4,
     "thickness": null,
     "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
+  },
+  {
+    "id": "sellita--sw330-2",
+    "name": "SW330-2",
+    "manufacturer": "SELLITA",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 56,
+    "jewels": 25,
+    "diameter": 25.6,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "GMT",
+      "DATE"
+    ]
+  },
+  {
+    "id": "nomos--duw-6101",
+    "name": "DUW 6101",
+    "manufacturer": "NOMOS",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 42,
+    "jewels": 27,
+    "diameter": 35.2,
+    "thickness": 3.6,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "DATE"
+    ]
   }
 ]
