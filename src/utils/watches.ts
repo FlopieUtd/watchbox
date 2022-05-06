@@ -3,7 +3,16 @@ import watchesJson from "../json/watches.json";
 
 export const watches = watchesJson.map((watch) => ({
   ...watch,
-  caliber: getCaliberById(watch.caliberId),
+  caliber: {
+    ...getCaliberById(watch.caliberId),
+    // Some watches do not use all caliber complications, filter those
+    complications: [
+      ...getCaliberById(watch.caliberId).complications.filter(
+        (complication) =>
+          !(watch.unusedCaliberComplications ?? []).includes(complication)
+      ),
+    ],
+  },
   watchCase: {
     ...watch.watchCase,
     detailedDiameter: {
@@ -21,6 +30,8 @@ export const watches = watchesJson.map((watch) => ({
     },
   },
 })) as Watch[];
+
+console.log(watches);
 
 export const getWatchById = (watchId: string) => {
   const result = watches.find((watch) => watch.id === watchId);

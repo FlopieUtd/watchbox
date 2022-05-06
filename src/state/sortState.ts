@@ -39,6 +39,6 @@ export class SortState {
 }
 
 export const sortState = new SortState({
-  activeSort: "Case size",
+  activeSort: "Case size (approx.)",
   direction: SortDirection.Ascending,
 });

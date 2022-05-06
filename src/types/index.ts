@@ -26,6 +26,7 @@ export enum CrystalShape {
 export enum DialColour {
   Black = "BLACK",
   White = "WHITE",
+  Silver = "SILVER",
   Grey = "GREY",
   Blue = "BLUE",
   Green = "GREEN",
@@ -70,6 +71,8 @@ export enum WatchManufacturer {
   HAMILTON = "HAMILTON",
   ZENITH = "ZENITH",
   FARER = "FARER",
+  BREGUET = "BREGUET",
+  LONGINES = "LONGINES",
 }
 
 export enum CaliberManufacturer {
@@ -126,6 +129,7 @@ export interface Watch {
   description?: string[];
   source?: string;
   caliber: Caliber;
+  unusedCaliberComplications?: Complication[];
   watchCase: {
     material: CaseMaterial;
     waterResistance: number;
@@ -168,6 +172,7 @@ export enum Complication {
   AmPm = "AM_PM",
   HackingSeconds = "HACKING_SECONDS",
   GMT = "GMT",
+  TENTH_OF_A_SECOND = "TENTH_OF_A_SECOND",
 }
 
 export interface Caliber {
@@ -221,6 +226,11 @@ export enum FilterType {
   Category = "CATEGORY",
   Search = "SEARCH",
   None = "NONE",
+}
+
+export enum FilterOperator {
+  And = "AND",
+  Or = "OR",
 }
 
 export interface BaseFilter {

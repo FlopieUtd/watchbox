@@ -1,7 +1,7 @@
 import { get } from "lodash";
 import { CategoryFilterState } from "src/state/categoryFiltersState";
 import { SearchFilterState } from "src/state/searchFilterState";
-import { Watch } from "src/types";
+import { FilterOperator, Watch } from "src/types";
 
 interface GetFilterResults {
   watches: Watch[];
@@ -33,7 +33,11 @@ export const getFilterResults = ({
         }
 
         if (typeof accessorResult === "object") {
-          return accessorResult.includes(option);
+          return categoryFilter.operator === FilterOperator.Or
+            ? accessorResult.includes(option)
+            : [option, ...categoryFilter.activeFilterOptions].every(
+                (attribute) => accessorResult.includes(attribute)
+              );
         }
 
         throw new Error("Unknown accessor result");

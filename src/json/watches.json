@@ -18,8 +18,7 @@
       "lugWidth": 16,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 33,
-        "size": 1330
+        "diameter": 33
       }
     },
     "crystal": {
@@ -27,7 +26,7 @@
       "shape": "DOMED"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "INDICES"
     },
     "price": {
@@ -57,8 +56,7 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 34,
-        "size": 1378
+        "diameter": 34
       }
     },
     "crystal": {
@@ -96,8 +94,7 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 34,
-        "size": 1416
+        "diameter": 34
       }
     },
     "crystal": {
@@ -132,8 +129,7 @@
       "detailedDiameter": {
         "type": "RECTANGULAR",
         "width": 28,
-        "height": 39,
-        "size": 1453
+        "height": 39
       }
     },
     "crystal": {
@@ -171,8 +167,7 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 35,
-        "size": 1455
+        "diameter": 35
       }
     },
     "crystal": {
@@ -180,7 +175,7 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "INDICES"
     },
     "price": {
@@ -206,8 +201,7 @@
       "lugWidth": 19,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 36,
-        "size": 1563
+        "diameter": 36
       }
     },
     "crystal": {
@@ -245,8 +239,7 @@
       "lugWidth": 19,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 36,
-        "size": 1563
+        "diameter": 36
       }
     },
     "crystal": {
@@ -285,8 +278,7 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 36,
-        "size": 1585
+        "diameter": 36
       }
     },
     "crystal": {
@@ -324,8 +316,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 36.5,
-        "size": 1586
+        "diameter": 36.5
       }
     },
     "crystal": {
@@ -359,8 +350,7 @@
       "lugWidth": 21,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 37,
-        "size": 1607
+        "diameter": 37
       }
     },
     "crystal": {
@@ -395,8 +385,7 @@
       "lugWidth": 19,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 37,
-        "size": 1615
+        "diameter": 37
       }
     },
     "crystal": {
@@ -434,8 +423,7 @@
       "lugWidth": 23,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 37,
-        "size": 1640
+        "diameter": 37
       }
     },
     "crystal": {
@@ -473,8 +461,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38,
-        "size": 1669
+        "diameter": 38
       }
     },
     "crystal": {
@@ -482,7 +469,7 @@
       "shape": "DOMED"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "INDICES"
     },
     "price": {
@@ -512,8 +499,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5,
-        "size": 1692
+        "diameter": 38.5
       }
     },
     "crystal": {
@@ -521,7 +507,7 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "INDICES"
     },
     "price": {
@@ -547,8 +533,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38,
-        "size": 1714
+        "diameter": 38
       }
     },
     "crystal": {
@@ -586,8 +571,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5,
-        "size": 1734
+        "diameter": 38.5
       }
     },
     "crystal": {
@@ -614,8 +598,9 @@
     "description": [
       "Striking form, sparse dial design, superior readability – characteristic SINN features which highlight the similarities between the 556 series and our pilot and navigation cockpit clocks. The accentuation of the hours, minutes and seconds plus the satinized stainless steel case are what give the watches their sporty yet elegant appearance. The crystal of the 556 watches is made from sapphire crystal, as is the transparent back which provides an intriguing insight into the filigree mechanical movement inside."
     ],
-    "source": "https://www.sinn.de/en/Modell/556_I_Mother-of-pearl_W",
+    "source": "https://www.sinn.de/en/Modell/556_I_Mother-of-pearl_W.htm",
     "caliberId": "sellita--sw2001",
+    "unusedCaliberComplications": ["DATE"],
     "watchCase": {
       "material": "STAINLESS_STEEL",
       "waterResistance": 20,
@@ -625,8 +610,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5,
-        "size": 1734
+        "diameter": 38.5
       }
     },
     "crystal": {
@@ -664,8 +648,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5,
-        "size": 1734
+        "diameter": 38.5
       }
     },
     "crystal": {
@@ -673,7 +656,7 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "ROMAN"
     },
     "price": {
@@ -706,8 +689,7 @@
         "width": 32.5,
         "height": 42,
         "offsetX": 0,
-        "offsetY": 0,
-        "size": 1739
+        "offsetY": 0
       }
     },
     "crystal": {
@@ -745,8 +727,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5,
-        "size": 1739
+        "diameter": 38.5
       }
     },
     "crystal": {
@@ -784,8 +765,7 @@
       "lugWidth": 19,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 38.5,
-        "size": 1749
+        "diameter": 38.5
       }
     },
     "crystal": {
@@ -819,8 +799,7 @@
       "lugWidth": 18,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 39,
-        "size": 1760
+        "diameter": 39
       }
     },
     "crystal": {
@@ -859,8 +838,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 39,
-        "size": 1765
+        "diameter": 39
       }
     },
     "crystal": {
@@ -868,7 +846,7 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "INDICES"
     },
     "price": {
@@ -899,8 +877,7 @@
       "detailedDiameter": {
         "type": "RECTANGULAR",
         "height": 47,
-        "width": 28.3,
-        "size": 1782
+        "width": 28.3
       }
     },
     "crystal": {
@@ -938,8 +915,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 39.5,
-        "size": 1783
+        "diameter": 39.5
       }
     },
     "crystal": {
@@ -973,8 +949,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 39,
-        "size": 1785
+        "diameter": 39
       }
     },
     "crystal": {
@@ -1012,8 +987,7 @@
       "lugWidth": 12,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1807
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1047,8 +1021,7 @@
       "lugWidth": 25,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1812
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1087,8 +1060,7 @@
       "lugWidth": 21,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1812
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1123,8 +1095,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1852
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1158,8 +1129,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1872
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1198,8 +1168,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1878
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1237,8 +1206,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 40,
-        "size": 1894
+        "diameter": 40
       }
     },
     "crystal": {
@@ -1272,8 +1240,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 41,
-        "size": 1915
+        "diameter": 41
       }
     },
     "crystal": {
@@ -1281,7 +1248,7 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "ARABIC"
     },
     "price": {
@@ -1312,8 +1279,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 41,
-        "size": 1935
+        "diameter": 41
       }
     },
     "crystal": {
@@ -1351,8 +1317,7 @@
       "lugWidth": 30,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 41,
-        "size": 1938
+        "diameter": 41
       }
     },
     "crystal": {
@@ -1391,8 +1356,7 @@
       "detailedDiameter": {
         "type": "RECTANGULAR",
         "width": 40,
-        "height": 40,
-        "size": 1954
+        "height": 40
       }
     },
     "crystal": {
@@ -1430,8 +1394,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42,
-        "size": 1985
+        "diameter": 42
       }
     },
     "crystal": {
@@ -1470,8 +1433,7 @@
       "detailedDiameter": {
         "type": "RECTANGULAR",
         "width": 39,
-        "height": 39,
-        "size": 1999
+        "height": 39
       }
     },
     "crystal": {
@@ -1511,8 +1473,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42,
-        "size": 2000
+        "diameter": 42
       }
     },
     "crystal": {
@@ -1551,8 +1512,7 @@
       "lugWidth": 21,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42,
-        "size": 2001
+        "diameter": 42
       }
     },
     "crystal": {
@@ -1590,8 +1550,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42,
-        "size": 2013
+        "diameter": 42
       }
     },
     "crystal": {
@@ -1599,7 +1558,7 @@
       "shape": "FLAT"
     },
     "dial": {
-      "colour": ["GREY", "BLACK", "BLUE", "WHITE"],
+      "colour": "SILVER",
       "hourMarkers": "INDICES"
     },
     "price": {
@@ -1633,8 +1592,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 42,
-        "size": 2024
+        "diameter": 42
       }
     },
     "crystal": {
@@ -1668,8 +1626,7 @@
       "lugWidth": 22,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 43,
-        "size": 2085
+        "diameter": 43
       }
     },
     "crystal": {
@@ -1707,8 +1664,7 @@
       "lugWidth": 22,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 44,
-        "size": 2191
+        "diameter": 44
       }
     },
     "crystal": {
@@ -1742,8 +1698,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 45,
-        "size": 2245
+        "diameter": 45
       }
     },
     "crystal": {
@@ -1778,8 +1733,7 @@
       "detailedDiameter": {
         "type": "RECTANGULAR",
         "width": 44,
-        "height": 44,
-        "size": 2437
+        "height": 44
       }
     },
     "crystal": {
@@ -1822,8 +1776,7 @@
         "width": 55,
         "height": 48,
         "offsetX": -5,
-        "offsetY": 0,
-        "size": 3036
+        "offsetY": 0
       }
     },
     "crystal": {
@@ -1847,6 +1800,10 @@
     "manufacturer": "NOMOS",
     "model": "Autobahn Neomatik 41 Date Sports Gray",
     "reference": "1303",
+    "description": [
+      "Dashing: The racing model of the three Autobahn versions, featuring blue on a gray background and neon orange hands. A confident, distinct watch—with a slender bezel, eye-catching crown, and striking dial."
+    ],
+    "source": "https://nomos-glashuette.com/en/autobahn/autobahn-neomatik-41-date-sports-gray-1303",
     "caliberId": "nomos--duw-6101",
     "watchCase": {
       "material": "STAINLESS_STEEL",
@@ -1857,8 +1814,7 @@
       "lugWidth": 20,
       "detailedDiameter": {
         "type": "ROUND",
-        "diameter": 41,
-        "size": 1669
+        "diameter": 41
       }
     },
     "crystal": {
@@ -1866,12 +1822,165 @@
       "shape": "DOMED"
     },
     "dial": {
-      "colour": "WHITE",
+      "colour": "SILVER",
       "hourMarkers": "ARABIC"
     },
     "price": {
       "amount": 3800,
       "date": "2022-04-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "hamilton--h70455553",
+    "manufacturer": "HAMILTON",
+    "model": "Khaki Field Auto",
+    "reference": "H70455553",
+    "description": [
+      "When you're planning an expedition, your essential equipment is reliable, resilient, functional and compact. At 38mm, this watch is punching above its weight when it comes to military inspired features. Bold looks, a rugged and robust case and strap and a movement that won't let you down. With 80 hours of typical power reserve in the exclusive H-10 automatic caliber, the Khaki Field Auto will keep you going."
+    ],
+    "source": "https://www.hamiltonwatch.com/en-int/h70455553-khaki-field-auto.html",
+    "caliberId": "hamilton--h-10",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 38,
+      "thickness": 11,
+      "lugToLug": 47,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "SILVER",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 575,
+      "date": "2022-05-03"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "breguet--7727br-12-9wu",
+    "manufacturer": "BREGUET",
+    "model": "Classique 7727",
+    "reference": "7727BR/12/9WU",
+    "description": [
+      "Classique Chronométrie wristwatch in 18-carat rose gold. High-frequency escapement ( 10Hz ) composed of a magnetic balance with double balance spring, lever and escape wheel in silicon. Hand-wound movement with running seconds. 1/10th of a second subdial and power-reserve indicator. Silvered gold dial, handengraved on a rose engine. Sapphire caseback. Water-resistant to 3 bar ( 30 m ). Diameter : 41mm. Also in white gold."
+    ],
+    "source": "https://www.hamiltonwatch.com/en-int/h70455553-khaki-field-auto.html",
+    "caliberId": "breguet--574dr",
+    "watchCase": {
+      "material": "ROSE_GOLD",
+      "waterResistance": 3,
+      "diameter": 41,
+      "thickness": 9.65,
+      "lugToLug": 50.3,
+      "lugWidth": 20,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "SILVER",
+      "hourMarkers": "ROMAN"
+    },
+    "price": {
+      "amount": 41200,
+      "date": "2022-05-04"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "longines--l2-828-4-73-2",
+    "manufacturer": "LONGINES",
+    "model": "Heritage Classic",
+    "reference": "L2.828.4.73.2",
+    "description": [
+      "Longines combines the original aesthetics of its most remarkable historic models with the most modern watchmaking techniques. Heritage Classic pieces are a tribute to the innovative spirit that has driven Longines’ watchmakers from the outset. Longines timepieces draw from this expertise and illustrate the durability that is the brand’s signature, as well a consistent desire to honor history."
+    ],
+    "source": "https://www.longines.com/en-nl/watch-the-longines-heritage-classic-l2-828-4-73-2",
+    "caliberId": "longines--l893",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 3,
+      "diameter": 38.5,
+      "thickness": 11,
+      "lugToLug": 47.3,
+      "lugWidth": 19,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 38.5
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "SILVER",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 2180,
+      "date": "2022-05-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "rolex--m126300-0011",
+    "manufacturer": "ROLEX",
+    "model": "Datejust 41",
+    "reference": "M126300-0011",
+    "description": [
+      "This Oyster Perpetual Datejust 41 in Oystersteel features a bright black dial and an Oyster bracelet.",
+      "The light reflections on the case sides and lugs highlight the elegant profile of the 41 mm Oyster case, which is fitted with a smooth bezel. Aesthetically, the Datejust has spanned eras, while retaining the enduring codes that make it, notably in its traditional versions, one of the most recognized and recognizable of watches."
+    ],
+    "source": "https://www.rolex.com/watches/datejust/m126300-0011.html",
+    "caliberId": "rolex--3235",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 41,
+      "thickness": 12,
+      "lugToLug": 47.5,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 41
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLACK",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 7500,
+      "date": "2022-05-06"
     },
     "bezel": {
       "type": "PLAIN"

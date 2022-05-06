@@ -4,7 +4,13 @@ import {
   WatchAttributeCategory,
 } from "src/constants";
 import { WATCH_ATTRIBUTES } from "src/constants/watchAttributes";
-import { Accessor, BaseFilter, FilterOption, FilterType } from "src/types";
+import {
+  Accessor,
+  BaseFilter,
+  FilterOperator,
+  FilterOption,
+  FilterType,
+} from "src/types";
 
 export interface CategoryFilter extends BaseFilter {
   dict: Record<string, string> | null;
@@ -19,6 +25,7 @@ export class CategoryFilterState {
   accessor: string;
   dict: Record<string, string> | null;
   type: FilterType.Category;
+  operator: FilterOperator;
   isActive = false;
   unit: string | null;
   category: WatchAttributeCategory;
@@ -30,6 +37,7 @@ export class CategoryFilterState {
     dict,
     unit,
     category,
+    operator,
   }: {
     name: string;
     filterOptions: FilterOption[];
@@ -37,6 +45,7 @@ export class CategoryFilterState {
     dict: Record<string, string> | null;
     unit: string | null;
     category: WatchAttributeCategory;
+    operator: FilterOperator;
   }) {
     makeAutoObservable(this);
     this.name = name;
@@ -49,6 +58,7 @@ export class CategoryFilterState {
     this.dict = dict;
     this.unit = unit;
     this.category = category;
+    this.operator = operator;
   }
 
   onFilter(value: FilterOption) {
@@ -79,6 +89,7 @@ export const categoryFiltersState = categoryFilters.map(
       ...filter,
       dict: filter.dict ?? null,
       unit: filter.unit ?? null,
+      operator: filter.operator ?? null,
     })
 );
 

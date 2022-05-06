@@ -12,7 +12,6 @@ export const useScrollRestoration = (pageId: string) => {
     setPosition(0);
   };
 
-  // Scroll position
   useEffect(() => {
     if (!scrollRef.current) {
       return;

@@ -14,6 +14,7 @@ import {
   FilterOption,
   FilterType,
   CaliberManufacturer,
+  FilterOperator,
 } from "src/types";
 
 export const SIDE_PANEL_WIDTH = 280;
@@ -46,6 +47,8 @@ export const WATCH_MANUFACTURER: { [key in WatchManufacturer]: string } = {
   HAMILTON: "Hamilton",
   ZENITH: "Zenith",
   FARER: "Farer",
+  BREGUET: "Breguet",
+  LONGINES: "Longines",
 };
 
 export const CALIBER_MANUFACTURER: { [key in CaliberManufacturer]: string } = {
@@ -77,7 +80,8 @@ export const MOVEMENT_TYPE: { [key in MovementType]: string } = {
 
 export const DIAL_COLOUR: { [key in DialColour]: string } = {
   BLACK: "Black",
-  WHITE: "White / silver",
+  WHITE: "White",
+  SILVER: "Silver",
   GREY: "Grey",
   BLUE: "Blue",
   GREEN: "Green",
@@ -129,6 +133,7 @@ export const COMPLICATION: { [key in Complication]: string } = {
   AM_PM: "AM / PM",
   HACKING_SECONDS: "Hacking seconds",
   GMT: "GMT",
+  TENTH_OF_A_SECOND: "Tenth of a second",
 };
 
 export const CRYSTAL_MATERIAL: { [key in CrystalMaterial]: string } = {
@@ -168,6 +173,7 @@ export interface BaseWatchAttribute {
 
 export interface CategoryFilterWatchAttribute extends BaseWatchAttribute {
   filterType: FilterType.Category;
+  operator: FilterOperator;
   filterOptions: FilterOption[];
 }
 

@@ -64,6 +64,7 @@ export const Watch = () => {
     powerReserve,
     jewels,
     complications,
+    manufacturer: caliberManufacturer,
   } = caliber;
 
   const { material: crystalMaterial, shape: crystalShape } = crystal;
@@ -201,6 +202,10 @@ export const Watch = () => {
             <div>
               <h2 className="border-b mb-1 pb-1">Caliber</h2>
               <DescriptionLine label="Reference" value={caliberName} />
+              <DescriptionLine
+                label="Manufacturer"
+                value={MANUFACTURER[caliberManufacturer]}
+              />
               <DescriptionLine label="Type" value={MOVEMENT_TYPE[type]} />
               {type !== MovementType.Quartz && (
                 <>

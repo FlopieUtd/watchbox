@@ -100,7 +100,8 @@
       "SMALL_SECONDS",
       "DATE",
       "BIG_DATE",
-      "POWER_RESERVE_INDICATOR"
+      "POWER_RESERVE_INDICATOR",
+      "MOON_PHASE"
     ]
   },
   {
@@ -695,6 +696,73 @@
       "HOURS",
       "MINUTES",
       "SMALL_SECONDS",
+      "DATE"
+    ]
+  },
+  {
+    "id": "hamilton--h-10",
+    "name": "H-10",
+    "manufacturer": "HAMILTON",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 80,
+    "jewels": 25,
+    "diameter": 25.6,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
+      "DATE"
+    ]
+  },
+  {
+    "id": "breguet--574dr",
+    "name": "574DR",
+    "manufacturer": "BREGUET",
+    "type": "MANUAL_WIND",
+    "vph": 72000,
+    "powerReserve": 60,
+    "jewels": 45,
+    "diameter": 36,
+    "thickness": null,
+    "complications": [
+      "HOURS",
+      "MINUTES",
+      "SMALL_SECONDS",
+      "DATE",
+      "POWER_RESERVE_INDICATOR",
+      "TENTH_OF_A_SECOND"
+    ]
+  },
+  {
+    "id": "longines--l893",
+    "name": "L893",
+    "manufacturer": "LONGINES",
+    "type": "AUTOMATIC",
+    "vph": 25200,
+    "powerReserve": 72,
+    "jewels": 27,
+    "diameter": 25.6,
+    "thickness": null,
+    "complications": ["HOURS", "MINUTES", "SMALL_SECONDS"]
+  },
+  {
+    "id": "rolex--3235",
+    "name": "3235",
+    "manufacturer": "ROLEX",
+    "type": "AUTOMATIC",
+    "vph": 28800,
+    "powerReserve": 70,
+    "jewels": 31,
+    "diameter": 28.5,
+    "thickness": null,
+    "complications": [
+      "HACKING_SECONDS",
+      "HOURS",
+      "MINUTES",
+      "CENTRAL_SECONDS",
       "DATE"
     ]
   }
