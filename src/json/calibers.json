@@ -765,5 +765,17 @@
       "CENTRAL_SECONDS",
       "DATE"
     ]
+  },
+  {
+    "id": "nomos--duw-3001",
+    "name": "DUW 3001",
+    "manufacturer": "NOMOS",
+    "type": "AUTOMATIC",
+    "vph": 21600,
+    "powerReserve": 43,
+    "jewels": 27,
+    "diameter": 28.8,
+    "thickness": 3.2,
+    "complications": ["HACKING_SECONDS", "HOURS", "MINUTES", "SMALL_SECONDS"]
   }
 ]

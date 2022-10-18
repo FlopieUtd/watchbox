@@ -1985,5 +1985,82 @@
     "bezel": {
       "type": "PLAIN"
     }
+  },
+  {
+    "id": "rolex--126234-0017",
+    "manufacturer": "ROLEX",
+    "model": "Datejust 36",
+    "reference": "126234-0017",
+    "description": [
+      "This Oyster Perpetual Datejust 36 in Oystersteel and white gold features a bright blue dial and a Jubilee bracelet.",
+      "The light reflections on the case sides and lugs highlight the elegant profile of the 36 mm Oyster case, which is fitted with a fluted bezel. Aesthetically, the Datejust has spanned eras, while retaining the enduring codes that make it, notably in its traditional versions, one of the most recognized and recognizable of watches."
+    ],
+    "source": "https://www.rolex.com/watches/datejust/m126234-0017.html",
+    "caliberId": "rolex--3235",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 10,
+      "diameter": 36,
+      "thickness": 12,
+      "lugToLug": 47.5,
+      "lugWidth": 21,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 36
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "INDICES"
+    },
+    "price": {
+      "amount": 8300,
+      "date": "2022-05-06"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
+  },
+  {
+    "id": "nomos--750",
+    "manufacturer": "NOMOS",
+    "model": "Club Sport Neomatik Polar",
+    "reference": "750",
+    "description": [
+      "Club Sport neomatik in refreshing polar blue has a case diameter of 37 millimeters—the automatic watch with elaborate sunburst finish dazzles on any wrist. It accompanies you through busy weekdays with its motivating sportiness. This high-performance model is driven by DUW 3001, the innovative caliber from NOMOS. The movement developed and manufactured by NOMOS is just 3.2 millimeters in height and equipped with the NOMOS swing system for optimum accuracy. Those who want to lose no time between working at the desk and jumping into the pool are in good hands with this watch as Club Sport neomatik polar is water resistant to 20 atm and stays put on your wrist while swimming."
+    ],
+    "source": "https://nomos-glashuette.com/en/club/club-sport-neomatik-polar-750",
+    "caliberId": "nomos--duw-3001",
+    "watchCase": {
+      "material": "STAINLESS_STEEL",
+      "waterResistance": 20,
+      "diameter": 37.5,
+      "thickness": 8.4,
+      "lugToLug": 47.7,
+      "lugWidth": 18,
+      "detailedDiameter": {
+        "type": "ROUND",
+        "diameter": 37.5
+      }
+    },
+    "crystal": {
+      "material": "SAPPHIRE",
+      "shape": "FLAT"
+    },
+    "dial": {
+      "colour": "BLUE",
+      "hourMarkers": "ARABIC"
+    },
+    "price": {
+      "amount": 2780,
+      "date": "2022-10-17"
+    },
+    "bezel": {
+      "type": "PLAIN"
+    }
   }
 ]
