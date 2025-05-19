@@ -71,7 +71,7 @@ export const FilterPanel = observer(() => {
               onClick={handleToggleSortDirection}
             >
               <img
-                src="/icons/sort.svg"
+                src="icons/sort.svg"
                 alt="Back"
                 className={sortButtonClass}
               />

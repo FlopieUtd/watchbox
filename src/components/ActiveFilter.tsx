@@ -29,7 +29,7 @@ export const ActiveFilter = ({ filter, onEdit }: ActiveFilterProps) => {
           className="h-full flex items-center justify-center bg-slate-100 p-2 hover:bg-slate-200 absolute right-0"
           onClick={filter.onClear}
         >
-          <img src="/icons/cross.svg" alt="Remove" width={"12px"} />
+          <img src="icons/cross.svg" alt="Remove" width={"12px"} />
         </button>
       </div>
     </div>

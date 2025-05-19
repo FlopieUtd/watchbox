@@ -105,7 +105,7 @@ export const Watch = () => {
         className="hidden h-full border-r p-6 md:flex items-center hover:bg-slate-50"
       >
         <img
-          src="/icons/chevron_right.svg"
+          src="icons/chevron_right.svg"
           alt="Back"
           className="rotate-180 w-6"
         />

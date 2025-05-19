@@ -61,7 +61,7 @@ export const Compare = () => {
                           >
                             <img
                               className="w-full relative top-[-20px]"
-                              src="/images/placeholder.jpg"
+                              src="images/placeholder.jpg"
                               alt="alt"
                             />
                             <div className="absolute bottom-4 h-20 flex flex-col justify-between items-center">

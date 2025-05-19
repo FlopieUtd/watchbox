@@ -92,7 +92,7 @@ export const BoxSlot = ({
           <div>
             <img
               className={imageClass}
-              src={`/images/uncompressed/${slot.watch}.jpg`}
+              src={`%PUBLIC_URL%/images/uncompressed/${slot.watch}.jpg`}
               alt="alt"
               ref={drag}
               onLoad={() => {
@@ -104,7 +104,7 @@ export const BoxSlot = ({
             className="transition absolute top-0 right-0 opacity-0 group-hover:opacity-100 bg-slate-100 rounded-sm hover:bg-slate-200 w-10 h-10 flex items-center justify-center"
             onClick={handleRemove}
           >
-            <img src="/icons/trash.svg" alt="Back" />
+            <img src="icons/trash.svg" alt="Back" />
           </button>
         </>
       )}

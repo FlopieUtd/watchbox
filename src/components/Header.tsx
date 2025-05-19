@@ -19,22 +19,6 @@ export const Header = () => (
           Compare
         </NavLink>
       </li>
-      <li className="p-2">
-        <NavLink
-          className={({ isActive }) => (isActive ? "underline" : "")}
-          to="/collect"
-        >
-          Collect
-        </NavLink>
-      </li>
-      <li className="p-2">
-        <NavLink
-          className={({ isActive }) => (isActive ? "underline" : "")}
-          to="/manage"
-        >
-          Manage
-        </NavLink>
-      </li>
     </ul>
   </div>
 );

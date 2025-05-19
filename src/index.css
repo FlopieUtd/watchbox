@@ -4,21 +4,21 @@
 
 @font-face {
   font-family: "Gotham";
-  src: url("../public/fonts/GothamBook.otf");
+  src: url("fonts/GothamBook.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("../public/fonts/GothamBookItalic.otf");
+  src: url("fonts/GothamBookItalic.otf");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
     font-family: "Gotham";
-    src: url("../public/fonts/GothamMedium.otf");
+    src: url("fonts/GothamMedium.otf");
     font-weight: bold;
     font-style: normal;
   }
