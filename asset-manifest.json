@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "https://flopieutd.github.io/watchbox/static/css/main.b3e2a11b.css",
-    "main.js": "https://flopieutd.github.io/watchbox/static/js/main.e242dec0.js",
+    "main.js": "https://flopieutd.github.io/watchbox/static/js/main.1c72088e.js",
     "static/media/GothamMedium.otf": "https://flopieutd.github.io/watchbox/static/media/GothamMedium.bcd733e6f8ebeb6a5e75.otf",
     "static/media/GothamBookItalic.otf": "https://flopieutd.github.io/watchbox/static/media/GothamBookItalic.ad21531a3ecee70c5b5f.otf",
     "static/media/GothamBook.otf": "https://flopieutd.github.io/watchbox/static/media/GothamBook.d946fc4006181ac4e1c7.otf",
     "index.html": "https://flopieutd.github.io/watchbox/index.html",
     "main.b3e2a11b.css.map": "https://flopieutd.github.io/watchbox/static/css/main.b3e2a11b.css.map",
-    "main.e242dec0.js.map": "https://flopieutd.github.io/watchbox/static/js/main.e242dec0.js.map"
+    "main.1c72088e.js.map": "https://flopieutd.github.io/watchbox/static/js/main.1c72088e.js.map"
   },
   "entrypoints": [
     "static/css/main.b3e2a11b.css",
-    "static/js/main.e242dec0.js"
+    "static/js/main.1c72088e.js"
   ]
 }
