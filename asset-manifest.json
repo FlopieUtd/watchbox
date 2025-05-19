@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://www.flopieutd.github.io/watchbox/static/css/main.f80266f1.css",
-    "main.js": "https://www.flopieutd.github.io/watchbox/static/js/main.e242dec0.js",
-    "static/media/GothamMedium.otf": "https://www.flopieutd.github.io/watchbox/static/media/GothamMedium.bcd733e6f8ebeb6a5e75.otf",
-    "static/media/GothamBookItalic.otf": "https://www.flopieutd.github.io/watchbox/static/media/GothamBookItalic.ad21531a3ecee70c5b5f.otf",
-    "static/media/GothamBook.otf": "https://www.flopieutd.github.io/watchbox/static/media/GothamBook.d946fc4006181ac4e1c7.otf",
-    "index.html": "https://www.flopieutd.github.io/watchbox/index.html",
-    "main.f80266f1.css.map": "https://www.flopieutd.github.io/watchbox/static/css/main.f80266f1.css.map",
-    "main.e242dec0.js.map": "https://www.flopieutd.github.io/watchbox/static/js/main.e242dec0.js.map"
+    "main.css": "flopieutd.github.io/watchbox/static/css/main.b347d841.css",
+    "main.js": "flopieutd.github.io/watchbox/static/js/main.e242dec0.js",
+    "static/media/GothamMedium.otf": "flopieutd.github.io/watchbox/static/media/GothamMedium.bcd733e6f8ebeb6a5e75.otf",
+    "static/media/GothamBookItalic.otf": "flopieutd.github.io/watchbox/static/media/GothamBookItalic.ad21531a3ecee70c5b5f.otf",
+    "static/media/GothamBook.otf": "flopieutd.github.io/watchbox/static/media/GothamBook.d946fc4006181ac4e1c7.otf",
+    "index.html": "flopieutd.github.io/watchbox/index.html",
+    "main.b347d841.css.map": "flopieutd.github.io/watchbox/static/css/main.b347d841.css.map",
+    "main.e242dec0.js.map": "flopieutd.github.io/watchbox/static/js/main.e242dec0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f80266f1.css",
+    "static/css/main.b347d841.css",
     "static/js/main.e242dec0.js"
   ]
 }
