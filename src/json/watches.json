@@ -405,44 +405,6 @@
     }
   },
   {
-    "id": "audemars-piguet--15550st-OO-1356st-02",
-    "manufacturer": "AUDEMARS_PIGUET",
-    "model": "Royal Oak Selfwinding",
-    "reference": "15550ST.OO.1356ST.02",
-    "description": [
-      "This 37 mm timepiece is inspired by the original Royal Oak from 1972 with its body of steel and its Bleu Nuit, Nuage 50 Tapisserie dial. Yet looking to the future, it presents the new Royal Oak ergonomic design as well as the new selfwinding Calibre 5900, fitted with the '50-years' oscillating weight."
-    ],
-    "source": "https://www.audemarspiguet.com/com/en/watch-collection/royal-oak/15550ST.OO.1356ST.02",
-    "caliberId": "audemars-piguet--5900",
-    "watchCase": {
-      "material": "STAINLESS_STEEL",
-      "waterResistance": 5,
-      "diameter": 37,
-      "thickness": 10,
-      "lugToLug": 46.5,
-      "lugWidth": 23,
-      "detailedDiameter": {
-        "type": "ROUND",
-        "diameter": 37
-      }
-    },
-    "crystal": {
-      "material": "SAPPHIRE",
-      "shape": "FLAT"
-    },
-    "dial": {
-      "colour": "BLUE",
-      "hourMarkers": "INDICES"
-    },
-    "price": {
-      "amount": 21100,
-      "date": "2022-04-06"
-    },
-    "bezel": {
-      "type": "PLAIN"
-    }
-  },
-  {
     "id": "nomos--1109",
     "manufacturer": "NOMOS",
     "model": "Metro 38",
