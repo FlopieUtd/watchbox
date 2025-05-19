@@ -2,7 +2,7 @@
   "name": "watchbox",
   "version": "0.1.0",
   "private": true,
-  "homepage": "flopieutd.github.io/watchbox/",
+"homepage": "https://flopieutd.github.io/watchbox",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
